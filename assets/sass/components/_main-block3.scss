@@ -1,0 +1,28 @@
+.grid-container_main_block3_houses{
+    display: grid;
+    grid-template: 28% 52% 10% 10%/5% 1fr 5%;
+    
+    height: 100%;
+
+    .grid-item_main_block3_houses-finished{
+        grid-area: 1/1/2/4;
+
+        background-color: antiquewhite;
+        border: solid blue;
+    }
+    .grid-item_main_block3_houses-variants{
+        grid-area: 2/1/4/4;
+
+        background-color: antiquewhite;
+
+        border: solid red;
+    }
+    .grid-item_main_block3_houses-excursion{
+        grid-area: 3/2/5/3;
+        z-index: 1;
+
+        background-color: aquamarine;
+
+        border: solid black;
+    }
+}
