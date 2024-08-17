@@ -1,0 +1,72 @@
+.grid-item_main_block2_benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1, h2, li {
+        font-family: Arial;
+    }
+    
+    h1 {
+        font-family: Arial;
+        font-size: 3.39rem;
+        color: rgba(15, 33, 44, 1.00);
+    }
+
+    .grid-item_main_block2-card_title {
+        display: flex;
+        align-items: center;
+        height: 4.5rem;
+    }
+
+
+    h2 {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+        margin: 0;
+
+        display: block;
+    }
+
+
+    .grid-item_main_block2-card {
+
+    
+        width: 75vw;
+        display: flex;
+        justify-content: space-between;
+    
+    
+    
+    
+        .grid-item_main_block2-card_content {
+            width: 32%;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+    
+        .card_img {
+            width: 100%;
+        }
+    
+        ul {
+            padding-left: 2rem;
+            padding-right: 1rem;
+            margin-top: 2%;
+        }
+
+    
+        li {
+            list-style-type: '\2014';
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+
