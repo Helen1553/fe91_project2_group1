@@ -42,4 +42,44 @@
   border: solid rgb(175, 1, 255);
 }
 
+.grid-item_main_block1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 90%;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  border: solid violet;
+  padding: 1em;
+}
+
+.subtitle {
+  grid-area: 1/1/2/4;
+  text-align: center;
+}
+
+.column1 {
+  grid-area: 2/1/3/2;
+  background-color: lightgray;
+}
+
+.column2 {
+  grid-area: 2/2/3/3;
+  background-color: lightgray;
+}
+
+.column3 {
+  grid-area: 2/3/3/4;
+  background-color: lightgray;
+}
+
+.main_block1-img {
+  width: 100%;
+  height: 15em;
+  border-radius: 10%;
+}
+
+h4 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
