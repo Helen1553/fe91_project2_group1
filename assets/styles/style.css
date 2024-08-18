@@ -46,15 +46,30 @@
 .grid-item_main_block2_benefit,
 .grid-item_main_block2-card_title,
 .grid-item_main_block2-card,
-.grid-item_main_block2-card_content {
+.grid-item_main_block2-card_content,
+.grid-item_main_block2-bank {
   display: flex;
+}
+
+.grid-item_main_block2-bank {
+  justify-content: space-around;
+  margin-bottom: 5vh;
+  margin-left: 5%;
+  width: 90%;
+  height: 5vh;
+}
+.grid-item_main_block2-bank .bank-logo_large {
+  width: 15%;
+}
+.grid-item_main_block2-bank .bank-logo_small {
+  display: none;
 }
 
 .grid-item_main_block2_benefit {
   flex-direction: column;
   align-items: center;
 }
-.grid-item_main_block2_benefit h1, .grid-item_main_block2_benefit h2, .grid-item_main_block2_benefit li {
+.grid-item_main_block2_benefit h1, .grid-item_main_block2_benefit h2, .grid-item_main_block2_benefit p, .grid-item_main_block2_benefit li {
   font-family: Arial;
 }
 .grid-item_main_block2_benefit h1 {
@@ -66,6 +81,9 @@
 .grid-item_main_block2_benefit .grid-item_main_block2-card_title {
   align-items: center;
   height: 4.5rem;
+}
+.grid-item_main_block2_benefit p {
+  font-size: 1.3vw;
 }
 .grid-item_main_block2_benefit h2 {
   /*font-size: 1.4rem;*/
