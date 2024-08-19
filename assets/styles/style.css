@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .body {
   height: 8773px;
   border: solid black;
@@ -157,6 +158,86 @@
   background-color: rgb(238, 238, 231);
   text-align: center;
   height: 100%;
+}
+
+.grid-item_main_block2_benefit,
+.grid-item_main_block2-card_title,
+.grid-item_main_block2-card,
+.grid-item_main_block2-card_content,
+.grid-item_main_block2-bank {
+  display: flex;
+}
+
+.grid-item_main_block2-bank {
+  justify-content: space-around;
+  margin-bottom: 5vh;
+  margin-left: 5%;
+  width: 90%;
+  height: 5vh;
+}
+.grid-item_main_block2-bank .bank-logo_large {
+  width: 15%;
+}
+.grid-item_main_block2-bank .bank-logo_small {
+  display: none;
+}
+
+.grid-item_main_block2_benefit {
+  flex-direction: column;
+  align-items: center;
+}
+.grid-item_main_block2_benefit h1, .grid-item_main_block2_benefit h2, .grid-item_main_block2_benefit p, .grid-item_main_block2_benefit li {
+  font-family: Arial;
+}
+.grid-item_main_block2_benefit h1 {
+  font-family: Arial;
+  /*font-size: 3.39rem;*/
+  font-size: 2.7vw;
+  color: rgb(15, 33, 44);
+}
+.grid-item_main_block2_benefit .grid-item_main_block2-card_title {
+  align-items: center;
+  height: 4.5rem;
+}
+.grid-item_main_block2_benefit p {
+  font-size: 1.3vw;
+}
+.grid-item_main_block2_benefit h2 {
+  /*font-size: 1.4rem;*/
+  font-size: 1.8vw;
+  padding-left: 0.5rem;
+  margin: 0;
+  display: block;
+}
+.grid-item_main_block2_benefit .grid-item_main_block2-card {
+  justify-content: space-between;
+  width: 80vw;
+  margin-top: 1rem;
+}
+.grid-item_main_block2_benefit .grid-item_main_block2-card .grid-item_main_block2-card_content {
+  width: 32%;
+  flex-direction: column;
+}
+.grid-item_main_block2_benefit .grid-item_main_block2-card .card_img {
+  width: 100%;
+}
+.grid-item_main_block2_benefit .grid-item_main_block2-card ul {
+  padding-left: 2rem;
+  padding-right: 1rem;
+  margin: 0;
+}
+.grid-item_main_block2_benefit .grid-item_main_block2-card li {
+  list-style-type: "—";
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  /*font-size: 1.2rem;*/
+  font-size: 1.5vw;
+  color: rgb(15, 33, 44);
+}
+
+.grid-item_main_block2_benefit h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
