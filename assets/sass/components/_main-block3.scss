@@ -1,0 +1,135 @@
+.grid-container_main_block3_houses{
+    display: grid;
+    grid-template: 27% 51% 11% 11%/10% 80% 10%;
+    
+    height: 100%;
+
+    .grid-item_main_block3_houses-finished{
+        grid-area: 1/1/2/4;
+
+        background-color: rgba(187, 220, 214, 0.247);
+
+        .grid-container_houses-finished{
+            display: grid;
+            grid-template: 15% 5% 80%/5% 1fr 5%;
+
+            height: 100%;
+
+            .grid-item_houses-finished-text{
+                grid-area: 1/2/2/3;
+
+                h2{
+                    @include title;
+                    text-align: center;
+                }
+            }
+
+            .grid-item_houses-finished-carousel{
+                grid-area:3/2/4/3;
+            }
+        }
+    }
+    
+    .grid-item_main_block3_houses-variants{
+        grid-area: 2/1/4/4;
+
+        background-color: rgba(187, 220, 214, 0.247);
+
+        .grid-container_houses-variants{
+            display: grid;
+            grid-template: 7% 34% 2% 34% 8% 10%/5% 28% 3% 28% 3% 28% 5%;
+
+            height: 100%;
+            width: 100%;
+
+            .grid-item_houses-variants-title{
+                grid-area: 1/2/2/7;
+
+                h2{
+                    @include title;
+                }
+            }
+
+            .grid-item_houses-variants-card1{
+                grid-area: 2/2/3/3;
+            }
+
+            .grid-item_houses-variants-card2{
+                grid-area: 2/4/3/5;
+            }
+
+            .grid-item_houses-variants-card3{
+                grid-area: 2/6/3/7;
+            }
+
+            .grid-item_houses-variants-card4{
+                grid-area: 4/2/5/3;
+            }
+
+            .grid-item_houses-variants-card5{
+                grid-area: 4/4/5/5;
+            }
+
+            .grid-item_houses-variants-card6{
+                grid-area: 4/6/5/7;
+            }
+
+            .grid-item_houses-variants-button{
+                grid-area: 5/3/6/6;
+                justify-self: center;
+            }
+
+            .card {
+                transition: 0.7s;
+                cursor: pointer;
+            }
+        
+            .card:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .grid-item_main_block3_houses-excursion{
+        grid-area: 3/2/5/3;
+        z-index: 1;
+        border: solid rgb(255, 0, 0);
+
+        background-color: rgb(238, 238, 231);
+        background-image: url(https://cobrio.club/uploads/posts/2022-10/1665889030_2-cobrio-club-p-malenkii-khai-tek-dom-dizain-oboi-2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        -o-background-size: cover;
+        background-size: cover;
+
+        .flex-container_houses-excursion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
+
+            height: 100%;
+
+            .flex-item_house-excursion-title{
+                font-weight: 900;
+                font-size: 3.125rem;
+                color: white;
+                text-shadow: 5px 5px 5px black;
+                text-align: center;
+
+            }
+
+            .flex-item_house-excursion-text-button{
+                text-align: center;
+
+                .house-excursion-text{
+                    font-weight: 500;
+                    font-size: 1.875rem;
+                    color: white;
+                    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+}
