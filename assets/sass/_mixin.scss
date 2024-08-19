@@ -4,3 +4,7 @@
     font-weight: 700;
     line-height: 5.3125rem;
 }
+
+@mixin background {
+    background-color: rgba(187, 220, 214, 0.247);
+}

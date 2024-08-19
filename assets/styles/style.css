@@ -160,73 +160,126 @@
   height: 100%;
 }
 
-.grid-item_main_block2_benefit,
-.grid-item_main_block2-card_title,
-.grid-item_main_block2-card,
-.grid-item_main_block2-card_content,
-.grid-item_main_block2-bank {
+.grid-item_main_block2 {
   display: flex;
-}
-
-.grid-item_main_block2-bank {
-  justify-content: space-around;
-  margin-bottom: 5vh;
-  margin-left: 5%;
-  width: 90%;
-  height: 5vh;
-}
-.grid-item_main_block2-bank .bank-logo_large {
-  width: 15%;
-}
-.grid-item_main_block2-bank .bank-logo_small {
-  display: none;
-}
-
-.grid-item_main_block2_benefit {
   flex-direction: column;
   align-items: center;
+  background-color: rgba(187, 220, 214, 0.247);
 }
-.grid-item_main_block2_benefit h1, .grid-item_main_block2_benefit h2, .grid-item_main_block2_benefit p, .grid-item_main_block2_benefit li {
-  font-family: Arial;
+.grid-item_main_block2 h1, .grid-item_main_block2 h2, .grid-item_main_block2 h3, .grid-item_main_block2 p, .grid-item_main_block2 li {
+  font-family: "Roboto";
 }
-.grid-item_main_block2_benefit h1 {
-  font-family: Arial;
+.grid-item_main_block2 h1 {
   /*font-size: 3.39rem;*/
   font-size: 2.7vw;
   color: rgb(15, 33, 44);
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card_title {
+.grid-item_main_block2 .grid-item_main_block2_benefit,
+.grid-item_main_block2 .grid-item_main_block2-card_title,
+.grid-item_main_block2 .grid-item_main_block2-card,
+.grid-item_main_block2 .grid-item_main_block2-card_content,
+.grid-item_main_block2 .grid-item_main_block2-bank {
+  display: flex;
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec {
+  width: 90%;
+  background-image: url(/assets/images/block_2/hypothec_background_img.svg);
+  background-size: cover;
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec-img {
+  grid-area: 2/2/4/5;
+  justify-self: center;
+  align-self: end;
+  width: 60%;
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col1 {
+  grid-area: 1/1/4/3;
+  padding: 5%;
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 {
+  grid-area: 1/4/4/6;
+  padding: 5%;
+  text-align: right;
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 li {
+  list-style: none;
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec .button {
+  grid-area: 3/4/4/6;
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec h2, .grid-item_main_block2 .grid-item_main_block2-hypothec h3, .grid-item_main_block2 .grid-item_main_block2-hypothec p, .grid-item_main_block2 .grid-item_main_block2-hypothec ul, .grid-item_main_block2 .grid-item_main_block2-hypothec li {
+  color: rgb(255, 255, 255);
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec h2, .grid-item_main_block2 .grid-item_main_block2-hypothec h3 {
+  font-size: 1.8vw;
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec h3 {
+  margin-top: 4vh;
+}
+.grid-item_main_block2 .grid-item_main_block2-hypothec p, .grid-item_main_block2 .grid-item_main_block2-hypothec li {
+  font-size: 1.3vw;
+}
+.grid-item_main_block2 .grid-item_main_block2-bank {
+  justify-content: space-around;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 90%;
+  height: 5vh;
+}
+.grid-item_main_block2 .grid-item_main_block2-bank .bank-logo_large {
+  width: 15%;
+}
+.grid-item_main_block2 .grid-item_main_block2-bank .bank-logo_small {
+  display: none;
+}
+.grid-item_main_block2 .grid-item_main_block2_benefit {
+  flex-direction: column;
+  align-items: center;
+}
+.grid-item_main_block2 .grid-item_main_block2_benefit .grid-item_main_block2_benefit_logo {
+  width: 4vw;
+}
+.grid-item_main_block2 .grid-item_main_block2_benefit .grid-item_main_block2-card_title {
   align-items: center;
   height: 4.5rem;
 }
-.grid-item_main_block2_benefit p {
+.grid-item_main_block2 .grid-item_main_block2_benefit p {
   font-size: 1.3vw;
+  margin-bottom: 1rem;
 }
-.grid-item_main_block2_benefit h2 {
+.grid-item_main_block2 .grid-item_main_block2_benefit h2 {
   /*font-size: 1.4rem;*/
   font-size: 1.8vw;
   padding-left: 0.5rem;
-  margin: 0;
   display: block;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card {
+.grid-item_main_block2 .grid-item_main_block2_benefit .grid-item_main_block2-card {
   justify-content: space-between;
   width: 80vw;
-  margin-top: 1rem;
+  border-radius: 2% 2% 0 0;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card .grid-item_main_block2-card_content {
+.grid-item_main_block2 .grid-item_main_block2_benefit .grid-item_main_block2-card .grid-item_main_block2-card_content {
   width: 32%;
   flex-direction: column;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 2% 2%;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card .card_img {
+.grid-item_main_block2 .grid-item_main_block2_benefit .grid-item_main_block2-card .grid-item_main_block2-card_content:hover {
+  box-shadow: 2px 6px 8px 4px rgba(25, 41, 28, 0.1);
+}
+.grid-item_main_block2 .grid-item_main_block2_benefit .grid-item_main_block2-card .card_img {
   width: 100%;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card ul {
+.grid-item_main_block2 .grid-item_main_block2_benefit .grid-item_main_block2-card ul {
   padding-left: 2rem;
   padding-right: 1rem;
   margin: 0;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card li {
+.grid-item_main_block2 .grid-item_main_block2_benefit .grid-item_main_block2-card li {
   list-style-type: "—";
   padding-left: 0.5rem;
   padding-top: 0.5rem;
@@ -234,8 +287,7 @@
   font-size: 1.5vw;
   color: rgb(15, 33, 44);
 }
-
-.grid-item_main_block2_benefit h1 {
+.grid-item_main_block2 .grid-item_main_block2_benefit h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
