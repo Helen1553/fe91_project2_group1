@@ -6,62 +6,80 @@
     grid-row-gap: 1em;
     border: solid violet;
     padding: 1em;
-}
 
-.subtitle {
-    grid-area: 1/1/2/4;
-    text-align: center;
-}
+    .subtitle {
+        grid-area: 1/1/2/4;
+        text-align: center;
+    }
 
-.column1 {
-    grid-area: 2/1/3/2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1em;
-    border-radius: 10px;
-}
+    .column1 {
+        grid-area: 2/1/3/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1em;
+        border-radius: 10px;
+        transition: 0.7s;
+        cursor: pointer;
+    }
 
-.column2 {
-    grid-area: 2/2/3/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1em;
-    border-radius: 10px;
-}
+    .column2 {
+        grid-area: 2/2/3/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1em;
+        border-radius: 10px;
+        transition: 0.7s;
+        cursor: pointer;
+    }
 
-.column3 {
-    grid-area: 2/3/3/4;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1em;
-    border-radius: 10px;
-}
+    .column3 {
+        grid-area: 2/3/3/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1em;
+        border-radius: 10px;
+        transition: 0.7s;
+        cursor: pointer;
+    }
 
-.main_block1-img {
-    width: 100%;
-    height: 15em;
-    border-radius: 10%;
-    margin-bottom: 0.5em;
-}
+    .column1:hover,
+    .column2:hover,
+    .column3:hover {
+        transform: scale(1.1);
+    }
 
-.text-content {
-    flex-grow: 1;
-    background-color: lightgray;
-    padding: 1em;
-    border-radius: 5px;
-}
+    .main_block1-img {
+        width: 100%;
+        height: 15em;
+        border-radius: 10%;
+        margin-bottom: 0.5em;
+        transition: 0.7s;
+        cursor: pointer;
+    }
 
-h4 {
-    text-align: center;
-    margin: 0;
-    padding-bottom: 0.5em;
-}
+    .main_block1-img:hover {
+        transform: scale(1.1);
+    }
 
-ul {
-    padding-left: 1.5em;
-    margin-top: 0;
-    padding-bottom: 0.5em;
+    .text-content {
+        flex-grow: 1;
+        background-color: lightgray;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    h4 {
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0.5em;
+    }
+
+    ul {
+        padding-left: 1.5em;
+        margin-top: 0;
+        padding-bottom: 0.5em;
+    }
 }
