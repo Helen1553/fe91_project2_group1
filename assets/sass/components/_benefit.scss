@@ -7,72 +7,69 @@
 
     h1, h2, h3, p, li {
         font-family: "Roboto";
+        color: rgba(15, 33, 44, 1.00);
     }
     
     h1 {
-        /*font-size: 3.39rem;*/
         font-size: 2.7vw;
-        color: rgba(15, 33, 44, 1.00);
+    }
+    
+    h2,h3 {
+        font-size: 1.8vw;
     }
 
-.grid-item_main_block2_benefit,
-.grid-item_main_block2-card_title,
-.grid-item_main_block2-card,
-.grid-item_main_block2-card_content,
-.grid-item_main_block2-bank {
-    display: flex;
-}
+    p, li {
+        font-size: 1.3vw;
+    }
+
+    .grid-item_main_block2_benefit,
+    .grid-item_main_block2-card_title,
+    .grid-item_main_block2-card,
+    .grid-item_main_block2-card_content,
+    .grid-item_main_block2-bank {
+        display: flex;
+    }
 
 
-.grid-item_main_block2-hypothec {
-    width: 90%;
-    background-image: url(/assets/images/block_2/hypothec_background_img.svg);
-    background-size: cover;
-    border-radius:10px;
+    .grid-item_main_block2-hypothec {
+        width: 90%;
+        background-image: url(/assets/images/block_2/hypothec_background_img.svg);
+        background-size: cover;
+        border-radius:10px;
 
-    margin-top: 2vh;
+        margin-top: 2vh;
 
-    display: grid;
-    /*grid-template-columns: repeat(5, 1fr);*/
-    grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
-    grid-template-rows: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
+        grid-template-rows: 1fr;
     
 
-    .grid-item_main_block2-hypothec-img {
-        grid-area: 2 / 2 / 4 / 5;
-        justify-self: center;
-        align-self: end;
-        width: 60%;
-        margin-left: 3vw;
-    }
+            .grid-item_main_block2-hypothec-img {
+                grid-area: 1 / 2 / 2 / 5;
+                justify-self: center;
+                align-self: end;
+                width: 60%;
+                margin-left: 3vw;
+            }
 
-    .grid-item_main_block2-hypothec_col1 {
-        grid-area: 1 / 1 / 4 / 3;
-        padding: 5%;
+            .grid-item_main_block2-hypothec_col1 {
+                grid-area: 1 / 1 / 2 / 3;
+                padding: 5%;
+            }
 
-    }
+            .grid-item_main_block2-hypothec_col2 {
+                grid-area: 1 / 4 / 2 / 6;
+                padding: 5%;
+                text-align: right;
 
-    .grid-item_main_block2-hypothec_col2 {
-        grid-area: 1 / 4 / 4 / 6;
-        align-content:space-between;
-
-        padding: 5%;
-        
-        text-align: right;
-
-        li {
-            list-style: none;
-        }
-    }
+                    li {
+                        list-style: none;
+                    }
+            }
 
     h2, h3, p, ul, li {
         color: rgba(255, 255, 255, 1.00);
-        /*text-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);*/
         text-shadow: 1px 3px 6px  rgba(210, 214, 203, 0.61);
-    }
-
-    h2, h3 {
-        font-size: 1.8vw;
     }
 
     h2 {
@@ -83,32 +80,29 @@
         margin-top: 4vh;
     }
 
-    p, li {
-        font-size: 1.3vw;
-    }
 }
 
 
-.grid-item_main_block2-bank {
-    justify-content: space-around;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    .grid-item_main_block2-bank {
+        justify-content: space-around;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
 
-    width: 90%;
-    height: 5vh;
+        width: 90%;
+        height: 5vh;
 
-    .bank-logo_large {
-        width: 15%;
+            .bank-logo_large {
+                width: 15%;
+            }
+
+            .bank-logo_small {
+                display: none;
+            }
     }
 
-    .bank-logo_small {
-        display: none;
-    }
-}
-
-.grid-item_main_block2_benefit {
-    flex-direction: column;
-    align-items: center;
+    .grid-item_main_block2_benefit {
+        flex-direction: column;
+        align-items: center;
 
         .grid-item_main_block2_benefit_logo {
             width: 4vw;
@@ -119,16 +113,17 @@
             height: 4.5rem;
         }
 
+        h1 { 
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
         p {
-            font-size: 1.3vw;
             margin-bottom: 1rem;
         }
 
         h2 {
-            /*font-size: 1.4rem;*/
-            font-size: 1.8vw;
             padding-left: 0.5rem;
-
             display: block;
         }
 
@@ -137,21 +132,18 @@
             width: 80vw;
             border-radius: 2% 2% 0 0;
             
-        
-            .grid-item_main_block2-card_content {
-                width: 32%;
+                .grid-item_main_block2-card_content {
                 flex-direction: column;
+                width: 32%;
                 box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
                 border-radius: 0 0 2% 2%;
-
+                padding-bottom: 2vh;
 
                 &:hover {
                     box-shadow: 2px 6px 8px 4px rgba(25, 41, 28, 0.1);
                 }
             }
 
-            
-        
             .card_img {
                 width: 100%;
             }
@@ -167,16 +159,9 @@
                 padding-left: 0.5rem;
                 padding-top: 0.5rem;
 
-                /*font-size: 1.2rem;*/
                 font-size: 1.5vw;
                 color: rgba(15, 33, 44, 1.00);
             }
         }
-}
-
-.grid-item_main_block2_benefit h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
+    }
 }
