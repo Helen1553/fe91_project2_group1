@@ -112,10 +112,7 @@
             height: 100%;
 
             .flex-item_house-excursion-title{
-                font-weight: 900;
-                font-size: 3.125rem;
-                color: white;
-                text-shadow: 5px 5px 5px black;
+                @include background-image-title;
                 text-align: center;
 
             }
