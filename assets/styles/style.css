@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .body {
-  height: 8773px;
+  height: 8000px;
   border: solid black;
 }
 .body .grid-container_body {
@@ -23,7 +23,7 @@
 
 .grid-container_main {
   display: grid;
-  grid-template: 11% 24% 40% 25%/1fr;
+  grid-template: 13% 26% 34% 27%/1fr;
   height: 100%;
 }
 .grid-container_main .grid-item_main_block1 {
@@ -45,7 +45,7 @@
 
 .grid-container_main_block3_houses {
   display: grid;
-  grid-template: 27% 51% 11% 11%/10% 80% 10%;
+  grid-template: 33% 41% 13% 13%/10% 80% 10%;
   height: 100%;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
@@ -70,13 +70,19 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel {
   grid-area: 3/2/4/3;
 }
+.grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .carousel-caption {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  background: rgba(210, 205, 205, 0.534);
+  border-radius: 1rem;
+}
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
   grid-area: 2/1/4/4;
   background-color: rgba(187, 220, 214, 0.247);
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
   display: grid;
-  grid-template: 7% 34% 2% 34% 8% 10%/5% 28% 3% 28% 3% 28% 5%;
+  grid-template: 8% 5% 52% 5% 4% 26%/5% 28% 3% 28% 3% 28% 5%;
   height: 100%;
   width: 100%;
 }
@@ -90,26 +96,30 @@
   line-height: 5.3125rem;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card1 {
-  grid-area: 2/2/3/3;
+  grid-area: 3/2/4/3;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card2 {
-  grid-area: 2/4/3/5;
+  grid-area: 3/4/4/5;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card3 {
-  grid-area: 2/6/3/7;
-}
-.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card4 {
-  grid-area: 4/2/5/3;
-}
-.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card5 {
-  grid-area: 4/4/5/5;
-}
-.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card6 {
-  grid-area: 4/6/5/7;
+  grid-area: 3/6/4/7;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button {
   grid-area: 5/3/6/6;
   justify-self: center;
+}
+.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button .houses-variants-button {
+  padding: 0.9rem 0.3rem;
+  background-color: white;
+  color: black;
+  border: 0.2rem solid white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button .houses-variants-button:hover {
+  background-color: rgb(7, 109, 109);
+  color: white;
+  border: 0.2rem solid rgb(7, 109, 109);
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .card {
   transition: 0.7s;
@@ -121,7 +131,6 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion {
   grid-area: 3/2/5/3;
   z-index: 1;
-  border: solid rgb(255, 0, 0);
   background-color: rgb(238, 238, 231);
   background-image: url(https://cobrio.club/uploads/posts/2022-10/1665889030_2-cobrio-club-p-malenkii-khai-tek-dom-dizain-oboi-2.jpg);
   background-repeat: no-repeat;
