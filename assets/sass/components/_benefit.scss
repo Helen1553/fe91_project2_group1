@@ -16,10 +16,14 @@
     
     h2,h3 {
         font-size: 1.8vw;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 2vw;}
     }
 
     p, li {
         font-size: 1.3vw;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 1.5vw;}
     }
 
     .grid-item_main_block2_benefit,
@@ -42,7 +46,10 @@
         display: grid;
         grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
         grid-template-rows: 1fr;
-    
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(4, 15vh);
+        }
 
             .grid-item_main_block2-hypothec-img {
                 grid-area: 1 / 2 / 2 / 5;
@@ -50,17 +57,34 @@
                 align-self: end;
                 width: 60%;
                 margin-left: 3vw;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    grid-area: 3 / 2 / 5 / 4;
+                    justify-self: end;
+                    width: 60%;
+                }
             }
 
             .grid-item_main_block2-hypothec_col1 {
                 grid-area: 1 / 1 / 2 / 3;
                 padding: 5%;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    grid-area: 1 / 1 / 3 / 4;
+                    padding: 2%;
+                }
             }
 
             .grid-item_main_block2-hypothec_col2 {
                 grid-area: 1 / 4 / 2 / 6;
                 padding: 5%;
                 text-align: right;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    grid-area: 3 / 1 / 5 / 4;
+                    text-align: left;
+                    padding: 2%;
+                }
 
                     li {
                         list-style: none;
@@ -78,6 +102,9 @@
 
     h3 {
         margin-top: 4vh;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            margin-top: 2vh;
+        }
     }
 
 }
@@ -132,12 +159,12 @@
             width: 80vw;
             border-radius: 2% 2% 0 0;
             
-                .grid-item_main_block2-card_content {
-                flex-direction: column;
-                width: 32%;
-                box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
-                border-radius: 0 0 2% 2%;
-                padding-bottom: 2vh;
+            .grid-item_main_block2-card_content {
+            flex-direction: column;
+            width: 32%;
+            box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+            border-radius: 0 0 2% 2%;
+            padding-bottom: 2vh;
 
                 &:hover {
                     box-shadow: 2px 6px 8px 4px rgba(25, 41, 28, 0.1);
@@ -147,7 +174,7 @@
             .card_img {
                 width: 100%;
             }
-        
+            
             ul {
                 padding-left: 2rem;
                 padding-right: 1rem;
@@ -165,3 +192,14 @@
         }
     }
 }
+
+/*@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid-item_main_block2-hypothec {
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+}*/
