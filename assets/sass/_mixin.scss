@@ -1,6 +1,15 @@
-@mixin title{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3.375rem;
-    font-weight: 700;
-    line-height: 5.3125rem;
+@mixin title {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 3.375rem;
+	font-weight: 700;
+	line-height: 5.3125rem;
+}
+@mixin button {
+	width: 20vw;
+	height: 5vw;
+	border: 0px solid transparent;
+	border-radius: 10px;
+	background: linear-gradient(to bottom right, #469ce3, #2c60b9);
+	box-shadow: 1px 1px 2px 2px #469ce3;
+	color: #ffffff;
 }
