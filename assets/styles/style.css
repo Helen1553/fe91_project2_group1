@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .body {
-  height: 8773px;
+  height: 8000px;
   border: solid black;
   font-family: "Roboto", sans-serif;
 }
@@ -24,7 +24,7 @@
 
 .grid-container_main {
   display: grid;
-  grid-template: 11% 24% 40% 25%/1fr;
+  grid-template: 13% 26% 34% 27%/1fr;
   height: 100%;
 }
 .grid-container_main .grid-item_main_block1 {
@@ -246,7 +246,7 @@
 
 .grid-container_main_block3_houses {
   display: grid;
-  grid-template: 27% 51% 11% 11%/10% 80% 10%;
+  grid-template: 33% 41% 13% 13%/10% 80% 10%;
   height: 100%;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
@@ -271,13 +271,19 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel {
   grid-area: 3/2/4/3;
 }
+.grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .carousel-caption {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  background: rgba(210, 205, 205, 0.534);
+  border-radius: 1rem;
+}
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
   grid-area: 2/1/4/4;
   background-color: rgba(187, 220, 214, 0.247);
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
   display: grid;
-  grid-template: 7% 34% 2% 34% 8% 10%/5% 28% 3% 28% 3% 28% 5%;
+  grid-template: 8% 5% 52% 5% 4% 26%/5% 28% 3% 28% 3% 28% 5%;
   height: 100%;
   width: 100%;
 }
@@ -291,26 +297,30 @@
   line-height: 5.3125rem;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card1 {
-  grid-area: 2/2/3/3;
+  grid-area: 3/2/4/3;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card2 {
-  grid-area: 2/4/3/5;
+  grid-area: 3/4/4/5;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card3 {
-  grid-area: 2/6/3/7;
-}
-.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card4 {
-  grid-area: 4/2/5/3;
-}
-.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card5 {
-  grid-area: 4/4/5/5;
-}
-.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card6 {
-  grid-area: 4/6/5/7;
+  grid-area: 3/6/4/7;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button {
   grid-area: 5/3/6/6;
   justify-self: center;
+}
+.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button .houses-variants-button {
+  padding: 0.9rem 0.3rem;
+  background-color: white;
+  color: black;
+  border: 0.2rem solid white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button .houses-variants-button:hover {
+  background-color: rgb(7, 109, 109);
+  color: white;
+  border: 0.2rem solid rgb(7, 109, 109);
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .card {
   transition: 0.7s;
@@ -322,7 +332,6 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion {
   grid-area: 3/2/5/3;
   z-index: 1;
-  border: solid rgb(255, 0, 0);
   background-color: rgb(238, 238, 231);
   background-image: url(https://cobrio.club/uploads/posts/2022-10/1665889030_2-cobrio-club-p-malenkii-khai-tek-dom-dizain-oboi-2.jpg);
   background-repeat: no-repeat;
@@ -439,6 +448,239 @@
 .grid-item_main_block2_benefit h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.grid-container_projects_body {
+  display: grid;
+  grid-template: 5% 91% 4%/1fr;
+  height: 4600px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.grid-container_projects_body .grid-item_projects_body_header {
+  grid-area: 1/1/2/2;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header {
+  display: grid;
+  grid-template: 40% 60%/15% 65% 20%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header {
+  grid-area: 1/1/2/4;
+  align-content: center;
+  text-align: center;
+  background-color: #304857;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header .projects_title {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .header_logo {
+  grid-area: 2/1/3/2;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav {
+  grid-area: 2/2/3/3;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav .nav_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav .nav_links a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav li a:hover {
+  text-decoration: underline;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .buttons {
+  grid-area: 2/3/3/4;
+  align-content: center;
+  justify-self: center;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .buttons .buttons_contact {
+  width: 150px;
+  height: 55px;
+  background-color: #cf6f49;
+  color: white;
+  border: 1px solid #cf6f49;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .buttons .buttons_contact:hover {
+  background-color: #304857;
+  border: 2px solid #304857;
+}
+.grid-container_projects_body .grid-item_projects_body_main {
+  grid-area: 2/1/3/2;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main {
+  height: 100%;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses {
+  height: 52%;
+  display: grid;
+  grid-template: 24% 71% 5%/5% 1fr 5%;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses .grid_item_projects_main_houses_title {
+  grid-area: 1/1/2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://cobrio.club/uploads/posts/2022-10/1666014441_5-cobrio-club-p-podsvetka-karkasnogo-doma-dizain-krasivo-5.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses .grid_item_projects_main_houses_title .projects_main_houses_title {
+  font-weight: 900;
+  font-size: 3.125rem;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses .grid-item_projects_main_houses_cards {
+  grid-area: 2/2/3/3;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses .grid-item_projects_main_houses_cards .grid-container_houses-variants {
+  display: grid;
+  grid-template: 4% 47% 1% 47% 1%/31.5% 2.75% 31.5% 2.75% 31.5%;
+  height: 100%;
+  width: 100%;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats {
+  height: 48%;
+  display: grid;
+  grid-template: 25% 74% 1%/5% 1fr 5%;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats .grid-item_projects_main_flats_title {
+  grid-area: 1/1/2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/originals/d9/8a/f3/d98af31eba241276e9562058ef180885.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats .grid-item_projects_main_flats_title .projects_main_flats_title {
+  font-weight: 900;
+  font-size: 3.125rem;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats .grid-item_projects_main_flats_cards {
+  grid-area: 2/2/3/3;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats .grid-item_projects_main_flats_cards .grid-container_flats-variants {
+  display: grid;
+  grid-template: 4% 43% 2% 43% 3% 5%/30% 5% 30% 5% 30%;
+  height: 100%;
+  width: 100%;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats .grid-item_projects_main_flats_cards .grid-container_flats-variants .grid-item_flats_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 6/3/7/4;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card1 {
+  grid-area: 2/1/3/2;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card2 {
+  grid-area: 2/3/3/4;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card3 {
+  grid-area: 2/5/3/6;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card4 {
+  grid-area: 4/1/5/2;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card5 {
+  grid-area: 4/3/5/4;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card6 {
+  grid-area: 4/5/5/6;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .card {
+  transition: 0.7s;
+  cursor: pointer;
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .card:hover {
+  transform: scale(1.1);
+}
+.grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 3/2/4/3;
+}
+.grid-container_projects_body .grid-item_projects_body_footer {
+  grid-area: 3/1/4/2;
+}
+.grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer {
+  display: grid;
+  grid-template: 1fr/20% 80%;
+  background-color: #304857;
+  height: 100%;
+}
+.grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo {
+  grid-area: 1/1/2/2;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+.grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo .logo_text {
+  font-size: 1.1rem;
+  color: white;
+}
+.grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav {
+  height: 80%;
+}
+.grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a:hover {
+  text-decoration: underline;
+}
+.grid-container_projects_body .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.grid-container_projects_body .logo .svg {
+  width: 60%;
+  height: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */
