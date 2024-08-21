@@ -294,10 +294,6 @@
   border-radius: 10%;
   margin-bottom: 0.5em;
   transition: 0.7s;
-  cursor: pointer;
-}
-.grid-item_main_block1 .main_block1-img:hover {
-  transform: scale(1.1);
 }
 .grid-item_main_block1 .text-content {
   flex-grow: 1;
