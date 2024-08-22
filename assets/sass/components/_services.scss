@@ -78,3 +78,25 @@
         padding-bottom: 0.5em;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .grid-item_main_block1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .column1 {
+        grid-area: auto;
+    }
+
+    .column2 {
+        grid-area: auto;
+    }
+
+    .column3 {
+        grid-area: auto;
+    }
+}
+
+@media screen and /*(min-width: 900px) */(min-width: 768px) and (max-width: 1023px) {
+}
