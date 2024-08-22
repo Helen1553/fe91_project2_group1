@@ -4,3 +4,28 @@
     font-weight: 700;
     line-height: 5.3125rem;
 }
+
+@mixin background-image-title{
+        font-weight: 900;
+        font-size: 3.125rem;
+        color: white;
+        text-shadow: 5px 5px 5px black;
+}
+
+@mixin projects_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin projects_nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+
+    height: 100%;
+    width: 100%;
+
+    list-style: none;
+}
