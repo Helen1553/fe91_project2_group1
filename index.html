@@ -188,7 +188,7 @@
                                 <div class="grid-item_houses-finished-carousel"> <!--здесь начинается карусель из нескольких слайдов готовых проектов компании-->
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-md-8 offset-md-2">
+                                            <div class="col-12 col-sm-12 col-md-12 col-xl-10 offset-xl-1">
                                                 <div id="carouselExampleIndicators" class="carousel slide shadow-lg" data-bs-ride="carousel">
                                                     <div class="carousel-indicators"> <!--здесь код для индикаторов слайдов карусели-->
                                                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -268,6 +268,11 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <div class="houses-finished-button">
+                                                <a href="./pages/projects.html" target="_blank" class="shadow-lg finished-button">
+                                                    Показать все проекты
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -285,11 +290,54 @@
 
                                 <div class="grid-item_houses-variants-card1"> <!-- 1 карточка - 1 вариант дома-->
                                     <div class="card link rounded-3 shadow-lg">
-                                        <img
-                                            src="./assets/images/main_block3-houses/img_house1.jpg"
-                                            class="card-img-top"
-                                            alt="Дом на продажу от агенства недвижимости №1"
-                                        />
+
+                                        <!-- далее идет код для карусели фотографий для данного варианта дома-->
+                                        <div id="ExampleIndicators" class="carousel slide shadow-lg">
+                                            <div class="carousel-indicators"> <!--здесь код для индикаторов слайдов карусели-->
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner"> <!--здесь начинается код для самих слайдов карусели-->
+                                                <div class="carousel-item active"> <!--здесь код для первого слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house1.jpg"
+                                                        class="d-block w-100" 
+                                                        alt="Дом на продажу от агенства недвижимости №1">
+                                                </div>
+
+                                                <div class="carousel-item"> <!--здесь код для второго слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house1.jpg"
+                                                        class="d-block w-100" 
+                                                        alt=">Дом на продажу от агенства недвижимости №1">
+                                                </div>
+
+                                                <div class="carousel-item"> <!--здесь код для третьего слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house1.jpg"
+                                                        class="d-block w-100" 
+                                                        alt="Дом на продажу от агенства недвижимости №1">
+                                                </div>
+                                            </div>
+                                            <!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
+                                            <button class="carousel-control-prev" 
+                                                    type="button" 
+                                                    data-bs-target="#ExampleIndicators"
+                                                    data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">
+                                                    Previous
+                                                </span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" 
+                                                    data-bs-target="#ExampleIndicators"
+                                                    data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">
+                                                    Next
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
+
                                         <div class="card-body">
                                             <div class="d-flex flex-column gap-4">
                                                 <div>
@@ -370,11 +418,54 @@
 
                                 <div class="grid-item_houses-variants-card2"> <!-- 2 карточка - 2 вариант дома-->
                                     <div class="card link rounded-3 shadow-lg">
-                                        <img
-                                            src="./assets/images/main_block3-houses/img_house2.jpg"
-                                            class="card-img-top"
-                                            alt="Дом на продажу от агенства недвижимости №2"
-                                        />
+                                        
+                                        <!-- далее идет код для карусели фотографий для данного варианта дома-->
+                                        <div id="Indicators" class="carousel slide shadow-lg">
+                                            <div class="carousel-indicators"> <!--здесь код для индикаторов слайдов карусели-->
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner"> <!--здесь начинается код для самих слайдов карусели-->
+                                                <div class="carousel-item active"> <!--здесь код для первого слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house2.jpg"
+                                                        class="d-block w-100" 
+                                                        alt="Дом на продажу от агенства недвижимости №2">
+                                                </div>
+
+                                                <div class="carousel-item"> <!--здесь код для второго слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house2.jpg"
+                                                        class="d-block w-100" 
+                                                        alt=">Дом на продажу от агенства недвижимости №2">
+                                                </div>
+                                                
+                                                <div class="carousel-item"> <!--здесь код для третьего слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house2.jpg"
+                                                        class="d-block w-100" 
+                                                        alt="Дом на продажу от агенства недвижимости №2">
+                                                </div>
+                                            </div>
+                                            <!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
+                                            <button class="carousel-control-prev" 
+                                                    type="button" 
+                                                    data-bs-target="#Indicators"
+                                                    data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">
+                                                    Previous
+                                                </span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" 
+                                                    data-bs-target="#Indicators"
+                                                    data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">
+                                                    Next
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
+
                                         <div class="card-body">
                                             <div class="d-flex flex-column gap-4">
                                                 <div>
@@ -455,11 +546,54 @@
 
                                 <div class="grid-item_houses-variants-card3"> <!-- 3 карточка - 3 вариант дома-->
                                     <div class="card link rounded-3 shadow-lg">
-                                        <img
-                                            src="./assets/images/main_block3-houses/img_house3.jpg"
-                                            class="card-img-top"
-                                            alt="Дом на продажу от агенства недвижимости №3"
-                                        />
+                                        
+                                        <!-- далее идет код для карусели фотографий для данного варианта дома-->
+                                        <div id="Indicators2" class="carousel slide shadow-lg">
+                                            <div class="carousel-indicators"> <!--здесь код для индикаторов слайдов карусели-->
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner"> <!--здесь начинается код для самих слайдов карусели-->
+                                                <div class="carousel-item active"> <!--здесь код для первого слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house3.jpg"
+                                                        class="d-block w-100" 
+                                                        alt="Дом на продажу от агенства недвижимости №3">
+                                                </div>
+
+                                                <div class="carousel-item"> <!--здесь код для второго слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house3.jpg"
+                                                        class="d-block w-100" 
+                                                        alt=">Дом на продажу от агенства недвижимости №3">
+                                                </div>
+                                                
+                                                <div class="carousel-item"> <!--здесь код для третьего слайда карусели-->
+                                                    <img src="./assets/images/main_block3-houses/img_house3.jpg"
+                                                        class="d-block w-100" 
+                                                        alt="Дом на продажу от агенства недвижимости №3">
+                                                </div>
+                                            </div>
+                                            <!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
+                                            <button class="carousel-control-prev" 
+                                                    type="button" 
+                                                    data-bs-target="#Indicators2"
+                                                    data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">
+                                                    Previous
+                                                </span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" 
+                                                    data-bs-target="#Indicators2"
+                                                    data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">
+                                                    Next
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
+
                                         <div class="card-body">
                                             <div class="d-flex flex-column gap-4">
                                                 <div>
@@ -557,7 +691,7 @@
                                     <p class="house-excursion-text">
                                         Посмотрите как будет выглядеть Ваш будущий дом
                                     </p>
-                                    <button type="button" class="btn btn-light px-3 py-3 shadow-sm">
+                                    <button type="button" class="btn btn-light px-3 py-3 shadow-sm mt-1">
                                         <b>Записаться на экскурсию</b>
                                     </button>
                                 </div>

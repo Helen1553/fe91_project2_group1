@@ -21,6 +21,22 @@
   border: solid rgb(72, 255, 0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .body {
+    height: 7500px;
+  }
+  .body .grid-container_body {
+    grid-template: 10% 88% 2%/1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body {
+    height: 6000px;
+  }
+  .body .grid-container_body {
+    grid-template: 20% 78% 2%/1fr;
+  }
+}
 .grid-container_main {
   display: grid;
   grid-template: 13% 26% 34% 27%/1fr;
@@ -43,6 +59,11 @@
   border: solid rgb(175, 1, 255);
 }
 
+@media screen and (max-width: 767px) {
+  .grid-container_main {
+    grid-template: 20% 30% 20% 30%/1fr;
+  }
+}
 .grid-container_main_block3_houses {
   display: grid;
   grid-template: 33% 41% 13% 13%/10% 80% 10%;
@@ -75,6 +96,9 @@
   text-shadow: 5px 5px 5px black;
   background: rgba(210, 205, 205, 0.534);
   border-radius: 1rem;
+}
+.grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button {
+  display: none;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
   grid-area: 2/1/4/4;
@@ -163,6 +187,110 @@
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-container_main_block3_houses {
+    grid-template: 32% 48% 10% 10%/5% 90% 5%;
+    border: solid rgb(60, 255, 0);
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
+    grid-template: 20% 8% 72%/5% 1fr 5%;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .houses-finished-button {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
+    grid-template: 9% 4% 51% 5% 4% 20%/4% 44% 4% 44% 4%;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title {
+    grid-area: 1/2/2/6;
+    text-align: center;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card1 {
+    grid-area: 3/2/4/3;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card2 {
+    grid-area: 3/4/4/5;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card3 {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button {
+    grid-area: 5/2/6/5;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion {
+    gap: 4rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-title {
+    font-weight: 900;
+    font-size: 3.125rem;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: 2.6rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-container_main_block3_houses {
+    grid-template: 55% 45%/1fr;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
+    grid-area: 1/1/2/2;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
+    grid-template: 20% 5% 75%/1fr;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text {
+    grid-area: 1/1/2/2;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel {
+    grid-area: 3/1/4/2;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .carousel-caption {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button .finished-button {
+    padding: 0.5rem 0.3rem;
+    background-color: white;
+    color: black;
+    border: 0.2rem solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button .finished-button:hover {
+    background-color: rgb(7, 109, 109);
+    color: white;
+    border: 0.2rem solid rgb(7, 109, 109);
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion {
+    grid-area: 2/1/3/2;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion {
+    gap: 1rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-title {
+    font-size: 1.8rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-text {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
 .footer {
   background-color: rgb(238, 238, 231);
   text-align: center;
@@ -251,16 +379,17 @@
 
 .grid-container_projects_body {
   display: grid;
-  grid-template: 5% 91% 4%/1fr;
-  height: 4600px;
+  grid-template: 4% 92% 4%/1fr;
+  height: 4500px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .grid-container_projects_body .grid-item_projects_body_header {
   grid-area: 1/1/2/2;
+  border-bottom: solid black;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header {
   display: grid;
-  grid-template: 40% 60%/15% 65% 20%;
+  grid-template: 53% 47%/15% 65% 20%;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -269,11 +398,12 @@
   grid-area: 1/1/2/4;
   align-content: center;
   text-align: center;
-  background-color: #304857;
+  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+  background-attachment: fixed;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header .projects_title {
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 5px 5px 5px black;
   cursor: pointer;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .header_logo {
@@ -320,7 +450,7 @@
   cursor: pointer;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .buttons .buttons_contact:hover {
-  background-color: #304857;
+  background-color: #1a2125;
   border: 2px solid #304857;
 }
 .grid-container_projects_body .grid-item_projects_body_main {
@@ -435,7 +565,8 @@
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer {
   display: grid;
   grid-template: 1fr/20% 80%;
-  background-color: #304857;
+  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+  background-attachment: fixed;
   height: 100%;
 }
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo {
@@ -464,8 +595,9 @@
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a {
   text-decoration: none;
   color: white;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5rem;
 }
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a:hover {

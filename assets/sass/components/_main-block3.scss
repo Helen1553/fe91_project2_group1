@@ -34,6 +34,10 @@
                     background: rgba(210, 205, 205, 0.534);
                     border-radius: 1rem;
                 }
+
+                .houses-finished-button{
+                    display: none;
+                }
             }
         }
     }
@@ -137,6 +141,145 @@
                     font-size: 1.875rem;
                     color: white;
                     text-shadow: 4px 4px 4px rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .grid-container_main_block3_houses{
+        grid-template: 32% 48% 10% 10%/5% 90% 5%;
+
+        border: solid rgb(60, 255, 0);
+
+        .grid-item_main_block3_houses-finished{
+            .grid-container_houses-finished{
+                grid-template: 20% 8% 72%/5% 1fr 5%;
+
+                .houses-finished-button{
+                    display: none;
+                }
+            }
+        }
+
+        .grid-item_main_block3_houses-variants{
+            .grid-container_houses-variants{
+                grid-template: 9% 4% 51% 5% 4% 20%/4% 44% 4% 44% 4%;
+    
+                .grid-item_houses-variants-title{
+                    grid-area: 1/2/2/6;
+                    text-align: center;
+                    
+                }
+    
+                .grid-item_houses-variants-card1{
+                    grid-area: 3/2/4/3;
+                }
+    
+                .grid-item_houses-variants-card2{
+                    grid-area: 3/4/4/5;
+                }
+    
+                .grid-item_houses-variants-card3{
+                    display: none;
+                }
+    
+                .grid-item_houses-variants-button{
+                    grid-area: 5/2/6/5;
+                }
+            }
+        }
+    
+        .grid-item_main_block3_houses-excursion{
+            .flex-container_houses-excursion{
+                gap: 4rem;
+    
+                .flex-item_house-excursion-title{
+                    @include background-image-title;
+                    font-size: 2.6rem;
+                }
+
+                .flex-item_house-excursion-text-button{
+                    .house-excursion-text{
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .grid-container_main_block3_houses{
+        grid-template: 55% 45%/1fr;
+
+        .grid-item_main_block3_houses-finished{
+            grid-area: 1/1/2/2;
+
+            .grid-container_houses-finished{
+                grid-template: 20% 5% 75% /1fr;
+
+                .grid-item_houses-finished-text{
+                    grid-area: 1/1/2/2;
+    
+                    h2{
+                        @include title-adaptive-mobile;
+                    }
+                }
+
+                .grid-item_houses-finished-carousel{
+                    grid-area:3/1/4/2;
+    
+                    .carousel-caption {
+                        display:none;
+                    }
+
+                    .houses-finished-button{
+                        display: flex;
+                        justify-content: center;
+    
+                        .finished-button{
+                            padding: 0.5rem 0.3rem;
+                            background-color: white;
+                            color: black;
+        
+                            border: 0.2rem solid  white;
+                            border-radius: 6px;
+                            text-decoration: none;
+                            margin-top: 1rem;
+                        }
+        
+                        .finished-button:hover{
+                            background-color: rgb(7, 109, 109);
+                            color: white;
+                            border: 0.2rem solid  rgb(7, 109, 109);
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .grid-item_main_block3_houses-variants{
+            display:none;
+        }
+    
+        .grid-item_main_block3_houses-excursion{
+            grid-area: 2/1/3/2;
+            .flex-container_houses-excursion{
+                gap: 1rem;
+    
+                .flex-item_house-excursion-title{
+                    font-size: 1.8rem;
+                }
+
+                .flex-item_house-excursion-text-button{
+                    .house-excursion-text{
+                        font-weight: 500;
+                        font-size: 1rem;
+                    }
                 }
             }
         }
