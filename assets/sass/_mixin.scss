@@ -1,4 +1,4 @@
-@mixin title{
+@mixin title {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3.375rem;
     font-weight: 700;
@@ -9,6 +9,12 @@
     background-color: rgba(187, 220, 214, 0.247);
 }
 
+@mixin title-adaptive-mobile{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
 @mixin background-image-title{
         font-weight: 900;
         font-size: 3.125rem;
@@ -16,13 +22,13 @@
         text-shadow: 5px 5px 5px black;
 }
 
-@mixin projects_buttons{
+@mixin projects_buttons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@mixin projects_nav_links{
+@mixin projects_nav_links {
     display: flex;
     justify-content: center;
     align-items: center;
