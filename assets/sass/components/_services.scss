@@ -1,0 +1,102 @@
+.grid-item_main_block1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 90%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    border: solid violet;
+    padding: 1em;
+
+    .subtitle {
+        grid-area: 1/1/2/4;
+        text-align: center;
+    }
+
+    .column1 {
+        grid-area: 2/1/3/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1em;
+        border-radius: 10px;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+
+    .column2 {
+        grid-area: 2/2/3/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1em;
+        border-radius: 10px;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+
+    .column3 {
+        grid-area: 2/3/3/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1em;
+        border-radius: 10px;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+
+    .column1:hover,
+    .column2:hover,
+    .column3:hover {
+        transform: scale(1.1);
+    }
+
+    .main_block1-img {
+        width: 100%;
+        height: 15em;
+        border-radius: 10%;
+        margin-bottom: 0.5em;
+        transition: 0.7s;
+    }
+
+    .text-content {
+        flex-grow: 1;
+        background-color: lightgray;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    h4 {
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0.5em;
+    }
+
+    ul {
+        padding-left: 1.5em;
+        margin-top: 0;
+        padding-bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .grid-item_main_block1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .column1 {
+        grid-area: auto;
+    }
+
+    .column2 {
+        grid-area: auto;
+    }
+
+    .column3 {
+        grid-area: auto;
+    }
+}
+
+@media screen and /*(min-width: 900px) */(min-width: 768px) and (max-width: 1023px) {
+}

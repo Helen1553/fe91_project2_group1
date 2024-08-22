@@ -1,5 +1,5 @@
 .body{
-    height: 8773px;
+    height: 8000px;
 
     border: solid black;
 
@@ -28,5 +28,25 @@
             border: solid rgb(72, 255, 0);
         }
 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .body{
+        height: 7500px;
+    
+        .grid-container_body{
+            grid-template: 10% 88% 2%/1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .body{
+        height: 6000px;
+    
+        .grid-container_body{
+            grid-template: 20% 78% 2%/1fr;
+        }
     }
 }

@@ -1,6 +1,6 @@
 .grid-container_main{
     display: grid;
-    grid-template: 11% 24% 40% 25%/1fr;
+    grid-template: 13% 26% 34% 27%/1fr;
 
     height: 100%;
 
@@ -26,5 +26,11 @@
         grid-area: 4/1/5/2;
 
         border: solid rgb(175, 1, 255);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .grid-container_main{
+        grid-template: 20% 30% 20% 30%/1fr;
     }
 }
