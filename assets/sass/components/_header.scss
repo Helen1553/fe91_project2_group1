@@ -172,7 +172,7 @@
         border-radius: 20%;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-
+// не срабатывает display none у links 
     .header_links {
         display: none;
         flex-direction: column;
