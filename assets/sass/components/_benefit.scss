@@ -154,6 +154,7 @@
             display: block;
         }
 
+        /*Нужно тут переписать флексы, чтобы при адаптивке блоки были в строку*/
         .grid-item_main_block2-card {
             justify-content: space-between;
             width: 80vw;
