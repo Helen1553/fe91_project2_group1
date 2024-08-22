@@ -5,6 +5,32 @@
     line-height: 5.3125rem;
 }
 
+<<<<<<< HEAD
 @mixin background {
     background-color: rgba(187, 220, 214, 0.247);
+=======
+@mixin background-image-title{
+        font-weight: 900;
+        font-size: 3.125rem;
+        color: white;
+        text-shadow: 5px 5px 5px black;
+}
+
+@mixin projects_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin projects_nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+
+    height: 100%;
+    width: 100%;
+
+    list-style: none;
+>>>>>>> b622677f159f8cff352a80910cd3e139530caed7
 }
