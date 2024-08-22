@@ -28,3 +28,9 @@
         border: solid rgb(175, 1, 255);
     }
 }
+
+@media screen and (max-width: 767px){
+    .grid-container_main{
+        grid-template: 20% 30% 20% 30%/1fr;
+    }
+}
