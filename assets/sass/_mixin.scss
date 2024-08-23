@@ -35,3 +35,7 @@
 
     list-style: none;
 }
+
+@mixin background {
+    background-color: rgba(187, 220, 214, 0.247);
+}

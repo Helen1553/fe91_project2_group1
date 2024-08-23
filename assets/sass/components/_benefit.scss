@@ -1,75 +1,225 @@
-.grid-item_main_block2_benefit,
-.grid-item_main_block2-card_title,
-.grid-item_main_block2-card,
-.grid-item_main_block2-card_content,
-.grid-item_main_block2-bank {
+.flex-item_main_block2 {
     display: flex;
-}
-
-.grid-item_main_block2-bank {
-    justify-content: space-around;
-    margin-bottom: 5vh;
-    margin-left: 5%;
-
-    width: 90%;
-    height: 5vh;
-
-    .bank-logo_large {
-        width: 15%;
-    }
-
-    .bank-logo_small {
-        display: none;
-    }
-}
-
-.grid-item_main_block2_benefit {
     flex-direction: column;
     align-items: center;
 
-    h1, h2, p, li {
-        font-family: Arial;
+    @include background;
+
+    h1, h2, h3, p, li {
+        font-family: "Roboto";
+        color: rgba(15, 33, 44, 1.00);
     }
     
     h1 {
-        font-family: Arial;
-        /*font-size: 3.39rem;*/
         font-size: 2.7vw;
-        color: rgba(15, 33, 44, 1.00);
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 3vw;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 3.2vw;
+        }
+    }
+    
+    h2,h3 {
+        font-size: 1.8vw;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 2vw;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 3vw;
+        }
     }
 
-    .grid-item_main_block2-card_title {
-        align-items: center;
-        height: 4.5rem;
-    }
-
-    p {
+    p, li {
         font-size: 1.3vw;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 1.7vw;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 2vw;
+        }
+    }
+
+    .flex-item_main_block2_benefit,
+    .flex-item_main_block2-bank {
+        display: flex;
+    }
+
+    .grid-item_main_block2-hypothec {
+        width: 95vw;
+        height: auto;
+        background-image: url(/assets/images/block_2/vector__hypothec_background.svg);
+        background-size: cover;
+        border-radius:10px;
+
+        margin-top: 2vh;
+
+        display: grid;
+        grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
+        grid-template-rows: 1fr;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+            .grid-item_main_block2-hypothec_col1 {
+                grid-area: 1 / 1 / 2 / 3;
+                padding: 5%;
+            }
+
+            .grid-item_main_block2-hypothec_col2 {
+                grid-area: 1 / 4 / 2 / 6;
+                padding: 5%;
+                text-align: right;
+
+                li {
+                    list-style: none;
+                }
+            }
+
+    h2, h3, p, ul, li {
+        text-shadow: 1px 1px 4px rgb(233, 231, 231);
     }
 
     h2 {
-        /*font-size: 1.4rem;*/
-        font-size: 1.8vw;
-        padding-left: 0.5rem;
-        margin: 0;
-        display: block;
+        margin-bottom: 1vh;
     }
 
-    .grid-item_main_block2-card {
-        justify-content: space-between;
-        width: 80vw;
-        margin-top: 1rem;
-    
-        .grid-item_main_block2-card_content {
-            width: 32%;
+    h3 {
+        margin-top: 4vh;
+    }
+}
 
+    .flex-item_main_block2-bank {
+        justify-content: space-between;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        width: 95vw;
+        height: 5vh;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            width: 90vw;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 80vw;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+            .bank-logo_large {
+                width: 15%;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    display: none;
+                }
+
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+
+            .bank-logo_small {
+                display: none;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    display: block;
+                }
+
+                @media screen and (max-width: 767px) {
+                    display: block;
+                }
+            }
+    }
+
+    .flex-item_main_block2_benefit {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2vh;
+
+        .flex-item_main_block2_benefit_logo {
+            width: 4vw;
+        }
+
+        h1 { 
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            padding-left: 0.5rem;
+            display: block;
+        }
+    }
+    
+    .flex-item_main_block2-card {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 2.5vh;
+        }
+
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+            width: 70vw;
+            row-gap: 2.5vh;
+        }
+
+        .flex-item_main_block2-card_content {
+            width: 32%;
+            box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+            border-radius: 10px 10px 10px 10px;
+            display: flex;
             flex-direction: column;
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                flex-direction: row;
+                width: 100%;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+
+            &:hover {
+                box-shadow: 2px 6px 8px 4px rgba(25, 41, 28, 0.1);
+                cursor: pointer;
+            }
         }
-    
-        .card_img {
+
+        .flex-item_main_block2-card__card_img {
             width: 100%;
+            border-radius: 10px 10px 0 0;
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                width: 30%;
+                border-radius: 10px 0 0 10px;
+            }
         }
-    
+
+        .flex-item_main_block2-card_text {
+            display: flex;
+            flex-direction: column;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+        }
+
         ul {
             padding-left: 2rem;
             padding-right: 1rem;
@@ -80,16 +230,7 @@
             list-style-type: '\2014';
             padding-left: 0.5rem;
             padding-top: 0.5rem;
-
-            /*font-size: 1.2rem;*/
-            font-size: 1.5vw;
             color: rgba(15, 33, 44, 1.00);
         }
     }
 }
-
-.grid-item_main_block2_benefit h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
