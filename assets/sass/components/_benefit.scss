@@ -61,22 +61,12 @@
         grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
         grid-template-rows: 1fr;
         @media screen and (min-width: 768px) and (max-width: 1023px) {
-            /*grid-template-columns: repeat(3, auto);
-            grid-template-rows: repeat(4, 15vh);*/
             display: none;
         }
 
         @media screen and (max-width: 767px) {
             display: none;
         }
-
-            .grid-item_main_block2-hypothec-img {
-                grid-area: 1 / 2 / 2 / 5;
-                justify-self: center;
-                align-self: end;
-                width: 60%;
-                margin-left: 3vw;
-            }
 
             .grid-item_main_block2-hypothec_col1 {
                 grid-area: 1 / 1 / 2 / 3;
@@ -94,7 +84,7 @@
             }
 
     h2, h3, p, ul, li {
-        text-shadow: 1px 1px 4px rgba(255, 255, 255, 1.00);
+        text-shadow: 1px 1px 4px rgb(233, 231, 231);
     }
 
     h2 {
