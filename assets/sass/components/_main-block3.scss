@@ -1,6 +1,7 @@
 .grid-container_main_block3_houses{
     display: grid;
-    grid-template: repeat (4, auto) /10% 80% 10%;
+    grid-template: 33% 41% 13% 13%/10% 80% 10%;
+    
     height: 100%;
 
     .grid-item_main_block3_houses-finished{
@@ -11,6 +12,7 @@
         .grid-container_houses-finished{
             display: grid;
             grid-template: 15% 5% 80%/5% 1fr 5%;
+
             height: 100%;
 
             .grid-item_houses-finished-text{
@@ -48,6 +50,8 @@
         .grid-container_houses-variants{
             display: grid;
             grid-template: 8% 5% 52% 5% 4% 26%/5% 28% 3% 28% 3% 28% 5%;
+
+            height: 100%;
             width: 100%;
 
             .grid-item_houses-variants-title{
