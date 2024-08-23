@@ -7,7 +7,6 @@
     .grid-container_body{
         display: grid;
         grid-template: 9% 89% 2%/1fr;
-
         height: 100%;
 
         .grid-item_body_header{
@@ -48,5 +47,6 @@
         .grid-container_body{
             grid-template: 20% 78% 2%/1fr;
         }
+
     }
 }
