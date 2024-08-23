@@ -7,7 +7,7 @@
 
     .grid-container_body{
         display: grid;
-        grid-template: 10% 88% 2%/1fr;
+        grid-template: 10% 86% 4%/1fr;
 
 		height: 100%;
 
@@ -36,7 +36,7 @@
 		height: 7500px;
 
 		.grid-container_body {
-			grid-template: 10% 88% 2%/1fr;
+			grid-template: 9% 88% 3%/1fr;
 		}
 	}
 }
