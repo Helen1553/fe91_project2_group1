@@ -1,4 +1,4 @@
-.grid-item_main_block2 {
+.flex-item_main_block2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,14 +43,15 @@
         }
     }
 
-    .grid-item_main_block2_benefit,
-    .grid-item_main_block2-bank {
+    .flex-item_main_block2_benefit,
+    .flex-item_main_block2-bank {
         display: flex;
     }
 
     .grid-item_main_block2-hypothec {
         width: 95vw;
-        background-image: url(/assets/images/block_2/hypothec_background_img.svg);
+        height: auto;
+        background-image: url(/assets/images/block_2/vector__hypothec_background.svg);
         background-size: cover;
         border-radius:10px;
 
@@ -60,22 +61,12 @@
         grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
         grid-template-rows: 1fr;
         @media screen and (min-width: 768px) and (max-width: 1023px) {
-            /*grid-template-columns: repeat(3, auto);
-            grid-template-rows: repeat(4, 15vh);*/
             display: none;
         }
 
         @media screen and (max-width: 767px) {
             display: none;
         }
-
-            .grid-item_main_block2-hypothec-img {
-                grid-area: 1 / 2 / 2 / 5;
-                justify-self: center;
-                align-self: end;
-                width: 60%;
-                margin-left: 3vw;
-            }
 
             .grid-item_main_block2-hypothec_col1 {
                 grid-area: 1 / 1 / 2 / 3;
@@ -93,8 +84,7 @@
             }
 
     h2, h3, p, ul, li {
-        color: rgba(255, 255, 255, 1.00);
-        text-shadow: 1px 3px 6px  rgba(210, 214, 203, 0.61);
+        text-shadow: 1px 1px 4px rgb(233, 231, 231);
     }
 
     h2 {
@@ -106,7 +96,7 @@
     }
 }
 
-    .grid-item_main_block2-bank {
+    .flex-item_main_block2-bank {
         justify-content: space-between;
         margin-top: 5vh;
         margin-bottom: 5vh;
@@ -150,12 +140,12 @@
             }
     }
 
-    .grid-item_main_block2_benefit {
+    .flex-item_main_block2_benefit {
         flex-direction: column;
         align-items: center;
         margin-bottom: 2vh;
 
-        .grid-item_main_block2_benefit_logo {
+        .flex-item_main_block2_benefit_logo {
             width: 4vw;
         }
 
@@ -174,7 +164,7 @@
         }
     }
     
-    .grid-item_main_block2-card {
+    .flex-item_main_block2-card {
         display: flex;
         justify-content: space-between;
         width: 90vw;
@@ -191,7 +181,7 @@
             row-gap: 2.5vh;
         }
 
-        .grid-item_main_block2-card_content {
+        .flex-item_main_block2-card_content {
             width: 32%;
             box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
             border-radius: 10px 10px 10px 10px;
@@ -209,10 +199,11 @@
 
             &:hover {
                 box-shadow: 2px 6px 8px 4px rgba(25, 41, 28, 0.1);
+                cursor: pointer;
             }
         }
 
-        .grid-item_main_block2-card__card_img {
+        .flex-item_main_block2-card__card_img {
             width: 100%;
             border-radius: 10px 10px 0 0;
 
@@ -222,7 +213,7 @@
             }
         }
 
-        .grid-item_main_block2-card_text {
+        .flex-item_main_block2-card_text {
             display: flex;
             flex-direction: column;
             padding-top: 2vh;
