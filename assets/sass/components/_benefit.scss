@@ -51,12 +51,10 @@
     .grid-item_main_block2-hypothec {
         width: 95vw;
         height: auto;
-        background-image: url(/assets/images/block_2/vector__hypothec_background.svg);
-        background-size: cover;
+        /*background-image: url(/assets/images/block_2/vector__hypothec_background.svg);
+        background-size: cover;*/
         border-radius:10px;
-
         margin-top: 2vh;
-
         display: grid;
         grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
         grid-template-rows: 1fr;
@@ -68,14 +66,19 @@
             display: none;
         }
 
+            .grid-item_main_block2-hypothec_img {
+                grid-area: 1 / 1 / 2 / 6;
+                width: 100%;
+            }
+
             .grid-item_main_block2-hypothec_col1 {
                 grid-area: 1 / 1 / 2 / 3;
-                padding: 5%;
+                padding: 15%;
             }
 
             .grid-item_main_block2-hypothec_col2 {
                 grid-area: 1 / 4 / 2 / 6;
-                padding: 5%;
+                padding: 15%;
                 text-align: right;
 
                 li {
@@ -85,14 +88,17 @@
 
     h2, h3, p, ul, li {
         text-shadow: 1px 1px 4px rgb(233, 231, 231);
+        font-size: 1.5vw;
     }
 
     h2 {
         margin-bottom: 1vh;
+        font-size: 2.5vw;
     }
 
     h3 {
         margin-top: 4vh;
+        font-size: 2vw;
     }
 }
 
