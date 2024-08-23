@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .body {
-  height: 8000px;
+  height: 8100px;
   border: solid black;
   font-family: "Roboto", sans-serif;
 }
@@ -35,7 +35,7 @@
     height: 6000px;
   }
   .body .grid-container_body {
-    grid-template: 20% 78% 2%/1fr;
+    grid-template: 18% 78% 4%/1fr;
   }
 }
 .header {
@@ -228,7 +228,7 @@
 }
 .grid-container_main {
   display: grid;
-  grid-template: 13% 26% 33% 28%/1fr;
+  grid-template: 13% 25% 34% 28%/1fr;
   height: 100%;
 }
 .grid-container_main .grid-item_main_block1 {
@@ -584,7 +584,7 @@
 
 .grid-container_main_block3_houses {
   display: grid;
-  grid-template: 33% 41% 13% 13%/10% 80% 10%;
+  grid-template: 32% 41% 13.5% 13.5%/10% 80% 10%;
   height: 100%;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {

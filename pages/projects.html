@@ -34,12 +34,6 @@
             </div>
 
             <nav class="nav">
-                <!-- <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-                <label for="menu-toggle" class="burger-menu">
-                    <div class="line line1"></div>
-                    <div class="line line2"></div>
-                    <div class="line line3"></div>
-                </label> бургер-меню!!!!! -->
                 <ul class="nav_links">
                     <li><a href="http://127.0.0.1:5500/index.html">На главную</a></li>
                     <li><a href="#Houses">Дома</a></li>
@@ -49,7 +43,7 @@
             </nav>
 
             <div class="buttons">
-                <button class="buttons_contact">
+                <button class="buttons_contact" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Связаться с нами
                 </button>
             </div>
@@ -588,7 +582,7 @@
                 </div>
 
                 <div class="grid-item_buttons">
-                    <button type="button" class="btn btn-light px-3 py-3 shadow-sm">
+                    <button type="button" class="btn btn-light px-3 py-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <b>Связаться с нами</b>
                     </button>
                 </div>
@@ -1018,9 +1012,79 @@
                         </div>
 
                         <div class="grid-item_flats_buttons">
-                            <button type="button" class="btn btn-light px-3 py-3 shadow-sm">
+                            <button type="button" class="btn btn-light px-3 py-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 <b>Связаться с нами</b>
                             </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Модальное окно для обратной связи -->
+					<div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">
+                                    Оставьте заявку и мы с Вами свяжемся
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Закрыть"
+                                ></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="contact-form__input-wrapper input-group mb-5">
+                                    <input
+                                        name="name"
+                                        type="text"
+                                        class="contact-form__input contact-form__input_name form-control form-control-lg"
+                                        placeholder="Имя"
+                                        required
+                                    />
+                                    <div
+                                        class="contact-form__error contact-form__error_name"
+                                    ></div>
+                                </form>
+                                <form class="contact-form__input-wrapper input-group mb-5">
+                                    <input
+                                        name="tel"
+                                        type="tel"
+                                        class="contact-form__input contact-form__input_tel form-control form-control-lg"
+                                        placeholder="+7 (999) 999-99-99"
+                                        required
+                                    />
+                                    <div
+                                        class="contact-form__error contact-form__error_tel"
+                                    ></div>
+                                </form>
+                                <form class="contact-form__input-wrapper input-group mb-2">
+                                    <input
+                                        name="email"
+                                        type="email"
+                                        class="contact-form__input contact-form__input_email form-control form-control-lg"
+                                        placeholder="Введите ваш email"
+                                        required
+                                    />
+                                    <div
+                                        class="contact-form__error contact-form__error_email"
+                                    ></div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    Оставить заявку
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1051,5 +1115,8 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 </html>
