@@ -297,272 +297,234 @@
   height: 100%;
 }
 
-.header {
-  padding: 0.5rem 2rem;
-  width: 100%;
-  height: 100%;
-  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding-top: 1%;
-  padding-bottom: 5%;
-}
-.header .header_row {
+.flex-item_main_block2 {
   display: flex;
-  align-items: center;
-  padding: 1rem 0;
-  gap: 1rem;
-}
-.header .header_row .header_logo {
-  width: 20%;
-}
-.header .header_row .header_logo .logo {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  gap: 3rem;
-}
-.header .header_row .header_logo .logo_icon {
-  width: 30%;
-  height: 10%;
-}
-.header .header_row .header_logo .logo_text {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: white;
-}
-.header .header_row .header_nav {
-  margin: 1.5rem 0;
-  width: 80%;
-  display: flex;
-}
-.header .header_row .header_nav .header_links {
-  display: flex;
-  justify-content: space-around;
-  padding: 0.5rem 2.5rem;
-  gap: 3rem;
-  font-weight: 600;
-  font-size: 1.3rem;
-  line-height: normal;
-  list-style: none;
-  width: 100%;
-}
-.header .header_row .header_nav .header_links .header_links-link {
-  color: white;
-  text-decoration: none;
-}
-.header .header_row .header_nav .header_links .header_links-link:hover {
-  text-decoration: underline;
-}
-.header .content {
-  max-width: 100%;
-  padding: 2rem 1rem;
-  gap: 3rem;
-}
-.header .content_title {
-  display: flex;
-  justify-content: center;
-  margin: 5rem 0;
-  text-shadow: 5px 5px 5px black;
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: normal;
-  color: white;
-}
-.header .content_text {
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: normal;
-  text-align: center;
-  text-decoration: underline;
-  cursor: pointer;
-  text-shadow: 5px 5px 5px black;
-  color: white;
-}
-.header .content_form {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  margin: 10rem 0;
-}
-.header .content_form_btn {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: white;
-  text-shadow: white;
-  background-color: #197096;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-.header .content_form_btn2 {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1rem;
-  gap: 0.5rem;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: white;
-  text-shadow: white;
-  background-color: #1b9c4b;
-  border: 0.5rem solid #1b9c4b;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-.header .content_form .content_form_btn:hover {
-  background-color: rgba(163, 174, 167, 0.6078431373);
-}
-.header .content_form .content_form_btn2:hover {
-  background-color: rgba(163, 174, 167, 0.6078431373);
-}
-
-.menu-toggle {
-  display: none;
-}
-
-.burger-menu {
-  display: none;
-}
-
-@media (max-width: 881px) {
-  .header_nav {
-    position: relative;
-  }
-  .burger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .burger-menu .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    border-radius: 20%;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  .header_links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-    position: absolute;
-    top: 50px;
-    width: fit-content;
-    gap: 2rem;
-    height: fit-content;
-    background-color: #b7cfd1;
-    border-radius: 5%;
-    color: #000000;
-  }
-  /* Отображение меню при активном чекбоксе */
-  .menu-toggle:checked + .burger-menu + .header_links {
-    display: flex;
-  }
-  /* Анимация превращения бургер-меню в крестик */
-  .menu-toggle:checked + .burger-menu .line1 {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  .menu-toggle:checked + .burger-menu .line2 {
-    opacity: 0;
-  }
-  .menu-toggle:checked + .burger-menu .line3 {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-  .header_links-link {
-    margin: 10px 20px;
-  }
-  .header_links-link a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-  }
-}
-.grid-item_main_block2_benefit,
-.grid-item_main_block2-card_title,
-.grid-item_main_block2-card,
-.grid-item_main_block2-card_content,
-.grid-item_main_block2-bank {
-  display: flex;
-}
-
-.grid-item_main_block2-bank {
-  justify-content: space-around;
-  margin-bottom: 5vh;
-  margin-left: 5%;
-  width: 90%;
-  height: 5vh;
-}
-.grid-item_main_block2-bank .bank-logo_large {
-  width: 15%;
-}
-.grid-item_main_block2-bank .bank-logo_small {
-  display: none;
-}
-
-.grid-item_main_block2_benefit {
   flex-direction: column;
   align-items: center;
+  background-color: rgba(187, 220, 214, 0.247);
 }
-.grid-item_main_block2_benefit h1, .grid-item_main_block2_benefit h2, .grid-item_main_block2_benefit p, .grid-item_main_block2_benefit li {
-  font-family: Arial;
-}
-.grid-item_main_block2_benefit h1 {
-  font-family: Arial;
-  /*font-size: 3.39rem;*/
-  font-size: 2.7vw;
+.flex-item_main_block2 h1, .flex-item_main_block2 h2, .flex-item_main_block2 h3, .flex-item_main_block2 p, .flex-item_main_block2 li {
+  font-family: "Roboto";
   color: rgb(15, 33, 44);
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card_title {
-  align-items: center;
-  height: 4.5rem;
+.flex-item_main_block2 h1 {
+  font-size: 2.7vw;
 }
-.grid-item_main_block2_benefit p {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 h1 {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 h1 {
+    font-size: 3.2vw;
+  }
+}
+.flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+  font-size: 1.8vw;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+    font-size: 3vw;
+  }
+}
+.flex-item_main_block2 p, .flex-item_main_block2 li {
   font-size: 1.3vw;
 }
-.grid-item_main_block2_benefit h2 {
-  /*font-size: 1.4rem;*/
-  font-size: 1.8vw;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 p, .flex-item_main_block2 li {
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 p, .flex-item_main_block2 li {
+    font-size: 2vw;
+  }
+}
+.flex-item_main_block2 .flex-item_main_block2_benefit,
+.flex-item_main_block2 .flex-item_main_block2-bank {
+  display: flex;
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec {
+  width: 95vw;
+  height: auto;
+  background-image: url(/assets/images/block_2/vector__hypothec_background.svg);
+  background-size: cover;
+  border-radius: 10px;
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
+  grid-template-rows: 1fr;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 .grid-item_main_block2-hypothec {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 .grid-item_main_block2-hypothec {
+    display: none;
+  }
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col1 {
+  grid-area: 1/1/2/3;
+  padding: 5%;
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 {
+  grid-area: 1/4/2/6;
+  padding: 5%;
+  text-align: right;
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 li {
+  list-style: none;
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec h2, .flex-item_main_block2 .grid-item_main_block2-hypothec h3, .flex-item_main_block2 .grid-item_main_block2-hypothec p, .flex-item_main_block2 .grid-item_main_block2-hypothec ul, .flex-item_main_block2 .grid-item_main_block2-hypothec li {
+  text-shadow: 1px 1px 4px rgb(233, 231, 231);
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec h2 {
+  margin-bottom: 1vh;
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec h3 {
+  margin-top: 4vh;
+}
+.flex-item_main_block2 .flex-item_main_block2-bank {
+  justify-content: space-between;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 95vw;
+  height: 5vh;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 .flex-item_main_block2-bank {
+    width: 90vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 .flex-item_main_block2-bank {
+    width: 80vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+.flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large {
+  width: 15%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large {
+    display: none;
+  }
+}
+.flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small {
+    display: block;
+  }
+}
+.flex-item_main_block2 .flex-item_main_block2_benefit {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.flex-item_main_block2 .flex-item_main_block2_benefit .flex-item_main_block2_benefit_logo {
+  width: 4vw;
+}
+.flex-item_main_block2 .flex-item_main_block2_benefit h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.flex-item_main_block2 .flex-item_main_block2_benefit p {
+  margin-bottom: 1rem;
+}
+.flex-item_main_block2 .flex-item_main_block2_benefit h2 {
   padding-left: 0.5rem;
-  margin: 0;
   display: block;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card {
+.flex-item_main_block2 .flex-item_main_block2-card {
+  display: flex;
   justify-content: space-between;
-  width: 80vw;
-  margin-top: 1rem;
+  width: 90vw;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card .grid-item_main_block2-card_content {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 .flex-item_main_block2-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2.5vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 .flex-item_main_block2-card {
+    flex-wrap: wrap;
+    width: 70vw;
+    row-gap: 2.5vh;
+  }
+}
+.flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
   width: 32%;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
   flex-direction: column;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card .card_img {
-  width: 100%;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
+    flex-direction: row;
+    width: 100%;
+  }
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card ul {
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
+    width: 100%;
+  }
+}
+.flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content:hover {
+  box-shadow: 2px 6px 8px 4px rgba(25, 41, 28, 0.1);
+  cursor: pointer;
+}
+.flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card__card_img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card__card_img {
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+  }
+}
+.flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.flex-item_main_block2 .flex-item_main_block2-card ul {
   padding-left: 2rem;
   padding-right: 1rem;
   margin: 0;
 }
-.grid-item_main_block2_benefit .grid-item_main_block2-card li {
+.flex-item_main_block2 .flex-item_main_block2-card li {
   list-style-type: "—";
   padding-left: 0.5rem;
   padding-top: 0.5rem;
-  /*font-size: 1.2rem;*/
-  font-size: 1.5vw;
   color: rgb(15, 33, 44);
-}
-
-.grid-item_main_block2_benefit h1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .grid-container_projects_body {
@@ -887,6 +849,194 @@
   }
   .column3 {
     grid-area: auto;
+  }
+}
+.header {
+  padding: 0.5rem 2rem;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+.header .header_row {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.header .header_row .header_logo {
+  width: 20%;
+}
+.header .header_row .header_logo .logo {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 3rem;
+}
+.header .header_row .header_logo .logo_icon {
+  width: 30%;
+  height: 10%;
+}
+.header .header_row .header_logo .logo_text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
+.header .header_row .header_nav {
+  margin: 1.5rem 0;
+  width: 80%;
+  display: flex;
+}
+.header .header_row .header_nav .header_links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 2.5rem;
+  gap: 3rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: normal;
+  list-style: none;
+  width: 100%;
+}
+.header .header_row .header_nav .header_links .header_links-link {
+  color: white;
+  text-decoration: none;
+}
+.header .header_row .header_nav .header_links .header_links-link:hover {
+  text-decoration: underline;
+}
+.header .content {
+  max-width: 100%;
+  padding: 2rem 1rem;
+  gap: 3rem;
+}
+.header .content_title {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+  text-shadow: 5px 5px 5px black;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: normal;
+  color: white;
+}
+.header .content_text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: normal;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  text-shadow: 5px 5px 5px black;
+  color: white;
+}
+.header .content_form {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 10rem 0;
+}
+.header .content_form_btn {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: white;
+  background-color: #197096;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.header .content_form_btn2 {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: white;
+  background-color: #1b9c4b;
+  border: 0.5rem solid #1b9c4b;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.header .content_form .content_form_btn:hover {
+  background-color: rgba(163, 174, 167, 0.6078431373);
+}
+.header .content_form .content_form_btn2:hover {
+  background-color: rgba(163, 174, 167, 0.6078431373);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 881px) {
+  .header_nav {
+    position: relative;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .burger-menu .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 20%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .header_links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    position: absolute;
+    top: 50px;
+    width: fit-content;
+    gap: 2rem;
+    height: fit-content;
+    background-color: #b7cfd1;
+    border-radius: 5%;
+    color: #000000;
+  }
+  /* Отображение меню при активном чекбоксе */
+  .menu-toggle:checked + .burger-menu + .header_links {
+    display: flex;
+  }
+  /* Анимация превращения бургер-меню в крестик */
+  .menu-toggle:checked + .burger-menu .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle:checked + .burger-menu .line2 {
+    opacity: 0;
+  }
+  .menu-toggle:checked + .burger-menu .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .header_links-link {
+    margin: 10px 20px;
+  }
+  .header_links-link a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
   }
 }
 
