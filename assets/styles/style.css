@@ -22,6 +22,22 @@
   border: solid rgb(72, 255, 0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .body {
+    height: 7500px;
+  }
+  .body .grid-container_body {
+    grid-template: 10% 88% 2%/1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body {
+    height: 6000px;
+  }
+  .body .grid-container_body {
+    grid-template: 20% 78% 2%/1fr;
+  }
+}
 .grid-container_main {
   display: grid;
   grid-template: 13% 26% 34% 27%/1fr;
@@ -44,223 +60,11 @@
   border: solid rgb(175, 1, 255);
 }
 
-.grid-item_main_block4 {
-  display: grid;
-  grid-template: 2fr 1fr 2fr/1fr;
-  color: #2a2c1f;
+@media screen and (max-width: 767px) {
+  .grid-container_main {
+    grid-template: 20% 30% 20% 30%/1fr;
+  }
 }
-.grid-item_main_block4 .grid-item_main_block4_about-company {
-  grid-area: 1/1/2/2;
-  width: 80%;
-  height: min-content;
-  margin: 0 auto;
-  display: grid;
-  grid-template: 1fr 5fr/1fr 1fr;
-  margin-top: 5vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_about-company_title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3.375rem;
-  font-weight: 700;
-  line-height: 5.3125rem;
-  align-self: center;
-}
-.grid-item_main_block4 .grid-item_main_block4_about-company_desc {
-  grid-area: 2/1/3/2;
-  margin-top: 1.5vw;
-  width: 90%;
-}
-.grid-item_main_block4 .grid-item_main_block4_about-company_desc_text {
-  font-size: 1.3vw;
-  text-align: justify;
-}
-.grid-item_main_block4 .grid-item_main_block4_about-company_logo {
-  grid-area: 1/2/2/3;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_about-company_logo_image {
-  width: 50%;
-}
-.grid-item_main_block4 .grid-item_main_block4_about-company_logo_text {
-  font-size: 1vw;
-  font-weight: bold;
-}
-.grid-item_main_block4 .grid-item_main_block4_about-company_image2 {
-  width: 40vw;
-  margin-top: 1vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews {
-  width: 80%;
-  margin: 0 auto;
-  grid-area: 2/1/3/2;
-  display: grid;
-  grid-template: 1fr 2fr/1fr 2fr;
-  padding-top: 5vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-yandex {
-  grid-area: 1/1/2/2;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 2px 2px 17px 5px #c9c7c7;
-  width: 20vw;
-  height: 10vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-yandex:hover {
-  transform: scale(1.1);
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-yandex2 {
-  text-decoration: none;
-  color: #2a2c1f;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_logo2 {
-  width: 8vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2 {
-  display: flex;
-  margin-top: 1vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2-rating {
-  font-weight: bold;
-  font-size: 3vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2-wrap {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0.5vw;
-  margin-left: 0.5vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2-stars2 {
-  width: 10vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2-desc {
-  font-size: 1vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-2gis {
-  grid-area: 2/1/3/2;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 2px 2px 17px 5px #c9c7c7;
-  width: 20vw;
-  height: 10vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-2gis:hover {
-  transform: scale(1.1);
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-2gis2 {
-  text-decoration: none;
-  color: #2a2c1f;
-}
-.grid-item_main_block4 .grid-item_main_block4_reviews_carousel {
-  grid-area: 1/2/3/3;
-  width: 80vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts {
-  grid-area: 3/1/4/2;
-  background-image: url("/assets/images/main-block4/house3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-container {
-  width: 80%;
-  margin: 0 auto;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3.375rem;
-  font-weight: 700;
-  line-height: 5.3125rem;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-map {
-  display: flex;
-  margin-bottom: 3vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-map-logo2 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px 2px #c9c7c7;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-map-logo2:hover {
-  transform: scale(1.1);
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-map-text {
-  margin-left: 2vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-map-text-title {
-  color: #2a2c1f;
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-map-text-desc {
-  color: #2a2c1f;
-  font-size: 1.2vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-data {
-  display: flex;
-  margin-bottom: 4vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-data-logo2 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px 2px #c9c7c7;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-data-text {
-  margin-left: 2vw;
-  color: #2a2c1f;
-  font-size: 1.2vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-phone {
-  display: flex;
-  margin-bottom: 5vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-phone-logo2 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px 2px #c9c7c7;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-phone-number-text {
-  margin-left: 2vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-phone-number-text2 {
-  text-decoration: none;
-  color: #2a2c1f;
-  font-weight: bold;
-  font-size: 1.2vw;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-phone-number-text:hover {
-  transform: scale(1.1);
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-button {
-  width: 20vw;
-  height: 5vw;
-  border: 0px solid transparent;
-  border-radius: 10px;
-  background: linear-gradient(to bottom right, #469ce3, #2c60b9);
-  box-shadow: 1px 1px 2px 2px #469ce3;
-  color: #ffffff;
-}
-.grid-item_main_block4 .grid-item_main_block4_contacts-button:hover {
-  background: #ffffff;
-  color: #2c60b9;
-  border: 0.2rem solid #2c60b9;
-}
-
 .grid-container_main_block3_houses {
   display: grid;
   grid-template: 33% 41% 13% 13%/10% 80% 10%;
@@ -293,6 +97,9 @@
   text-shadow: 5px 5px 5px black;
   background: rgba(210, 205, 205, 0.534);
   border-radius: 1rem;
+}
+.grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button {
+  display: none;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
   grid-area: 2/1/4/4;
@@ -381,12 +188,304 @@
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-container_main_block3_houses {
+    grid-template: 32% 48% 10% 10%/5% 90% 5%;
+    border: solid rgb(60, 255, 0);
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
+    grid-template: 20% 8% 72%/5% 1fr 5%;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .houses-finished-button {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
+    grid-template: 9% 4% 51% 5% 4% 20%/4% 44% 4% 44% 4%;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title {
+    grid-area: 1/2/2/6;
+    text-align: center;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card1 {
+    grid-area: 3/2/4/3;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card2 {
+    grid-area: 3/4/4/5;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card3 {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button {
+    grid-area: 5/2/6/5;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion {
+    gap: 4rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-title {
+    font-weight: 900;
+    font-size: 3.125rem;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: 2.6rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-container_main_block3_houses {
+    grid-template: 65% 35%/1fr;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
+    grid-area: 1/1/2/2;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
+    grid-template: 20% 5% 75%/1fr;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text {
+    grid-area: 1/1/2/2;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel {
+    grid-area: 3/1/4/2;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .carousel-caption {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button .finished-button {
+    padding: 0.5rem 0.3rem;
+    background-color: white;
+    color: black;
+    border: 0.2rem solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button .finished-button:hover {
+    background-color: rgb(7, 109, 109);
+    color: white;
+    border: 0.2rem solid rgb(7, 109, 109);
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion {
+    grid-area: 2/1/3/2;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion {
+    gap: 1rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-title {
+    font-size: 1.8rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-text {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
 .footer {
   background-color: rgb(238, 238, 231);
   text-align: center;
   height: 100%;
 }
 
+.header {
+  padding: 0.5rem 2rem;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+.header .header_row {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.header .header_row .header_logo {
+  width: 20%;
+}
+.header .header_row .header_logo .logo {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 3rem;
+}
+.header .header_row .header_logo .logo_icon {
+  width: 30%;
+  height: 10%;
+}
+.header .header_row .header_logo .logo_text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
+.header .header_row .header_nav {
+  margin: 1.5rem 0;
+  width: 80%;
+  display: flex;
+}
+.header .header_row .header_nav .header_links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 2.5rem;
+  gap: 3rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: normal;
+  list-style: none;
+  width: 100%;
+}
+.header .header_row .header_nav .header_links .header_links-link {
+  color: white;
+  text-decoration: none;
+}
+.header .header_row .header_nav .header_links .header_links-link:hover {
+  text-decoration: underline;
+}
+.header .content {
+  max-width: 100%;
+  padding: 2rem 1rem;
+  gap: 3rem;
+}
+.header .content_title {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+  text-shadow: 5px 5px 5px black;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: normal;
+  color: white;
+}
+.header .content_text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: normal;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  text-shadow: 5px 5px 5px black;
+  color: white;
+}
+.header .content_form {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 10rem 0;
+}
+.header .content_form_btn {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: white;
+  background-color: #197096;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.header .content_form_btn2 {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: white;
+  background-color: #1b9c4b;
+  border: 0.5rem solid #1b9c4b;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.header .content_form .content_form_btn:hover {
+  background-color: rgba(163, 174, 167, 0.6078431373);
+}
+.header .content_form .content_form_btn2:hover {
+  background-color: rgba(163, 174, 167, 0.6078431373);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 881px) {
+  .header_nav {
+    position: relative;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .burger-menu .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 20%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .header_links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    position: absolute;
+    top: 50px;
+    width: fit-content;
+    gap: 2rem;
+    height: fit-content;
+    background-color: #b7cfd1;
+    border-radius: 5%;
+    color: #000000;
+  }
+  /* Отображение меню при активном чекбоксе */
+  .menu-toggle:checked + .burger-menu + .header_links {
+    display: flex;
+  }
+  /* Анимация превращения бургер-меню в крестик */
+  .menu-toggle:checked + .burger-menu .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle:checked + .burger-menu .line2 {
+    opacity: 0;
+  }
+  .menu-toggle:checked + .burger-menu .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .header_links-link {
+    margin: 10px 20px;
+  }
+  .header_links-link a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+  }
+}
 .grid-item_main_block2_benefit,
 .grid-item_main_block2-card_title,
 .grid-item_main_block2-card,
@@ -469,16 +568,17 @@
 
 .grid-container_projects_body {
   display: grid;
-  grid-template: 5% 91% 4%/1fr;
-  height: 4600px;
+  grid-template: 4% 92% 4%/1fr;
+  height: 4500px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .grid-container_projects_body .grid-item_projects_body_header {
   grid-area: 1/1/2/2;
+  border-bottom: solid black;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header {
   display: grid;
-  grid-template: 40% 60%/15% 65% 20%;
+  grid-template: 53% 47%/15% 65% 20%;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -487,11 +587,12 @@
   grid-area: 1/1/2/4;
   align-content: center;
   text-align: center;
-  background-color: #304857;
+  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+  background-attachment: fixed;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header .projects_title {
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 5px 5px 5px black;
   cursor: pointer;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .header_logo {
@@ -538,7 +639,7 @@
   cursor: pointer;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .buttons .buttons_contact:hover {
-  background-color: #304857;
+  background-color: #1a2125;
   border: 2px solid #304857;
 }
 .grid-container_projects_body .grid-item_projects_body_main {
@@ -653,7 +754,8 @@
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer {
   display: grid;
   grid-template: 1fr/20% 80%;
-  background-color: #304857;
+  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+  background-attachment: fixed;
   height: 100%;
 }
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo {
@@ -682,8 +784,9 @@
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a {
   text-decoration: none;
   color: white;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5rem;
 }
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a:hover {

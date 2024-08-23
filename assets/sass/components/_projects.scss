@@ -1,17 +1,18 @@
 .grid-container_projects_body{
     display: grid;
-    grid-template: 5% 91% 4%/1fr;
+    grid-template: 4% 92% 4%/1fr;
 
-    height: 4600px;
+    height: 4500px;
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     .grid-item_projects_body_header{
         grid-area: 1/1/2/2;
+        border-bottom: solid black;
 
         .grid-container_header {
             display: grid;
-            grid-template: 40% 60%/15% 65% 20%;
+            grid-template: 53% 47%/15% 65% 20%;
             width: 100%;
             height: 100%;
             background-color: white;
@@ -21,11 +22,14 @@
                 align-content: center;
         
                 text-align: center;
-                background-color: #304857;
+                // background-color: #304857;
+                background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+                background-attachment: fixed;
+
 
                 .projects_title{
                     color: white;
-                    text-shadow: 1px 1px 1px black;
+                    text-shadow: 5px 5px 5px black;
 
                     cursor: pointer;
                 }
@@ -78,17 +82,10 @@
                 }
     
                 .buttons_contact:hover {
-                    background-color: #304857;
+                    background-color: #1a2125;
                     border: 2px solid #304857;
                 }
             }
-            // .menu-toggle {
-            //     display: none;
-            // }
-        
-            // .burger-menu {
-            //     display: none;
-            // }
         }
     }
 
@@ -226,7 +223,10 @@
             display: grid;
             grid-template: 1fr/20% 80%;
 
-            background-color: #304857;
+            // background-color: #304857;
+
+            background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+            background-attachment: fixed;
             height: 100%;
 
             .footer_logo{
@@ -252,8 +252,9 @@
                     a {
                         text-decoration: none;
                         color: white;
+                        text-shadow: 5px 5px 5px rgb(0, 0, 0);
                         font-size: 1.1rem;
-                        font-weight: 500;
+                        font-weight: 600;
                         line-height: 1.5rem;
                     }
 
