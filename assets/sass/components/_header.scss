@@ -68,7 +68,7 @@
         }
     }
 
-    .content {
+    .header_content {
         max-width: 100%;
         padding: 2rem 1rem;
         gap: 3rem;
@@ -101,7 +101,7 @@
             display: flex;
             justify-content: center;
             gap: 5rem;
-            margin: 10rem 0;
+            margin: 7rem 0;
         
             &_btn {
                 font-weight: 700;
@@ -140,82 +140,200 @@
         }
     }
 }
-.header_nav {
-    position: relative;
-  }
-  
-  // /скрываем чек бокс/
-  
-  .menu-toggle {
+
+// /скрываем чек бокс/ 
+
+.menu-toggle {
     display: none;
-  }
-  
-  .burger-menu {
+}
+
+.burger-menu {
     display: none;
-  }
-  
-  .header_links {
-    display: none; /* Скрыто по умолчанию */
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: #333131;
-    color: #000;
-    width: 100%;
-    padding: 10px 0;
-    margin: 0;
-  }
-  
-  .header_links-link {
-    margin: 10px 0;
-    color: #000;
-  }
-  
-  .header_links-link a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  /* Мобильные стили */
-  @media (max-width: 881px) {
+}
+
+/* Мобильные стили */
+
+@media screen and /*(min-width: 900px) */(min-width: 768px) and (max-width: 1023px) {
+.header_content {
+        max-width: 100%;
+        padding: 2rem 1rem;
+        gap: 3rem;
+
+    &_title {
+        display: flex;
+        justify-content: center;
+
+        margin: 5rem 0;
+        text-shadow: 5px 5px 5px black;  
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: normal;
+        color: #ffff;
+    }
+}
+    .header_nav {
+        position: relative;
+        padding: 10px;
+    }
+    .header_links {
+        display: none; /* Скрыто по умолчанию */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        right: 0;
+
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+
+        background-color: #0c0b0b;
+        border-radius: 5%;
+        color: #ffff;
+    }
+
     .burger-menu {
-      display: flex; /* Показываем бургер-меню на мобильных устройствах */
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      right: 10px;
+        display: flex; /* Показываем бургер-меню на мобильных устройствах */
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        right: 40px;
     }
-  
+
     .burger-menu .line {
-      width: 100%;
-      height: 3px;
-      background-color: white;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+        width: 100%;
+        height: 3px;
+        background-color: #ffff;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
-  
     /* Отображение меню при активном чекбоксе */
     .menu-toggle:checked + .burger-menu + .header_links {
-      display: flex; /* Отображаем меню при клике на бургер */
+        display: flex; /* Отображаем меню при клике на бургер */
     }
-  
     /* Анимация превращения бургер-меню в крестик */
     .menu-toggle:checked + .burger-menu .line1 {
-      transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(5px, 5px);
     }
-  
+    
     .menu-toggle:checked + .burger-menu .line2 {
-      opacity: 0; /* Убираем вторую линию */
+        opacity: 0; /* Убираем вторую линию */
     }
-  
+
     .menu-toggle:checked + .burger-menu .line3 {
-      transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(5px, -5px);
     }
-  }
+}
+
+@media screen and (max-width: 767px) {
+.header_content {
+        max-width: 100%;
+        padding: 2rem 1rem;
+        gap: 3rem;
+
+    &_title {
+        display: flex;
+        justify-content: center;
+
+        margin: 5rem 0;
+        text-shadow: 5px 5px 5px black;  
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: normal;
+        color: #ffff;
+    }
+    &_form  {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        margin: 7rem 0;
+    
+        &_btn {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ffff;
+            text-shadow: #ffff;
+            background-color: #197096;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+
+        &_btn2 {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1rem;
+            gap: 0.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ffff;
+            text-shadow: #ffff;
+            background-color: #1b9c4b;
+            border: 0.5rem solid #1b9c4b;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
+    .header_nav {
+        position: relative;
+        padding: 10px;
+    }
+    .header_links {
+        display: none; /* Скрыто по умолчанию */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        right: 0;
+
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+
+        background-color: #0c0b0b;
+        border-radius: 5%;
+        color: #ffff;
+    }
+
+    .burger-menu {
+        display: flex; /* Показываем бургер-меню на мобильных устройствах */
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        right: 40px;
+    }
+
+    .burger-menu .line {
+        width: 100%;
+        height: 3px;
+        background-color: #ffff;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    /* Отображение меню при активном чекбоксе */
+    .menu-toggle:checked + .burger-menu + .header_links {
+        display: flex; /* Отображаем меню при клике на бургер */
+    }
+    /* Анимация превращения бургер-меню в крестик */
+    .menu-toggle:checked + .burger-menu .line1 {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle:checked + .burger-menu .line2 {
+        opacity: 0; /* Убираем вторую линию */
+    }
+
+    .menu-toggle:checked + .burger-menu .line3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
