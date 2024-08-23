@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template: 2fr 1fr 2fr / 1fr;
 	color: #2a2c1f;
+	overflow: hidden;
 
 	.grid-item_main_block4_about-company {
 		grid-area: 1 / 1 / 2 / 2;
@@ -16,6 +17,7 @@
 	}
 	.grid-item_main_block4_about-company_title {
 		@include title;
+		font-size: 5vw;
 		align-self: center;
 	}
 	.grid-item_main_block4_about-company_desc {
@@ -142,6 +144,7 @@
 	}
 	.grid-item_main_block4_contacts-title {
 		@include title;
+		font-size: 5vw;
 	}
 	.grid-item_main_block4_contacts-map {
 		display: flex;
@@ -210,4 +213,13 @@
 	.grid-item_main_block4_contacts-button {
 		@include button(hover);
 	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.grid-item_main_block4_about-company_title {
+		font-size: 2vw;
+	}
+}
+
+@media screen and (max-width: 767px) {
 }

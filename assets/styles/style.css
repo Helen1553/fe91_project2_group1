@@ -69,6 +69,7 @@
   display: grid;
   grid-template: 2fr 1fr 2fr/1fr;
   color: #2a2c1f;
+  overflow: hidden;
 }
 .grid-item_main_block4 .grid-item_main_block4_about-company {
   grid-area: 1/1/2/2;
@@ -84,6 +85,7 @@
   font-size: 3.375rem;
   font-weight: 700;
   line-height: 5.3125rem;
+  font-size: 5vw;
   align-self: center;
 }
 .grid-item_main_block4 .grid-item_main_block4_about-company_desc {
@@ -207,6 +209,7 @@
   font-size: 3.375rem;
   font-weight: 700;
   line-height: 5.3125rem;
+  font-size: 5vw;
 }
 .grid-item_main_block4 .grid-item_main_block4_contacts-map {
   display: flex;
@@ -282,6 +285,11 @@
   border: 0.2rem solid #2c60b9;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-item_main_block4_about-company_title {
+    font-size: 2vw;
+  }
+}
 .grid-container_main_block3_houses {
   display: grid;
   grid-template: 33% 41% 13% 13%/10% 80% 10%;
