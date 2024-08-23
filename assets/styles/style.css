@@ -353,6 +353,7 @@
 }
 .grid-item_main_block2 .grid-item_main_block2-hypothec {
   width: 95vw;
+  height: auto;
   background-image: url(/assets/images/block_2/hypothec_background_img.svg);
   background-size: cover;
   border-radius: 10px;
@@ -393,8 +394,7 @@
   list-style: none;
 }
 .grid-item_main_block2 .grid-item_main_block2-hypothec h2, .grid-item_main_block2 .grid-item_main_block2-hypothec h3, .grid-item_main_block2 .grid-item_main_block2-hypothec p, .grid-item_main_block2 .grid-item_main_block2-hypothec ul, .grid-item_main_block2 .grid-item_main_block2-hypothec li {
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 3px 6px rgba(210, 214, 203, 0.61);
+  text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
 .grid-item_main_block2 .grid-item_main_block2-hypothec h2 {
   margin-bottom: 1vh;
