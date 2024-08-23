@@ -35,6 +35,10 @@
 
 	list-style: none;
 }
+
+@mixin background {
+	background-color: rgba(187, 220, 214, 0.247);
+}
 @mixin button($hover) {
 	width: 20vw;
 	height: 5vw;
