@@ -819,13 +819,14 @@
 									<div class="row">
 										<div class="col-md-8 offset-md-2">
 											<div
-												id="carouselExampleIndicators"
-												class="carousel carousel-dark slide shadow-lg"
+												id="carouselExampleIndicators2"
+												class="
+                                                carousel slide shadow-lg carousel-dark carousel-fade" data-bs-ride="carousel"
 											>
 												<div class="carousel-indicators">
 													<button
 														type="button"
-														data-bs-target="#carouselExampleIndicators"
+														data-bs-target="#carouselExampleIndicators2"
 														data-bs-slide-to="0"
 														class="active"
 														aria-current="true"
@@ -833,37 +834,37 @@
 													></button>
 													<button
 														type="button"
-														data-bs-target="#carouselExampleIndicators"
+														data-bs-target="#carouselExampleIndicators2"
 														data-bs-slide-to="1"
 														aria-label="Slide 2"
 													></button>
 													<button
 														type="button"
-														data-bs-target="#carouselExampleIndicators"
+														data-bs-target="#carouselExampleIndicators2"
 														data-bs-slide-to="2"
 														aria-label="Slide 3"
 													></button>
 													<button
 														type="button"
-														data-bs-target="#carouselExampleIndicators"
+														data-bs-target="#carouselExampleIndicators2"
 														data-bs-slide-to="3"
 														aria-label="Slide 4"
 													></button>
 													<button
 														type="button"
-														data-bs-target="#carouselExampleIndicators"
+														data-bs-target="#carouselExampleIndicators2"
 														data-bs-slide-to="4"
 														aria-label="Slide 5"
 													></button>
 													<button
 														type="button"
-														data-bs-target="#carouselExampleIndicators"
+														data-bs-target="#carouselExampleIndicators2"
 														data-bs-slide-to="5"
 														aria-label="Slide 6"
 													></button>
 													<button
 														type="button"
-														data-bs-target="#carouselExampleIndicators"
+														data-bs-target="#carouselExampleIndicators2"
 														data-bs-slide-to="6"
 														aria-label="Slide 7"
 													></button>
@@ -919,30 +920,14 @@
 														/>
 													</div>
 												</div>
-												<button
-													class="carousel-control-prev"
-													type="button"
-													data-bs-target="#carouselExampleIndicators"
-													data-bs-slide="prev"
-												>
-													<span
-														class="carousel-control-prev-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden"> Previous </span>
-												</button>
-												<button
-													class="carousel-control-next"
-													type="button"
-													data-bs-target="#carouselExampleIndicators"
-													data-bs-slide="next"
-												>
-													<span
-														class="carousel-control-next-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden"> Next </span>
-												</button>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Предыдущий</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Следующий</span>
+                                                </button>
 											</div>
 										</div>
 									</div>
@@ -1015,7 +1000,10 @@
 									</div>
 								</div>
 								<form class="grid-item_main_block4_contacts-form">
-									<button class="grid-item_main_block4_contacts-button">
+
+                                    <!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
+									
+                                    <button class="grid-item_main_block4_contacts-button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 										ОСТАВИТЬ ЗАЯВКУ
 									</button>
 								</form>
@@ -1023,6 +1011,78 @@
 						</div>
 						<!--блок 4 заканчивается - @Marrria_L-->
 					</div>
+
+                    <!-- Модальное окно для обратной связи -->
+
+                    <div 
+                    class="modal fade" 
+                    id="staticBackdrop" 
+                    data-bs-backdrop="static" 
+                    data-bs-keyboard="false" 
+                    tabindex="-1" 
+                    aria-labelledby="staticBackdropLabel" 
+                    aria-hidden="true">
+                        <div 
+                        class="modal-dialog">
+                            <div 
+                            class="modal-content">
+                                <div 
+                                class="modal-header">
+                                    <h5 
+                                    class="modal-title" 
+                                    id="staticBackdropLabel">Оставьте заявку и мы с Вами свяжемся</h5>
+                                    <button 
+                                    type="button" 
+                                    class="btn-close" 
+                                    data-bs-dismiss="modal" 
+                                    aria-label="Закрыть"></button>
+                            </div>
+                            <div 
+                            class="modal-body">
+                                <form 
+                                class="contact-form__input-wrapper input-group mb-5">
+                                    <input 
+                                    name="name" 
+                                    type="text" 
+                                    class="contact-form__input contact-form__input_name form-control form-control-lg" 
+                                    placeholder="Имя"
+                                    required>
+                                    <div 
+                                    class="contact-form__error contact-form__error_name"></div>
+                                </form>
+                                    <form 
+                                    class="contact-form__input-wrapper input-group mb-5">
+                                        <input 
+                                        name="tel" 
+                                        type="tel" 
+                                        class="contact-form__input contact-form__input_tel form-control form-control-lg" 
+                                        placeholder="+7 (999) 999-99-99"
+                                        required>
+                                    <div 
+                                    class="contact-form__error contact-form__error_tel"></div>
+                                </form>
+                                <form 
+                                class="contact-form__input-wrapper input-group mb-2"> 
+                                    <input 
+                                    name="email" 
+                                    type="email" 
+                                    class="contact-form__input contact-form__input_email form-control form-control-lg" 
+                                    placeholder="Введите ваш email"
+                                    required>
+                                    <div 
+                                    class="contact-form__error contact-form__error_email"></div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button 
+                                type="button" 
+                                class="btn btn-primary">Оставить заявку</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
 				</main>
 			</div>
 			<div class="grid-item_body_footer">
@@ -1037,10 +1097,4 @@
 			crossorigin="anonymous"
 		></script>
 	</body>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"
-        ></script>
-    </body>
 </html>

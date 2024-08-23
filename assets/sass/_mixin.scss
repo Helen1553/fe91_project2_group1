@@ -29,7 +29,7 @@
 
 	list-style: none;
 }
-@mixin button {
+@mixin button($hover) {
 	width: 20vw;
 	height: 5vw;
 	border: 0px solid transparent;
@@ -37,4 +37,9 @@
 	background: linear-gradient(to bottom right, #469ce3, #2c60b9);
 	box-shadow: 1px 1px 2px 2px #469ce3;
 	color: #ffffff;
+	&:hover {
+		background: #ffffff;
+		color: #2c60b9;
+		border: 0.2rem solid #2c60b9;
+	}
 }

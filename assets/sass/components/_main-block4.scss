@@ -66,6 +66,11 @@
 		align-items: center;
 		margin-bottom: 2vw;
 	}
+
+	.grid-item_main_block4_reviews_wrap-yandex:hover {
+		transform: scale(1.1);
+	}
+
 	.grid-item_main_block4_reviews_wrap-yandex2 {
 		text-decoration: none;
 		color: #2a2c1f;
@@ -106,6 +111,11 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	.grid-item_main_block4_reviews_wrap-2gis:hover {
+		transform: scale(1.1);
+	}
+
 	.grid-item_main_block4_reviews_wrap-2gis2 {
 		text-decoration: none;
 		color: #2a2c1f;
@@ -113,12 +123,12 @@
 
 	.grid-item_main_block4_reviews_carousel {
 		grid-area: 1 / 2 / 3 / 3;
-		width: 70vw;
+		width: 80vw;
 	}
 
 	.grid-item_main_block4_contacts {
 		grid-area: 3 / 1 / 4 / 2;
-		background-image: url("/assets/images/main-block4/house2.png");
+		background-image: url("/assets/images/main-block4/house3.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		-webkit-background-size: cover;
@@ -137,10 +147,15 @@
 		display: flex;
 		margin-bottom: 3vw;
 	}
+
 	.grid-item_main_block4_contacts-map-logo2 {
 		border: 1px solid transparent;
 		border-radius: 10px;
 		box-shadow: 1px 1px 2px 2px #c9c7c7;
+	}
+
+	.grid-item_main_block4_contacts-map-logo2:hover {
+		transform: scale(1.1);
 	}
 	.grid-item_main_block4_contacts-map-text {
 		margin-left: 2vw;
@@ -188,7 +203,11 @@
 		font-size: 1.2vw;
 	}
 
+	.grid-item_main_block4_contacts-phone-number-text:hover {
+		transform: scale(1.1);
+	}
+
 	.grid-item_main_block4_contacts-button {
-		@include button;
+		@include button(hover);
 	}
 }
