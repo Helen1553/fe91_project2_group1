@@ -33,10 +33,12 @@
                             <div class="line line3"></div>
                         </label>
                         <ul class="header_links">
-                            <li><a class="header_links-link" href="#Окомпании">О компании</a></li>
-                            <li><a class="header_links-link" href="#Ипотека">Ипотека</a></li>
-                            <li><a class="header_links-link" href="#Проекты">Проекты</a></li>
-                            <li><a class="header_links-link" href="#Проекты">Дома и квартиры</a></li>
+                            <li><a class="header_links-link" href='#Наши услуги'>Наши услуги</a></li>
+                            <li><a class="header_links-link" href='#Ипотека'>Ипотека</a></li>
+                            <li><a class="header_links-link" href='#НашиПроекты'>Проекты</a></li>
+                            <li><a class="header_links-link" href="http://127.0.0.1:5500/pages/projects.html"
+                                    target="_blank">Дома и
+                                    квартиры</a></li>
                             <li><a class="header_links-link" href="#Контакты">Контакты</a></li>
                         </ul>
                     </nav>
@@ -48,11 +50,16 @@
                         Агенство недвижимости
                     </p>
                     <form class="header_content_form">
-                        <button class="header_content_form_btn" type="submit">
+                        <!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
+                        <button class="header_content_form_btn" type="button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
                             Связаться с менеджером
                         </button>
-                        <button class="header_content_form_btn2" type="submit">
-                            Написать в
+                        <!-- ниже идет кнопка с ссылкой на whatsApp заказчика -->
+                        <button class="header_content_form_btn2" type="button">
+                            <a class="header_content_form_whatsapp"
+                                href="https://api.whatsapp.com/send/?phone=79381590107&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%9F%D0%B8%D1%88%D1%83+%D0%B8%D0%B7+%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F+2%D0%93%D0%98%D0%A1.%0A%0A&type=phone_number&app_absent=0">Написать
+                                в</a>
                             <span>
                                 <svg width="40px" height="20px" viewBox="-2.73 0 1225.016 1225.016"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -100,7 +107,7 @@
         <div class="grid-item_body_main">
             <main class="grid-container_main">
 
-                <section class="grid-item_main_block1" id="ОКомпании">
+                <section class="grid-item_main_block1" id="Наши услуги">
                     <!--блок 1 начинается - @a_brio-->
                     <h2 class="subtitle">Делаем все услуги в комплексе</h2>
                     <article class="column1">
@@ -989,7 +996,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item_main_block4_contacts">
+                    <div class="grid-item_main_block4_contacts" id="Контакты">
                         <div class="grid-item_main_block4_contacts-container">
                             <h2 class="grid-item_main_block4_contacts-title">Контакты</h2>
                             <div class="grid-item_main_block4_contacts-map">
