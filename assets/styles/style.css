@@ -56,17 +56,17 @@
   gap: 1rem;
 }
 .header .header_row .header_logo {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  gap: 3rem;
+  width: 15%;
+  height: 100%;
 }
 .header .header_row .header_logo_icon {
-  width: 30%;
-  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .header .header_row .header_logo_text {
-  font-weight: 400;
   font-size: 1.5rem;
   color: white;
 }

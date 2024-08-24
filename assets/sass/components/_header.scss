@@ -16,18 +16,19 @@
         gap: 1rem;
         
         .header_logo {
-            display: flex;
-            align-items: center;
-            padding: 0.5rem 1rem;
-            gap: 3rem;
+            width: 15%;
+            height: 100%;
         
                 &_icon {
-                    width: 30%;
-                    height: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    height: 100%;
                 }
         
                 &_text {
-                    font-weight: 400;
                     font-size: 1.5rem;
                     color: #ffff;
                 }
