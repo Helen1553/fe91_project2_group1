@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template: 2fr 1fr 2fr / 1fr;
 	color: #2a2c1f;
+	overflow: hidden;
 
 	.grid-item_main_block4_about-company {
 		grid-area: 1 / 1 / 2 / 2;
@@ -16,6 +17,7 @@
 	}
 	.grid-item_main_block4_about-company_title {
 		@include title;
+		// font-size: 5vw;
 		align-self: center;
 	}
 	.grid-item_main_block4_about-company_desc {
@@ -24,8 +26,9 @@
 		width: 90%;
 	}
 	.grid-item_main_block4_about-company_desc_text {
-		font-size: 1.3vw;
-		text-align: justify;
+		// font-size: 1.3vw;
+		// text-align: justify;
+		@include text;
 	}
 	.grid-item_main_block4_about-company_logo {
 		grid-area: 1 / 2 / 2 / 3;
@@ -37,8 +40,9 @@
 		width: 50%;
 	}
 	.grid-item_main_block4_about-company_logo_text {
-		font-size: 1vw;
+		font-size: 1.5vw;
 		font-weight: bold;
+		text-align: left;
 	}
 	.grid-item_main_block4_about-company_image2 {
 		width: 40vw;
@@ -128,13 +132,14 @@
 
 	.grid-item_main_block4_contacts {
 		grid-area: 3 / 1 / 4 / 2;
-		background-image: url("/assets/images/main-block4/img_house3.png");
+		// background-image: url("/assets/images/main-block4/img_house3.png");
+		background-image: url(https://static.tildacdn.com/tild6131-6332-4663-a363-323331653361/Object.png);
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: right;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
-		background-size: cover;
+		background-size: 70%;
 	}
 	.grid-item_main_block4_contacts-container {
 		width: 80%;
@@ -142,6 +147,7 @@
 	}
 	.grid-item_main_block4_contacts-title {
 		@include title;
+		font-size: 5vw;
 	}
 	.grid-item_main_block4_contacts-map {
 		display: flex;
@@ -209,5 +215,19 @@
 
 	.grid-item_main_block4_contacts-button {
 		@include button(hover);
+		width: 20vw;
+		height: 5vw;
 	}
+}
+
+@media screen and (min-width: 2200px) {
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2199px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
 }
