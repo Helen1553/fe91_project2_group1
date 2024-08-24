@@ -1,11 +1,12 @@
 @charset "UTF-8";
 .body {
-  height: 8000px;
+  height: 8100px;
   border: solid black;
+  font-family: "Roboto", sans-serif;
 }
 .body .grid-container_body {
   display: grid;
-  grid-template: 9% 89% 2%/1fr;
+  grid-template: 10% 86% 4%/1fr;
   height: 100%;
 }
 .body .grid-container_body .grid-item_body_header {
@@ -26,7 +27,7 @@
     height: 7500px;
   }
   .body .grid-container_body {
-    grid-template: 10% 88% 2%/1fr;
+    grid-template: 9% 88% 3%/1fr;
   }
 }
 @media screen and (max-width: 767px) {
@@ -34,7 +35,7 @@
     height: 6000px;
   }
   .body .grid-container_body {
-    grid-template: 20% 78% 2%/1fr;
+    grid-template: 18% 78% 4%/1fr;
   }
 }
 .header {
@@ -330,14 +331,14 @@
 }
 .grid-container_main {
   display: grid;
-  grid-template: 13% 26% 34% 27%/1fr;
+  grid-template: 13% 25% 34% 28%/1fr;
   height: 100%;
 }
 .grid-container_main .grid-item_main_block1 {
   grid-area: 1/1/2/2;
   border: solid rgb(220, 156, 37);
 }
-.grid-container_main .grid-item_main_block2 {
+.grid-container_main .flex-item_main_block2 {
   grid-area: 2/1/3/2;
   border: solid rgb(18, 10, 177);
 }
@@ -350,14 +351,19 @@
   border: solid rgb(175, 1, 255);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-container_main {
+    grid-template: 20% 13% 37% 30%/1fr;
+  }
+}
 @media screen and (max-width: 767px) {
   .grid-container_main {
-    grid-template: 20% 30% 20% 30%/1fr;
+    grid-template: 22% 26% 22% 30%/1fr;
   }
 }
 .grid-container_main_block3_houses {
   display: grid;
-  grid-template: 33% 41% 13% 13%/10% 80% 10%;
+  grid-template: 32% 41% 13.5% 13.5%/10% 80% 10%;
   height: 100%;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
@@ -478,10 +484,37 @@
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 
+@media screen and (min-width: 2200px) {
+  .grid-container_main_block3_houses {
+    grid-template: 27% 45% 14% 14%/5% 90% 5%;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .houses-finished-button {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
+    grid-area: 2/1/4/4;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
+    grid-template: 7% 2% 51% 11% 4% 24%/5% 28% 3% 28% 3% 28% 5%;
+  }
+}
+@media screen and (min-width: 1800px) and (max-width: 2199px) {
+  .grid-container_main_block3_houses {
+    grid-template: 28% 46% 13% 13%/5% 90% 5%;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .houses-finished-button {
+    display: none;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
+    grid-area: 2/1/4/4;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
+    grid-template: 8% 5% 52% 5% 4% 25%/5% 28% 3% 28% 3% 28% 5%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-container_main_block3_houses {
     grid-template: 32% 48% 10% 10%/5% 90% 5%;
-    border: solid rgb(60, 255, 0);
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
     grid-template: 20% 8% 72%/5% 1fr 5%;
@@ -582,10 +615,331 @@
     font-size: 1rem;
   }
 }
+.grid-item_main_block4 {
+  display: grid;
+  grid-template: 2fr 1fr 2fr/1fr;
+  color: #2a2c1f;
+}
+.grid-item_main_block4 .grid-item_main_block4_about-company {
+  grid-area: 1/1/2/2;
+  width: 80%;
+  height: min-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr 5fr/1fr 1fr;
+  margin-top: 5vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_about-company_title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3.375rem;
+  font-weight: 700;
+  line-height: 5.3125rem;
+  align-self: center;
+}
+.grid-item_main_block4 .grid-item_main_block4_about-company_desc {
+  grid-area: 2/1/3/2;
+  margin-top: 1.5vw;
+  width: 90%;
+}
+.grid-item_main_block4 .grid-item_main_block4_about-company_desc_text {
+  font-size: 1.3vw;
+  text-align: justify;
+}
+.grid-item_main_block4 .grid-item_main_block4_about-company_logo {
+  grid-area: 1/2/2/3;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_about-company_logo_image {
+  width: 50%;
+}
+.grid-item_main_block4 .grid-item_main_block4_about-company_logo_text {
+  font-size: 1vw;
+  font-weight: bold;
+}
+.grid-item_main_block4 .grid-item_main_block4_about-company_image2 {
+  width: 40vw;
+  margin-top: 1vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews {
+  width: 80%;
+  margin: 0 auto;
+  grid-area: 2/1/3/2;
+  display: grid;
+  grid-template: 1fr 2fr/1fr 2fr;
+  padding-top: 5vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-yandex {
+  grid-area: 1/1/2/2;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 17px 5px #c9c7c7;
+  width: 20vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-yandex:hover {
+  transform: scale(1.1);
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-yandex2 {
+  text-decoration: none;
+  color: #2a2c1f;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_logo2 {
+  width: 8vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2 {
+  display: flex;
+  margin-top: 1vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2-rating {
+  font-weight: bold;
+  font-size: 3vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5vw;
+  margin-left: 0.5vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2-stars2 {
+  width: 10vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap2-desc {
+  font-size: 1vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-2gis {
+  grid-area: 2/1/3/2;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 17px 5px #c9c7c7;
+  width: 20vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-2gis:hover {
+  transform: scale(1.1);
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_wrap-2gis2 {
+  text-decoration: none;
+  color: #2a2c1f;
+}
+.grid-item_main_block4 .grid-item_main_block4_reviews_carousel {
+  grid-area: 1/2/3/3;
+  width: 80vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts {
+  grid-area: 3/1/4/2;
+  background-image: url("/assets/images/main-block4/img_house3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3.375rem;
+  font-weight: 700;
+  line-height: 5.3125rem;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-map {
+  display: flex;
+  margin-bottom: 3vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-map-logo2 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px #c9c7c7;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-map-logo2:hover {
+  transform: scale(1.1);
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-map-text {
+  margin-left: 2vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-map-text-title {
+  color: #2a2c1f;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-map-text-desc {
+  color: #2a2c1f;
+  font-size: 1.2vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-data {
+  display: flex;
+  margin-bottom: 4vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-data-logo2 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px #c9c7c7;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-data-text {
+  margin-left: 2vw;
+  color: #2a2c1f;
+  font-size: 1.2vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-phone {
+  display: flex;
+  margin-bottom: 5vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-phone-logo2 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px #c9c7c7;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-phone-number-text {
+  margin-left: 2vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-phone-number-text2 {
+  text-decoration: none;
+  color: #2a2c1f;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-phone-number-text:hover {
+  transform: scale(1.1);
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-button {
+  width: 20vw;
+  height: 5vw;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #469ce3, #2c60b9);
+  box-shadow: 1px 1px 2px 2px #469ce3;
+  color: #ffffff;
+}
+.grid-item_main_block4 .grid-item_main_block4_contacts-button:hover {
+  background: #ffffff;
+  color: #2c60b9;
+  border: 0.2rem solid #2c60b9;
+}
+
 .footer {
-  background-color: rgb(238, 238, 231);
-  text-align: center;
   height: 100%;
+  text-align: center;
+  border-top: solid-black;
+}
+.footer .grid-container_footer {
+  display: grid;
+  grid-template: 60% 40%/1fr;
+  height: 100%;
+  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+  background-attachment: fixed;
+}
+.footer .grid-container_footer .grid-item_footer-itself {
+  grid-area: 1/1/2/2;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_logo {
+  width: 15%;
+  height: 100%;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_logo .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_logo .logo .logo_text {
+  font-size: 1.5rem;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_logo .logo .logo_text a {
+  text-decoration: none;
+  color: white;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_logo .logo .svg {
+  width: 30%;
+  height: 30%;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_nav {
+  width: 85%;
+  height: 100%;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_nav .nav_links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_nav .nav_links a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_nav .nav_links a:hover {
+  text-decoration: underline;
+}
+.footer .grid-container_footer .grid-item_sub-footer {
+  grid-area: 2/1/3/2;
+}
+.footer .grid-container_footer .grid-item_sub-footer .sub-footer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_inf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: white;
+  width: 20%;
+  height: 100%;
+}
+.footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_rights {
+  align-content: end;
+  width: 60%;
+  height: 100%;
+  color: white;
+}
+.footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 20%;
+  height: 100%;
+}
+.footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .svg {
+  width: 60%;
+  height: 60%;
+  background-color: white;
+}
+.footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .sub-footer_itgirls-logo {
+  height: 40%;
+  font-size: 0.9rem;
+}
+.footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .sub-footer_itgirls-logo a {
+  text-decoration: none;
+  color: white;
 }
 
 .flex-item_main_block2 {
@@ -644,8 +998,8 @@
 .flex-item_main_block2 .grid-item_main_block2-hypothec {
   width: 95vw;
   height: auto;
-  background-image: url(/assets/images/block_2/vector__hypothec_background.svg);
-  background-size: cover;
+  /*background-image: url(/assets/images/block_2/vector__hypothec_background.svg);
+  background-size: cover;*/
   border-radius: 10px;
   margin-top: 2vh;
   display: grid;
@@ -662,13 +1016,17 @@
     display: none;
   }
 }
+.flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_img {
+  grid-area: 1/1/2/6;
+  width: 100%;
+}
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col1 {
   grid-area: 1/1/2/3;
-  padding: 5%;
+  padding: 15%;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 {
   grid-area: 1/4/2/6;
-  padding: 5%;
+  padding: 15%;
   text-align: right;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 li {
@@ -676,12 +1034,15 @@
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec h2, .flex-item_main_block2 .grid-item_main_block2-hypothec h3, .flex-item_main_block2 .grid-item_main_block2-hypothec p, .flex-item_main_block2 .grid-item_main_block2-hypothec ul, .flex-item_main_block2 .grid-item_main_block2-hypothec li {
   text-shadow: 1px 1px 4px rgb(233, 231, 231);
+  font-size: 1.5vw;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec h2 {
   margin-bottom: 1vh;
+  font-size: 2.5vw;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec h3 {
   margin-top: 4vh;
+  font-size: 2vw;
 }
 .flex-item_main_block2 .flex-item_main_block2-bank {
   justify-content: space-between;
@@ -820,8 +1181,8 @@
 
 .grid-container_projects_body {
   display: grid;
-  grid-template: 4% 92% 4%/1fr;
-  height: 4500px;
+  grid-template: 4% 93% 3%/1fr;
+  height: 7000px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .grid-container_projects_body .grid-item_projects_body_header {
@@ -899,11 +1260,13 @@
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main {
   height: 100%;
+  width: 100%;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses {
   height: 52%;
+  width: 100%;
   display: grid;
-  grid-template: 24% 71% 5%/5% 1fr 5%;
+  grid-template: 15% 80% 5%/5% 1fr 5%;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses .grid_item_projects_main_houses_title {
   grid-area: 1/1/2/4;
@@ -911,10 +1274,9 @@
   justify-content: center;
   align-items: center;
   background-image: url(https://cobrio.club/uploads/posts/2022-10/1666014441_5-cobrio-club-p-podsvetka-karkasnogo-doma-dizain-krasivo-5.jpg);
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  -o-background-size: cover;
   background-size: cover;
+  width: 100%;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses .grid_item_projects_main_houses_title .projects_main_houses_title {
   font-weight: 900;
@@ -927,14 +1289,14 @@
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_houses .grid-item_projects_main_houses_cards .grid-container_houses-variants {
   display: grid;
-  grid-template: 4% 47% 1% 47% 1%/31.5% 2.75% 31.5% 2.75% 31.5%;
+  grid-template: 5% 30% 2% 30% 2% 30% 1%/6% 40% 8% 40% 6%;
   height: 100%;
   width: 100%;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats {
   height: 48%;
   display: grid;
-  grid-template: 25% 74% 1%/5% 1fr 5%;
+  grid-template: 17% 82% 1%/5% 1fr 5%;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats .grid-item_projects_main_flats_title {
   grid-area: 1/1/2/4;
@@ -959,7 +1321,7 @@
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-container_projects_main_flats .grid-item_projects_main_flats_cards .grid-container_flats-variants {
   display: grid;
-  grid-template: 4% 43% 2% 43% 3% 5%/30% 5% 30% 5% 30%;
+  grid-template: 5% 29% 2% 29% 2% 29% 1% 3%/6% 40% 8% 40% 6%;
   height: 100%;
   width: 100%;
 }
@@ -967,25 +1329,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-area: 6/3/7/4;
+  grid-area: 8/2/9/5;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card1 {
-  grid-area: 2/1/3/2;
+  grid-area: 2/2/3/3;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card2 {
-  grid-area: 2/3/3/4;
+  grid-area: 2/4/3/5;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card3 {
-  grid-area: 2/5/3/6;
+  grid-area: 4/2/5/3;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card4 {
-  grid-area: 4/1/5/2;
+  grid-area: 4/4/5/5;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card5 {
-  grid-area: 4/3/5/4;
+  grid-area: 6/2/7/3;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card6 {
-  grid-area: 4/5/5/6;
+  grid-area: 6/4/7/5;
 }
 .grid-container_projects_body .grid-item_projects_body_main .projects_main .card {
   transition: 0.7s;
@@ -1032,6 +1394,7 @@
   width: 100%;
   list-style: none;
   justify-content: space-evenly;
+  gap: 0;
 }
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a {
   text-decoration: none;
@@ -1055,6 +1418,45 @@
   height: 60%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-container_projects_body {
+    grid-template: 7% 89% 4%/1fr;
+    height: 6000px;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header {
+    grid-template: 40% 60%/20% 80%;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header {
+    grid-area: 1/1/2/3;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav .nav_links {
+    gap: 6rem;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .buttons {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-container_projects_body {
+    grid-template: 15% 80% 5%/1fr;
+    height: 6000px;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header {
+    grid-template: 60% 40%/20% 80%;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header {
+    grid-area: 1/1/2/3;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav .nav_links {
+    gap: 2rem;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .buttons {
+    display: none;
+  }
+  .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer {
+    grid-template: 1fr/10% 90%;
+  }
+}
 .grid-item_main_block1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1140,297 +1542,6 @@
   }
   .column3 {
     grid-area: auto;
-  }
-}
-.header {
-  padding: 0.5rem 2rem;
-  width: 100%;
-  height: 100%;
-  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding-top: 1%;
-  padding-bottom: 5%;
-}
-.header .header_row {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
-  gap: 1rem;
-}
-.header .header_row .header_logo {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  gap: 3rem;
-}
-.header .header_row .header_logo_icon {
-  width: 30%;
-  height: 10%;
-}
-.header .header_row .header_logo_text {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: white;
-}
-.header .header_row .header_nav {
-  margin: 1.5rem 0;
-  width: 80%;
-  display: flex;
-}
-.header .header_row .header_nav .header_links {
-  display: flex;
-  justify-content: space-around;
-  padding: 0.5rem 2.5rem;
-  gap: 3rem;
-  font-weight: 700;
-  font-size: 1.3rem;
-  line-height: normal;
-  list-style: none;
-  width: 100%;
-}
-.header .header_row .header_nav .header_links .header_links-link {
-  color: white;
-  text-decoration: none;
-}
-.header .header_row .header_nav .header_links .header_links-link:hover {
-  text-decoration: underline;
-}
-.header .header_content {
-  max-width: 100%;
-  padding: 1rem 1rem;
-  gap: 3rem;
-}
-.header .header_content_title {
-  display: flex;
-  justify-content: center;
-  margin: 5rem 0;
-  text-shadow: 5px 5px 5px black;
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: normal;
-  color: white;
-}
-.header .header_content_text {
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: normal;
-  text-align: center;
-  text-decoration: underline;
-  cursor: pointer;
-  text-shadow: 5px 5px 5px black;
-  color: white;
-}
-.header .header_content_form {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  margin: 7rem 0;
-}
-.header .header_content_form_btn {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: white;
-  text-shadow: white;
-  background-color: #197096;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-.header .header_content_form_btn2 {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1rem;
-  gap: 0.5rem;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: white;
-  text-shadow: white;
-  background-color: #1b9c4b;
-  border: 0.5rem solid #1b9c4b;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-.header .header_content_form .content_form_btn:hover {
-  background-color: rgba(163, 174, 167, 0.6078431373);
-}
-.header .header_content_form .content_form_btn2:hover {
-  background-color: rgba(163, 174, 167, 0.6078431373);
-}
-
-.menu-toggle {
-  display: none;
-}
-
-.burger-menu {
-  display: none;
-}
-
-/* Мобильные стили */
-@media screen and (min-width: 768px) and (max-width: 1100px) {
-  .header_content {
-    max-width: 100%;
-    padding: 2rem 1rem;
-    gap: 3rem;
-  }
-  .header_content_title {
-    display: flex;
-    justify-content: center;
-    margin: 5rem 0;
-    text-shadow: 5px 5px 5px black;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: normal;
-    color: white;
-  }
-  .header_nav {
-    position: relative;
-    padding: 10px;
-  }
-  .header .header_row .header_nav .header_links {
-    display: none; /* Скрыто по умолчанию */
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 100%;
-    padding: 10px 0;
-    margin: 0;
-    background-color: #0c0b0b;
-    border-radius: 5%;
-    color: white;
-  }
-  .burger-menu {
-    display: flex; /* Показываем бургер-меню на мобильных устройствах */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right: 40px;
-  }
-  .burger-menu .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  /* Отображение меню при активном чекбоксе */
-  .menu-toggle:checked + .burger-menu + .header_links {
-    display: flex; /* Отображаем меню при клике на бургер */
-  }
-  /* Анимация превращения бургер-меню в крестик */
-  .menu-toggle:checked + .burger-menu .line1 {
-    transform: rotate(45deg) translate(13.5px, 13.5px);
-  }
-  .menu-toggle:checked + .burger-menu .line2 {
-    opacity: 0; /* Убираем вторую линию */
-  }
-  .menu-toggle:checked + .burger-menu .line3 {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .header .header_content_title {
-    max-width: 100%;
-    padding: 2rem 1rem;
-    gap: 3rem;
-  }
-  .header .header_content_title_title {
-    display: flex;
-    justify-content: center;
-    margin: 5rem 0;
-    text-shadow: 5px 5px 5px black;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: normal;
-    color: white;
-  }
-  .header .header_content_title_form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5rem;
-    margin: 7rem 0;
-  }
-  .header .header_content_title_form_btn {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: white;
-    text-shadow: white;
-    background-color: #197096;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
-  .header .header_content_title_form_btn2 {
-    display: flex;
-    align-items: center;
-    padding: 1rem 1rem;
-    gap: 0.5rem;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: white;
-    text-shadow: white;
-    background-color: #1b9c4b;
-    border: 0.5rem solid #1b9c4b;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
-  .header_nav {
-    position: relative;
-    padding: 10px;
-  }
-  .header .header_row .header_nav .header_links {
-    display: none; /* Скрыто по умолчанию */
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 100%;
-    padding: 10px 0;
-    margin: 0;
-    background-color: #0c0b0b;
-    border-radius: 5%;
-    color: white;
-  }
-  .burger-menu {
-    display: flex; /* Показываем бургер-меню на мобильных устройствах */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right: 40px;
-  }
-  .burger-menu .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  /* Отображение меню при активном чекбоксе */
-  .menu-toggle:checked + .burger-menu + .header_links {
-    display: flex; /* Отображаем меню при клике на бургер */
-  }
-  /* Анимация превращения бургер-меню в крестик */
-  .menu-toggle:checked + .burger-menu .line1 {
-    transform: rotate(45deg) translate(13.5px, 13.5px);
-  }
-  .menu-toggle:checked + .burger-menu .line2 {
-    opacity: 0; /* Убираем вторую линию */
-  }
-  .menu-toggle:checked + .burger-menu .line3 {
-    transform: rotate(-45deg) translate(5px, -5px);
   }
 }
 
