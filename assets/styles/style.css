@@ -100,6 +100,7 @@
 }
 .header .header_content_title {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 5rem 0;
   text-shadow: 5px 5px 5px black;
@@ -150,13 +151,11 @@
 }
 .header .header_content_form .header_content_form_btn:hover {
   background: rgba(163, 174, 167, 0.6078431373);
-  color: #2c60b9;
-  border: 0.2rem solid #2c60b9;
+  color: #ffffff;
 }
 .header .header_content_form .header_content_form_btn2:hover {
   background: rgba(163, 174, 167, 0.6078431373);
   color: #42f042;
-  border: 0.2rem solid #1b9c4b;
 }
 
 .header_content_form_whatsapp {
@@ -182,6 +181,7 @@
   .header .header_content_title {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 5rem 0;
     text-shadow: 5px 5px 5px black;
     font-weight: 700;

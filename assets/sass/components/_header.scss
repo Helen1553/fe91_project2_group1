@@ -71,6 +71,7 @@
 
         &_title  {
             display: flex;
+            align-items: center;
             justify-content: center;
 
             margin: 5rem 0;
@@ -126,14 +127,12 @@
 
                 .header_content_form_btn:hover {
                     background: #a3aea79b;
-                    color: #2c60b9;
-                    border: 0.2rem solid #2c60b9;
+                    color: #ffffff;
                 } 
 
                 .header_content_form_btn2:hover {
                     background: #a3aea79b;
                     color: #42f042;
-                    border: 0.2rem solid #1b9c4b;
                 }
             }
         }
@@ -166,6 +165,7 @@
     &_title {
         display: flex;
         justify-content: center;
+        align-items: center;
 
         margin: 5rem 0;
         text-shadow: 5px 5px 5px black;  
