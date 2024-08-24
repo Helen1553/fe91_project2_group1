@@ -2,7 +2,7 @@
     padding: 0.5rem 2rem;
     width: 100%;
     height: 100%;
-    background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+    background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -15,32 +15,28 @@
         padding: 1rem 0;
         gap: 1rem;
         
-        .header_logo{
-            width: 20%;
-
-            .logo {
-                display: flex;
-                align-items: center;
-                padding: 0.5rem 1rem;
-                gap: 3rem;
+        .header_logo {
+            width: 15%;
+            height: 100%;
         
                 &_icon {
-                    width: 30%;
-                    height: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    height: 100%;
                 }
         
                 &_text {
-                    font-weight: 400;
                     font-size: 1.5rem;
                     color: #ffff;
                 }
-            }
         }
 
         .header_nav{
             margin: 1.5rem 0;
             width: 80%;
-
             display: flex;
 
             .header_links{
@@ -49,7 +45,7 @@
 
                 padding: 0.5rem 2.5rem;
                 gap: 3rem;
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 1.3rem;
                 line-height: normal;
                 list-style: none;
@@ -68,13 +64,14 @@
         }
     }
 
-    .content {
+    .header_content {
         max-width: 100%;
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         gap: 3rem;
 
         &_title  {
             display: flex;
+            align-items: center;
             justify-content: center;
 
             margin: 5rem 0;
@@ -93,129 +90,254 @@
             text-decoration: underline;
             cursor: pointer;
             text-shadow: 5px 5px 5px black;
-            // margin: 3rem 0;
             color: #ffff;
         }
 
         &_form  {
             display: flex;
             justify-content: center;
-            gap: 5rem;
-            margin: 10rem 0;
-        
-            &_btn {
-                font-weight: 700;
-                font-size: 1.1rem;
-                color: #ffff;
-                text-shadow: #ffff;
-                background-color: #197096;
-                border: none;
-                border-radius: 0.5rem;
-                cursor: pointer;
-            }
+            gap: 3rem;
+            margin: 7rem 0;
+            font-size: 1.3rem;
+            cursor: pointer;
 
-            &_btn2 {
+            &_btn {
                 display: flex;
                 align-items: center;
                 padding: 1rem 1rem;
-                gap: 0.5rem;
-                font-weight: 700;
-                font-size: 1.1rem;
-                color: #ffff;
-                text-shadow: #ffff;
-                background-color: #1b9c4b;
-                border: 0.5rem solid #1b9c4b;
                 border: none;
                 border-radius: 0.5rem;
-                cursor: pointer;
+                background: linear-gradient(to bottom right, #469ce3, #2c60b9);
+                box-shadow: 1px 1px 2px 2px #469ce3;
+                color: #ffff;
+                text-shadow: #ffff;
+                font-weight: 300;
             }
 
-            .content_form_btn:hover {
-                background-color:  #a3aea79b;
+            &_btn2 {
+                padding: 1rem 1rem;
+                border: none;
+                border-radius: 0.5rem;
+                background: linear-gradient(to bottom right, #42f042, #1b9c4b);
+                box-shadow: 1px 1px 2px 2px #42f042;
+                color: #ffff;
+                text-shadow: #ffff;
+                font-weight: 300;
             }
-            
-            .content_form_btn2:hover {
-                background-color: #a3aea79b;
+
+                .header_content_form_btn:hover {
+                    background: #a3aea79b;
+                    color: #ffffff;
+                } 
+
+                .header_content_form_btn2:hover {
+                    background: #a3aea79b;
+                    color: #42f042;
+                }
             }
         }
     }
-}
+
+    .header_content_form_whatsapp {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
+// /скрываем чек бокс/ 
 
 .menu-toggle {
     display: none;
-  }
-  
-  .burger-menu {
-    display: none;
-  }
+}
 
-  @media (max-width: 881px) {
+.burger-menu {
+    display: none;
+}
+
+/* Мобильные стили */
+
+@media screen and /*(min-width: 900px) */(min-width: 768px) and (max-width: 1100px) {
+.header .header_content {
+        max-width: 100%;
+        padding: 2rem 1rem;
+        gap: 3rem;
+
+    &_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5rem 0;
+        text-shadow: 5px 5px 5px black;  
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: normal;
+        color: #ffff;
+    }
+}
     .header_nav {
         position: relative;
+        padding: 10px;
     }
-    .burger-menu {
-        display: flex;
+    .header .header_row .header_nav .header_links {
+        display: none; /* Скрыто по умолчанию */
         flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        right: 0;
+
+        width: 80%;
+        padding: 10px 0;
+        margin: 0;
+
+        background-color: #0c0b0b;
+        border-radius: 5%;
+        color: #ffff;
+    }
+
+    .burger-menu {
+        display: flex; /* Показываем бургер-меню на мобильных устройствах */
+        flex-direction: column;
+        justify-content: space-between;
         width: 30px;
         height: 30px;
-        cursor: pointer;
         position: absolute;
-        top: 0;
-        right: 0; 
+        cursor: pointer;
+        top: 10px;
+        right: 0;
     }
 
     .burger-menu .line {
         width: 100%;
         height: 3px;
         background-color: #ffff;
-        border-radius: 20%;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-// не срабатывает display none у links 
-    .header_links {
-        display: none;
+    /* Отображение меню при активном чекбоксе */
+    .menu-toggle:checked + .burger-menu + .header_links {
+        display: flex; /* Отображаем меню при клике на бургер */
+    }
+    /* Анимация превращения бургер-меню в крестик */
+    .menu-toggle:checked + .burger-menu .line1 {
+        transform: rotate(45deg) translate(13.5px, 13.5px);
+    }
+    
+    .menu-toggle:checked + .burger-menu .line2 {
+        opacity: 0; /* Убираем вторую линию */
+    }
+
+    .menu-toggle:checked + .burger-menu .line3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header .header_content_title {
+        max-width: 100%;
+        padding: 2rem 1rem;
+        gap: 3rem;
+
+    &_title {
+        display: flex;
+        justify-content: center;
+
+        margin: 5rem 0;
+        text-shadow: 5px 5px 5px black;  
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: normal;
+        color: #ffff;
+    }
+    &_form  {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        margin: 7rem 0;
+    
+        &_btn {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ffff;
+            text-shadow: #ffff;
+            background-color: #197096;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+
+        &_btn2 {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1rem;
+            gap: 0.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ffff;
+            text-shadow: #ffff;
+            background-color: #1b9c4b;
+            border: 0.5rem solid #1b9c4b;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
+    .header_nav {
+        position: relative;
+        padding: 10px;
+    }
+    .header .header_row .header_nav .header_links {
+        display: none; /* Скрыто по умолчанию */
         flex-direction: column;
         align-items: center;
-
-        margin-right: 0;
         position: absolute;
         top: 50px;
-        
-        width: fit-content;
-        gap: 2rem;
-        height: fit-content;
+        right: 0;
 
-        background-color: #b7cfd1;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+
+        background-color: #0c0b0b;
         border-radius: 5%;
-        color: #000000;
+        color: #ffff;
     }
 
-                        /* Отображение меню при активном чекбоксе */
-                        .menu-toggle:checked + .burger-menu + .header_links {
-                            display: flex;
-                        }
+    .burger-menu {
+        display: flex; /* Показываем бургер-меню на мобильных устройствах */
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        right: 60px;
+    }
+
+    .burger-menu .line {
+        width: 100%;
+        height: 3px;
+        background-color: #ffff;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    /* Отображение меню при активном чекбоксе */
+    .menu-toggle:checked + .burger-menu + .header_links {
+        display: flex; /* Отображаем меню при клике на бургер */
+    }
+    /* Анимация превращения бургер-меню в крестик */
+    .menu-toggle:checked + .burger-menu .line1 {
+        transform: rotate(45deg) translate(13.5px, 13.5px);
+    }
     
-                        /* Анимация превращения бургер-меню в крестик */
-                        .menu-toggle:checked + .burger-menu .line1 {
-                            transform: rotate(45deg) translate(5px, 5px);
-                        }
-
-                        .menu-toggle:checked + .burger-menu .line2 {
-                            opacity: 0;
-                        }
-
-                        .menu-toggle:checked + .burger-menu .line3 {
-                            transform: rotate(-45deg) translate(5px, -5px);
-                        }
-
-    .header_links-link {
-        margin: 10px 20px;
+    .menu-toggle:checked + .burger-menu .line2 {
+        opacity: 0; /* Убираем вторую линию */
     }
 
-    .header_links-link a {
-        text-decoration: none;
-        color: #000;
-        font-size: 18px;
+    .menu-toggle:checked + .burger-menu .line3 {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
-  }
+}
