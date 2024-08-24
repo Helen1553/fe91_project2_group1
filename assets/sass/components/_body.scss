@@ -1,13 +1,13 @@
 .body {
-	height: 8000px;
+	height: 8100px;
 
 	border: solid black;
 
 	font-family: "Roboto", sans-serif;
 
-	.grid-container_body {
-		display: grid;
-		grid-template: 9% 89% 2%/1fr;
+    .grid-container_body{
+        display: grid;
+        grid-template: 10% 86% 4%/1fr;
 
 		height: 100%;
 
@@ -36,7 +36,7 @@
 		height: 7500px;
 
 		.grid-container_body {
-			grid-template: 10% 88% 2%/1fr;
+			grid-template: 9% 88% 3%/1fr;
 		}
 	}
 }
@@ -46,7 +46,7 @@
 		height: 6000px;
 
 		.grid-container_body {
-			grid-template: 20% 78% 2%/1fr;
+			grid-template: 18% 78% 4%/1fr;
 		}
 	}
 }
