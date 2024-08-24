@@ -8,8 +8,9 @@
         grid-template: 60% 40%/1fr;
 
         height: 100%;
-        background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+        background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
         background-attachment: fixed;
+        background-position:top;
 
         .grid-item_footer-itself{
             grid-area: 1/1/2/2;
@@ -119,6 +120,7 @@
                         height: 60%;
 
                         background-color: white;
+                        border: solid rgba(0, 0, 0, 0.636);
                     }
 
                     .sub-footer_itgirls-logo{
@@ -128,6 +130,7 @@
                         a{
                             text-decoration: none;
                             color: white;
+                            text-shadow: 5px 5px 5px rgb(0, 0, 0);
                         }
                     }
                 }

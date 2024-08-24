@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .body {
-  height: 8100px;
+  height: 8200px;
   border: solid black;
   font-family: "Roboto", sans-serif;
 }
@@ -436,7 +436,7 @@
   justify-self: center;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button .houses-variants-button {
-  padding: 0.9rem 0.3rem;
+  padding: 1rem 0.5rem;
   background-color: white;
   color: black;
   border: 0.2rem solid white;
@@ -445,7 +445,7 @@
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button .houses-variants-button:hover {
   background-color: rgb(7, 109, 109);
-  color: white;
+  color: rgb(255, 255, 255);
   border: 0.2rem solid rgb(7, 109, 109);
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .card {
@@ -489,6 +489,27 @@
   color: white;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
+.grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-button {
+  border: 0px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #469ce3, #2c60b9);
+  box-shadow: 1px 1px 2px 2px #469ce3;
+  color: #ffffff;
+  margin-top: 2rem;
+  width: 14vw;
+  height: 4.5vw;
+  font-weight: bolder;
+}
+.grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-button:hover {
+  background: #ffffff;
+  color: #2c60b9;
+  border: 0.2rem solid #2c60b9;
+}
+.grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-button:hover {
+  color: #ffffff;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+}
 
 @media screen and (min-width: 2200px) {
   .grid-container_main_block3_houses {
@@ -523,17 +544,24 @@
     grid-template: 32% 48% 10% 10%/5% 90% 5%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
-    grid-template: 20% 8% 72%/5% 1fr 5%;
+    grid-template: 20% 2% 78%/5% 1fr 5%;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 3rem;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .houses-finished-button {
     display: none;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
-    grid-template: 9% 4% 51% 5% 4% 20%/4% 44% 4% 44% 4%;
+    grid-template: 7% 6% 51% 5% 4% 20%/4% 44% 4% 44% 4%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title {
     grid-area: 1/2/2/6;
     text-align: center;
+    margin-top: 2rem;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card1 {
     grid-area: 3/2/4/3;
@@ -561,6 +589,10 @@
     font-weight: 500;
     font-size: 1.5rem;
   }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-button {
+    width: 19vw;
+    height: 6vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .grid-container_main_block3_houses {
@@ -576,9 +608,10 @@
     grid-area: 1/1/2/2;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
-    font-size: 2.2vw;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: normal;
+    margin-top: 3rem;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel {
     grid-area: 3/1/4/2;
@@ -597,7 +630,7 @@
     border: 0.2rem solid white;
     border-radius: 6px;
     text-decoration: none;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button .finished-button:hover {
     background-color: rgb(7, 109, 109);
@@ -619,6 +652,18 @@
   .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-text {
     font-weight: 500;
     font-size: 1rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-button {
+    font-size: 0.7rem;
+    width: 28vw;
+    height: 8vw;
+  }
+}
+@media screen and (max-width: 370px) {
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion .flex-item_house-excursion-text-button .house-excursion-button {
+    font-size: 0.7rem;
+    width: 36vw;
+    height: fit-content;
   }
 }
 .grid-item_main_block4 {
@@ -849,8 +894,9 @@
   display: grid;
   grid-template: 60% 40%/1fr;
   height: 100%;
-  background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+  background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
   background-attachment: fixed;
+  background-position: top;
 }
 .footer .grid-container_footer .grid-item_footer-itself {
   grid-area: 1/1/2/2;
@@ -940,6 +986,7 @@
   width: 60%;
   height: 60%;
   background-color: white;
+  border: solid rgba(0, 0, 0, 0.636);
 }
 .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .sub-footer_itgirls-logo {
   height: 40%;
@@ -948,6 +995,7 @@
 .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .sub-footer_itgirls-logo a {
   text-decoration: none;
   color: white;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .flex-item_main_block2 {
