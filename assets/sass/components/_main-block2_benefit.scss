@@ -58,6 +58,7 @@
         display: grid;
         grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr);
         grid-template-rows: 1fr;
+
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             display: none;
         }
@@ -69,6 +70,8 @@
             .grid-item_main_block2-hypothec_img {
                 grid-area: 1 / 1 / 2 / 6;
                 width: 100%;
+                z-index: -1;
+                opacity: 0.5;
             }
 
             .grid-item_main_block2-hypothec_col1 {
@@ -123,6 +126,12 @@
 
             .bank-logo_large {
                 width: 15%;
+                cursor: pointer;
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+
 
                 @media screen and (min-width: 768px) and (max-width: 1023px) {
                     display: none;
@@ -135,6 +144,11 @@
 
             .bank-logo_small {
                 display: none;
+                cursor: pointer;
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.2);
+                }
 
                 @media screen and (min-width: 768px) and (max-width: 1023px) {
                     display: block;
@@ -174,6 +188,7 @@
         display: flex;
         justify-content: space-between;
         width: 90vw;
+        
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             flex-direction: row;
@@ -183,6 +198,7 @@
 
         @media screen and (max-width: 767px) {
             flex-wrap: wrap;
+            justify-content: center;
             width: 70vw;
             row-gap: 2.5vh;
         }
@@ -193,6 +209,7 @@
             border-radius: 10px 10px 10px 10px;
             display: flex;
             flex-direction: column;
+            background-color: white;
 
             @media screen and (min-width: 768px) and (max-width: 1023px) {
                 flex-direction: row;
@@ -200,7 +217,7 @@
             }
 
             @media screen and (max-width: 767px) {
-                width: 100%;
+                width: 60%;
             }
 
             &:hover {

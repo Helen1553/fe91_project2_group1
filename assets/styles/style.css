@@ -1027,6 +1027,8 @@
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_img {
   grid-area: 1/1/2/6;
   width: 100%;
+  z-index: -1;
+  opacity: 0.5;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col1 {
   grid-area: 1/1/2/3;
@@ -1075,6 +1077,11 @@
 }
 .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large {
   width: 15%;
+  cursor: pointer;
+  transition: 1s;
+}
+.flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large:hover {
+  transform: scale(1.2);
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large {
@@ -1088,6 +1095,11 @@
 }
 .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small {
   display: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small:hover {
+  transform: scale(1.2);
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small {
@@ -1133,6 +1145,7 @@
 @media screen and (max-width: 767px) {
   .flex-item_main_block2 .flex-item_main_block2-card {
     flex-wrap: wrap;
+    justify-content: center;
     width: 70vw;
     row-gap: 2.5vh;
   }
@@ -1143,6 +1156,7 @@
   border-radius: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
@@ -1152,7 +1166,7 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
-    width: 100%;
+    width: 60%;
   }
 }
 .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content:hover {
