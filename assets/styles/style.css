@@ -32,7 +32,7 @@
 }
 @media screen and (max-width: 767px) {
   .body {
-    height: 5000px;
+    height: 5600px;
   }
   .body .grid-container_body {
     grid-template: 16% 80% 4%/1fr;
@@ -400,7 +400,7 @@
 @media screen and (max-width: 767px) {
   .grid-container_main {
     /*grid-template: 22% 26% 22% 30%/1fr;*/
-    grid-template: 0.7fr 0.7fr 22% 1fr/1fr;
+    grid-template: 1fr 1fr 22% 1fr/1fr;
   }
 }
 .flex-item_main_block1 {
