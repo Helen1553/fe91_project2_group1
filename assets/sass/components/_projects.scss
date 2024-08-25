@@ -4,15 +4,13 @@
 
     height: 7000px;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
     .grid-item_projects_body_header{
         grid-area: 1/1/2/2;
         border-bottom: solid black;
 
         .grid-container_header {
             display: grid;
-            grid-template: 53% 47%/15% 65% 20%;
+            grid-template: 60% 40%/15% 65% 20%;
             width: 100%;
             height: 100%;
             background-color: white;
@@ -22,14 +20,14 @@
                 align-content: center;
         
                 text-align: center;
-                background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
-                background-attachment: fixed;
+                background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
+                background-position:center;
 
 
                 .projects_title{
-                    color: white;
+                    color: rgb(255, 255, 255);
                     text-shadow: 5px 5px 5px black;
-
+                    font-weight: 900;
                     cursor: pointer;
                 }
             }
@@ -81,8 +79,9 @@
                 }
     
                 .buttons_contact:hover {
-                    background-color: #1a2125;
-                    border: 2px solid #304857;
+                    color: black;
+                    background-color: #ffffff;
+                    border: 2px solid #000000;
                 }
             }
         }
@@ -96,7 +95,7 @@
             width: 100%;
 
             .grid-container_projects_main_houses{
-                height: 52%;
+                height: 50%;
                 width: 100%;
 
                 display: grid;
@@ -134,10 +133,10 @@
             }
 
             .grid-container_projects_main_flats{
-                height: 48%;
+                height: 50%;
 
                 display: grid;
-                grid-template: 17% 82% 1%/5% 1fr 5%;
+                grid-template: 16% 83% 1%/5% 1fr 5%;
 
                 .grid-item_projects_main_flats_title{
                     grid-area: 1/1/2/4;
@@ -213,6 +212,24 @@
                 @include projects_buttons;
                 grid-area: 3/2/4/3;
             }
+
+            .houses-flats-buttton{
+                width: 170px;
+                height: 65px;
+
+                background-color: #cf6f49;
+                color: white;
+                border: 1px solid #cf6f49;
+                border-radius: 10px;
+
+                font-weight: 600;
+            }
+
+            .houses-flats-buttton:hover {
+                color: black;
+                background-color: #ffffff;
+                border: 2px solid #000000;
+            }
         }
     }
 
@@ -223,8 +240,9 @@
             display: grid;
             grid-template: 1fr/20% 80%;
 
-            background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679616215_bogatyr-club-p-cherno-belaya-arkhitektura-foni-krasivo-1.jpg);
+            background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
             background-attachment: fixed;
+            background-position: top;
             height: 100%;
 
             .footer_logo{
@@ -245,7 +263,7 @@
 
                 .nav_links{
                     @include projects_nav_links;
-                    justify-content: space-evenly;
+                    justify-content: space-around;
                     gap: 0;
 
                     a {
@@ -287,15 +305,24 @@
 
         .grid-item_projects_body_header{
             .grid-container_header{
-                grid-template: 40% 60%/20% 80%;
+                grid-template: 70% 30%/20% 80%;
 
                 .grid-item_sup-header{
                     grid-area: 1/1/2/3;
+
+                    .projects_title{
+                        font-size: 5vw;
+                    }
                 }
 
                 .nav{
                     .nav_links{
                         gap: 6rem;
+                        justify-content: space-around;
+
+                        a{
+                            font-size: 2.5vw;
+                        }
                     }
                 }
 
@@ -304,26 +331,55 @@
                 }
             }
         }
+
+        .grid-item_projects_body_main{
+            .projects_main{
+                .grid-container_projects_main_houses{
+                    .grid_item_projects_main_houses_title{
+                        background-position: center;
+
+                        .projects_main_houses_title{
+                            font-size: 4.5vw;
+                        }
+                    }
+                }
+    
+                .grid-container_projects_main_flats{
+                    .grid-item_projects_main_flats_title{
+                        .projects_main_flats_title{
+                            font-size: 4.5vw;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 599px) and (max-width: 767px) {
     .grid-container_projects_body{
-        grid-template: 15% 80% 5%/1fr;
+        grid-template: 6% 92% 2%/1fr;
 
-        height: 6000px;
+        height: 11200px;
 
         .grid-item_projects_body_header{
             .grid-container_header{
-                grid-template: 60% 40%/20% 80%;
+                grid-template: 80% 20%/20% 80%;
 
                 .grid-item_sup-header{
-                    grid-area: 1/1/2/3;
+                    .projects_title{
+                        font-size: 7vw;
+                    }
                 }
 
                 .nav{
                     .nav_links{
-                        gap: 2rem;
+                        gap: 0;
+                        justify-content: space-around;
+
+                        a{
+                            font-size: 4vw;
+                        }
                     }
                 }
 
@@ -333,10 +389,188 @@
             }
         }
 
-        .grid-item_projects_body_footer{
-            .grid-container_footer{
-                grid-template: 1fr/10% 90%;
+        .grid-item_projects_body_main{
+            .projects_main{
+                .grid-container_projects_main_houses{
+                    height: 52.5%;
+
+                    grid-template: 7% 89% 2%/5% 1fr 5%;
+
+                    .grid_item_projects_main_houses_title{
+                        background-position: center;
+
+                        .projects_main_houses_title{
+                            font-size: 6.8vw;
+                        }
+                    }
+
+                    .grid-item_projects_main_houses_cards{
+                        .grid-container_houses-variants{
+                            grid-template: 0.5% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1% 0.5%/5% 90% 5%;
+                        }
+                    }
+                }
+    
+                .grid-container_projects_main_flats{
+                    height: 47.5%;
+
+                    grid-template: 8% 91% 1%/5% 1fr 5%;
+
+                    .grid-item_projects_main_flats_title{
+                        .projects_main_flats_title{
+                            font-size: 6.8vw;
+                        }
+                    }
+
+                    .grid-item_projects_main_flats_cards{
+                        grid-area: 2/2/3/3;
+    
+                        .grid-container_flats-variants{
+                            grid-template: 1% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1%/5% 90% 5%;
+                        
+                            .grid-item_flats_buttons{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .grid-item_variants-card1{
+                    grid-area: 2/2/3/3;
+                }
+    
+                .grid-item_variants-card2{
+                    grid-area: 4/2/5/3;
+                }
+    
+                .grid-item_variants-card3{
+                    grid-area: 6/2/7/3;
+                }
+    
+                .grid-item_variants-card4{
+                    grid-area: 8/2/9/3;
+                }
+    
+                .grid-item_variants-card5{
+                    grid-area: 10/2/11/3;
+                }
+    
+                .grid-item_variants-card6{
+                    grid-area: 12/2/13/3;
+                }
             }
         }
     }
 }
+
+@media screen and (max-width: 599px) {
+    .grid-container_projects_body{
+        grid-template: 4% 94% 2%/1fr;
+
+        height: 9900px;
+
+        .grid-item_projects_body_header{
+            .grid-container_header{
+                grid-template: 80% 20%/20% 80%;
+
+                .grid-item_sup-header{
+                    .projects_title{
+                        font-size: 7.5vw;
+                    }
+                }
+
+                .nav{
+                    .nav_links{
+                        gap: 0;
+                        justify-content: space-around;
+
+                        a{
+                            font-size: 4vw;
+                        }
+                    }
+                }
+
+                .buttons{
+                    display: none;
+                }
+            }
+        }
+
+        .grid-item_projects_body_main{
+            .projects_main{
+                .grid-container_projects_main_houses{
+                    height: 52.5%;
+
+                    grid-template: 9% 89% 2%/5% 1fr 5%;
+
+                    .grid_item_projects_main_houses_title{
+                        background-position: center;
+
+                        .projects_main_houses_title{
+                            font-size: 7vw;
+                        }
+                    }
+
+                    .grid-item_projects_main_houses_cards{
+                        .grid-container_houses-variants{
+                            grid-template: 0.5% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1% 15.5% 1% 0.5%/5% 90% 5%;
+                        }
+                    }
+                }
+    
+                .grid-container_projects_main_flats{
+                    height: 47.5%;
+
+                    grid-template: 10% 89% 1%/5% 1fr 5%;
+
+                    .grid-item_projects_main_flats_title{
+                        .projects_main_flats_title{
+                            font-size: 7vw;
+                        }
+                    }
+
+                    .grid-item_projects_main_flats_cards{
+                        grid-area: 2/2/3/3;
+    
+                        .grid-container_flats-variants{
+                            grid-template: 1.5% 16% 0.5% 16% 0.5% 16% 0.5% 16% 0.5% 16% 0.5% 16%/5% 90% 5%;
+                        
+                            .grid-item_flats_buttons{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .grid-item_variants-card1{
+                    grid-area: 2/2/3/3;
+                }
+    
+                .grid-item_variants-card2{
+                    grid-area: 4/2/5/3;
+                }
+    
+                .grid-item_variants-card3{
+                    grid-area: 6/2/7/3;
+                }
+    
+                .grid-item_variants-card4{
+                    grid-area: 8/2/9/3;
+                }
+    
+                .grid-item_variants-card5{
+                    grid-area: 10/2/11/3;
+                }
+    
+                .grid-item_variants-card6{
+                    grid-area: 12/2/13/3;
+                }
+
+                .houses-flats-buttton{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

@@ -64,7 +64,7 @@
 
 // Для заголовка страницы проектов на фоне background image
 @mixin background-image-title {
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 3.4vw;
 	color: white;
 	text-shadow: 5px 5px 5px black;
@@ -74,13 +74,17 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
+// Для ссылок навигации в хедере и футере страницы готовых проектов
 @mixin projects_nav_links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 8rem;
+
+	color: black;
 
 	height: 100%;
 	width: 100%;
@@ -88,6 +92,7 @@
 	list-style: none;
 }
 
+// Для кнопок на модальное окно
 @mixin background {
 	background-color: rgba(187, 220, 214, 0.247);
 }
