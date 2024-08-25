@@ -36,17 +36,17 @@
 		height: 7500px;
 
 		.grid-container_body {
-			grid-template: 9% 88% 3%/1fr;
+			grid-template: 8% 88% 3%/1fr;
 		}
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.body {
-		height: 6000px;
+		height: 5000px;
 
 		.grid-container_body {
-			grid-template: 18% 78% 4%/1fr;
+			grid-template: 16% 80% 4%/1fr;
 		}
 	}
 }

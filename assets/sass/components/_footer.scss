@@ -1,7 +1,7 @@
 .footer{
     height: 100%;
     text-align: center;
-    border-top: solid-black;
+    border-top: solid black;
     
     .grid-container_footer{
         display: grid;
@@ -131,6 +131,50 @@
                             text-decoration: none;
                             color: white;
                             text-shadow: 5px 5px 5px rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .grid-item_body_footer{
+        .footer{
+            .grid-container_footer{
+                .grid-item_footer-itself{
+                    .footer-itself{
+                        .footer-itself_logo{
+                            display: none;
+                        }
+                        .footer-itself_nav{
+                            width: 100%;
+                            
+                            .nav_links{
+                                a{
+                                    font-size: 0.9rem;
+                                    justify-content: space-between;
+                                    gap: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .grid-item_sub-footer{
+                    .sub-footer{
+                        .sub-footer_inf{
+                            display: none;
+                        }
+
+                        .sub-footer_rights{
+                            width: 100%;
+                            font-size: 1rem;
+                        }
+
+                        .sub-footer_itgirls{
+                            display: none;
                         }
                     }
                 }
