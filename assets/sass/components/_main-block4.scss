@@ -214,9 +214,9 @@
 	}
 
 	.grid-item_main_block4_contacts-button {
-		@include button(hover);
 		width: 20vw;
 		height: 5vw;
+		@include button(hover);
 	}
 }
 
