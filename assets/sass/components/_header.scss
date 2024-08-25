@@ -237,7 +237,8 @@
 
     &_title {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        text-align: center;
 
         margin: 5rem 0;
         text-shadow: 5px 5px 5px black;  
@@ -245,21 +246,23 @@
         font-size: 2.2rem;
         line-height: normal;
         color: #ffff;
+        width: 100%;
+        height: 7rem;
     }
     &_text {
-        margin: 11rem 0;
-        font-size: 1.8rem;
+        margin: 5rem 0;
+        font-size: 1.5rem;
     }
     &_form  {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 5rem;
-        margin: 15rem 0;
+        gap: 3rem;
+        margin: 7rem 0;
     
         &_btn {
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #ffff;
             text-shadow: #ffff;
             background-color: #197096;
@@ -275,7 +278,7 @@
             padding: 1rem 1rem;
             gap: 0.5rem;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #ffff;
             text-shadow: #ffff;
             background-color: #1b9c4b;

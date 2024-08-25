@@ -27,15 +27,15 @@
     height: 7500px;
   }
   .body .grid-container_body {
-    grid-template: 9% 88% 3%/1fr;
+    grid-template: 8% 88% 3%/1fr;
   }
 }
 @media screen and (max-width: 767px) {
   .body {
-    height: 6000px;
+    height: 5000px;
   }
   .body .grid-container_body {
-    grid-template: 18% 78% 4%/1fr;
+    grid-template: 16% 80% 4%/1fr;
   }
 }
 .header {
@@ -258,28 +258,31 @@
   }
   .header .header_content_title {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 5rem 0;
     text-shadow: 5px 5px 5px black;
     font-weight: 700;
     font-size: 2.2rem;
     line-height: normal;
     color: white;
+    width: 100%;
+    height: 7rem;
   }
   .header .header_content_text {
-    margin: 11rem 0;
-    font-size: 1.8rem;
+    margin: 5rem 0;
+    font-size: 1.5rem;
   }
   .header .header_content_form {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5rem;
-    margin: 15rem 0;
+    gap: 3rem;
+    margin: 7rem 0;
   }
   .header .header_content_form_btn {
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: white;
     text-shadow: white;
     background-color: #197096;
@@ -294,7 +297,7 @@
     padding: 1rem 1rem;
     gap: 0.5rem;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: white;
     text-shadow: white;
     background-color: #1b9c4b;
@@ -360,16 +363,14 @@
 .grid-container_main {
   display: grid;
   /*grid-template: 13% 25% 34% 28%/1fr;*/
-  grid-template: 0.7fr 1fr 3fr 2fr/1fr;
+  grid-template: 1fr 1.2fr 2.6fr 2fr/1fr;
   height: 100%;
 }
 .grid-container_main .grid-item_main_block1 {
   grid-area: 1/1/2/2;
-  /*border: solid rgb(220, 156, 37);*/
 }
 .grid-container_main .flex-item_main_block2 {
   grid-area: 2/1/3/2;
-  /*border: solid rgb(18, 10, 177);*/
 }
 .grid-container_main .grid-item_main_block3 {
   grid-area: 3/1/4/2;
@@ -380,16 +381,26 @@
   border: solid rgb(175, 1, 255);
 }
 
+@media screen and (min-width: 2000px) {
+  .grid-container_main {
+    grid-template: 1fr 1.2fr 40% 2fr/1fr;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .grid-container_main {
+    grid-template: 1fr 1.2fr 3.3fr 2fr/1fr;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-container_main {
     /*grid-template: 20% 13% 37% 30%/1fr;*/
-    grid-template: 0.5fr 0.5fr 2fr 1fr/1fr;
+    grid-template: 0.5fr 0.5fr 1.5fr 1fr/1fr;
   }
 }
 @media screen and (max-width: 767px) {
   .grid-container_main {
     /*grid-template: 22% 26% 22% 30%/1fr;*/
-    grid-template: 0.7fr 0.7fr 1fr 1fr/1fr;
+    grid-template: 0.7fr 0.7fr 22% 1fr/1fr;
   }
 }
 .flex-item_main_block1 {
@@ -793,12 +804,13 @@
 
 .grid-container_main_block3_houses {
   display: grid;
-  grid-template: 32% 41% 13.5% 13.5%/10% 80% 10%;
+  grid-template: 35% 43% 11% 11%/10% 80% 10%;
   height: 100%;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
   grid-area: 1/1/2/4;
   background-color: rgba(187, 220, 214, 0.247);
+  border: solid red;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
   display: grid;
@@ -813,6 +825,7 @@
   font-weight: 700;
   line-height: normal;
   text-align: center;
+  margin-top: 2rem;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel {
   grid-area: 3/2/4/3;
@@ -829,10 +842,11 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
   grid-area: 2/1/4/4;
   background-color: rgba(187, 220, 214, 0.247);
+  border: solid rgb(0, 8, 255);
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
   display: grid;
-  grid-template: 8% 5% 52% 5% 4% 26%/5% 28% 3% 28% 3% 28% 5%;
+  grid-template: 8% 5% 52% 4% 5% 26%/5% 28% 3% 28% 3% 28% 5%;
   height: 100%;
   width: 100%;
 }
@@ -858,7 +872,7 @@
   justify-self: center;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button .houses-variants-button {
-  padding: 1rem 0.5rem;
+  padding: 1.5rem 0.8rem;
   background-color: white;
   color: black;
   border: 0.2rem solid white;
@@ -933,9 +947,9 @@
   background: rgba(255, 255, 255, 0);
 }
 
-@media screen and (min-width: 2200px) {
+@media screen and (min-width: 1970px) {
   .grid-container_main_block3_houses {
-    grid-template: 27% 45% 14% 14%/5% 90% 5%;
+    grid-template: 29% 47% 12% 12%/5% 90% 5%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .houses-finished-button {
     display: none;
@@ -947,9 +961,12 @@
     grid-template: 7% 2% 51% 11% 4% 24%/5% 28% 3% 28% 3% 28% 5%;
   }
 }
-@media screen and (min-width: 1800px) and (max-width: 2199px) {
+@media screen and (min-width: 1600px) and (max-width: 1969px) {
   .grid-container_main_block3_houses {
     grid-template: 28% 46% 13% 13%/5% 90% 5%;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
+    grid-template: 15% 10% 70%/5% 1fr 5%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .houses-finished-button {
     display: none;
@@ -963,7 +980,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-container_main_block3_houses {
-    grid-template: 32% 48% 10% 10%/5% 90% 5%;
+    grid-template: 29% 45% 13% 13%/5% 90% 5%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
     grid-template: 20% 2% 78%/5% 1fr 5%;
@@ -974,13 +991,13 @@
     line-height: normal;
     margin-top: 3rem;
   }
-  .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .houses-finished-button {
-    display: none;
-  }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
-    grid-template: 7% 6% 51% 5% 4% 20%/4% 44% 4% 44% 4%;
+    grid-template: 8% 7% 46% 6% 6% 27%/4% 44% 4% 44% 4%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: normal;
     grid-area: 1/2/2/6;
     text-align: center;
     margin-top: 2rem;
@@ -996,6 +1013,7 @@
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-button {
     grid-area: 5/2/6/5;
+    padding: 2rem 1rem;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-excursion .flex-container_houses-excursion {
     gap: 4rem;
@@ -1018,13 +1036,13 @@
 }
 @media screen and (max-width: 767px) {
   .grid-container_main_block3_houses {
-    grid-template: 65% 35%/1fr;
+    grid-template: 60% 40%/1fr;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
     grid-area: 1/1/2/2;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
-    grid-template: 20% 5% 75%/1fr;
+    grid-template: 20% 10% 70%/1fr;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text {
     grid-area: 1/1/2/2;
@@ -1046,13 +1064,13 @@
     justify-content: center;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button .finished-button {
-    padding: 0.5rem 0.3rem;
+    padding: 1.1rem 0.7rem;
     background-color: white;
     color: black;
     border: 0.2rem solid white;
     border-radius: 6px;
     text-decoration: none;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-carousel .houses-finished-button .finished-button:hover {
     background-color: rgb(7, 109, 109);
@@ -1310,7 +1328,7 @@
 .footer {
   height: 100%;
   text-align: center;
-  border-top: solid-black;
+  border-top: solid black;
 }
 .footer .grid-container_footer {
   display: grid;
@@ -1420,6 +1438,29 @@
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 767px) {
+  .grid-item_body_footer .footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_logo {
+    display: none;
+  }
+  .grid-item_body_footer .footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_nav {
+    width: 100%;
+  }
+  .grid-item_body_footer .footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_nav .nav_links a {
+    font-size: 0.9rem;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .grid-item_body_footer .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_inf {
+    display: none;
+  }
+  .grid-item_body_footer .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_rights {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .grid-item_body_footer .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls {
+    display: none;
+  }
+}
 .grid-container_projects_body {
   display: grid;
   grid-template: 4% 93% 3%/1fr;

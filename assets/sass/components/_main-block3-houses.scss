@@ -1,6 +1,6 @@
 .grid-container_main_block3_houses {
     display: grid;
-    grid-template: 32% 41% 13.5% 13.5%/10% 80% 10%;
+    grid-template: 35% 43% 11% 11%/10% 80% 10%;
     
     height: 100%;
 
@@ -8,6 +8,7 @@
         grid-area: 1/1/2/4;
 
         background-color: rgba(187, 220, 214, 0.247);
+        border: solid red;
 
         .grid-container_houses-finished {
             display: grid;
@@ -21,6 +22,7 @@
                 h2 {
                     @include title;
                     text-align: center;
+                    margin-top: 2rem;
                 }
             }
 
@@ -46,10 +48,11 @@
         grid-area: 2/1/4/4;
 
         background-color: rgba(187, 220, 214, 0.247);
+        border: solid rgb(0, 8, 255);
 
         .grid-container_houses-variants {
             display: grid;
-            grid-template: 8% 5% 52% 5% 4% 26%/5% 28% 3% 28% 3% 28% 5%;
+            grid-template: 8% 5% 52% 4% 5% 26%/5% 28% 3% 28% 3% 28% 5%;
 
             height: 100%;
             width: 100%;
@@ -79,7 +82,7 @@
                 justify-self: center;
 
                 .houses-variants-button {
-                    padding: 1rem 0.5rem;
+                    padding: 1.5rem 0.8rem;
                     background-color: white;
                     color: black;
 
@@ -161,9 +164,9 @@
     }
 }
 
-@media screen and (min-width: 2200px) {
+@media screen and (min-width: 1970px) {
     .grid-container_main_block3_houses {
-        grid-template: 27% 45% 14% 14%/5% 90% 5%;
+        grid-template: 29% 47% 12% 12%/5% 90% 5%;
 
         .grid-item_main_block3_houses-finished {
             .grid-container_houses-finished {
@@ -183,11 +186,13 @@
     }
 }
 
-@media screen and (min-width: 1800px) and (max-width: 2199px) {
+@media screen and (min-width: 1600px) and (max-width: 1969px) {
     .grid-container_main_block3_houses {
         grid-template: 28% 46% 13% 13%/5% 90% 5%;
 
         .grid-item_main_block3_houses-finished {
+            grid-template: 15% 10% 70%/5% 1fr 5%;
+
             .grid-container_houses-finished {
                 .houses-finished-button {
                     display: none;
@@ -207,7 +212,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .grid-container_main_block3_houses {
-        grid-template: 32% 48% 10% 10%/5% 90% 5%;
+        grid-template: 29% 45% 13% 13%/5% 90% 5%;
 
         .grid-item_main_block3_houses-finished {
             .grid-container_houses-finished {
@@ -219,18 +224,15 @@
                         margin-top: 3rem;
                     }
                 }
-
-                .houses-finished-button {
-                    display: none;
-                }
             }
         }
 
         .grid-item_main_block3_houses-variants {
             .grid-container_houses-variants {
-                grid-template: 7% 6% 51% 5% 4% 20%/4% 44% 4% 44% 4%;
+                grid-template: 8% 7% 46% 6% 6% 27%/4% 44% 4% 44% 4%;
     
                 .grid-item_houses-variants-title {
+                    @include title-adaptive-mobile;
                     grid-area: 1/2/2/6;
                     text-align: center;
                     margin-top: 2rem;
@@ -250,6 +252,7 @@
     
                 .grid-item_houses-variants-button {
                     grid-area: 5/2/6/5;
+                    padding: 2rem 1rem;
                 }
             }
         }
@@ -282,13 +285,13 @@
 
 @media screen and (max-width: 767px) {
     .grid-container_main_block3_houses {
-        grid-template: 65% 35%/1fr;
+        grid-template: 60% 40%/1fr;
 
         .grid-item_main_block3_houses-finished {
             grid-area: 1/1/2/2;
 
             .grid-container_houses-finished {
-                grid-template: 20% 5% 75% /1fr;
+                grid-template: 20% 10% 70% /1fr;
 
                 .grid-item_houses-finished-text {
                     grid-area: 1/1/2/2;
@@ -311,14 +314,14 @@
                         justify-content: center;
     
                         .finished-button {
-                            padding: 0.5rem 0.3rem;
+                            padding: 1.1rem 0.7rem;
                             background-color: white;
                             color: black;
         
                             border: 0.2rem solid  white;
                             border-radius: 6px;
                             text-decoration: none;
-                            margin-top: 2rem;
+                            margin-top: 2.5rem;
                         }
         
                         .finished-button:hover {
