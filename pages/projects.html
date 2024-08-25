@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="../assets/styles/style.css">
 
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -38,7 +43,6 @@
                     <li><a href="http://127.0.0.1:5500/index.html">На главную</a></li>
                     <li><a href="#Houses">Дома</a></li>
                     <li><a href="#Flats">Квартиры</a></li>
-                    <li><a href="#Contacts">Контакты</a></li>
                 </ul>
             </nav>
 
@@ -61,7 +65,7 @@
 
                 <div class="grid-item_projects_main_houses_cards">
                     <div class="grid-container_houses-variants">
-                        <div class="grid-item_variants-card1"> <!-- 1 карточка - 1 вариант дома-->
+                        <div class="grid-item_variants-card1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 1 карточка - 1 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house1.jpg"
@@ -146,7 +150,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card2"> <!-- 2 карточка - 2 вариант дома-->
+                        <div class="grid-item_variants-card2" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 2 карточка - 2 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house2.jpg"
@@ -231,7 +235,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card3"> <!-- 3 карточка - 3 вариант дома-->
+                        <div class="grid-item_variants-card3" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 3 карточка - 3 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house3.jpg"
@@ -318,7 +322,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card4"> <!-- 4 карточка - 4 вариант дома-->
+                        <div class="grid-item_variants-card4" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 4 карточка - 4 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house4.jpg"
@@ -405,7 +409,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card5"> <!-- 5 карточка - 5 вариант дома-->
+                        <div class="grid-item_variants-card5" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 5 карточка - 5 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house5.jpg"
@@ -492,7 +496,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card6"> <!-- 6 карточка - 6 вариант дома-->
+                        <div class="grid-item_variants-card6" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 6 карточка - 6 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house6.jpg"
@@ -582,8 +586,8 @@
                 </div>
 
                 <div class="grid-item_buttons">
-                    <button type="button" class="btn btn-light px-3 py-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <b>Связаться с нами</b>
+                    <button class="houses-flats-buttton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Связаться с нами
                     </button>
                 </div>
             </section>
@@ -597,7 +601,7 @@
 
                 <div class="grid-item_projects_main_flats_cards">
                     <div class="grid-container_flats-variants">
-                        <div class="grid-item_variants-card1"> <!-- 1 карточка - 1 вариант квартиры-->
+                        <div class="grid-item_variants-card1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 1 карточка - 1 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat1.jpg"
@@ -666,7 +670,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card2"> <!-- 2 карточка - 2 вариант квартиры-->
+                        <div class="grid-item_variants-card2" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 2 карточка - 2 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat2.jpg"
@@ -735,7 +739,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card3"> <!-- 3 карточка - 3 вариант квартиры-->
+                        <div class="grid-item_variants-card3" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 3 карточка - 3 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat3.jpg"
@@ -804,7 +808,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card4"> <!-- 4 карточка - 4 вариант квартиры-->
+                        <div class="grid-item_variants-card4" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 4 карточка - 4 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat4.jpg"
@@ -873,7 +877,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card5"> <!-- 5 карточка - 5 вариант квартиры-->
+                        <div class="grid-item_variants-card5" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 5 карточка - 5 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat5.jpg"
@@ -942,7 +946,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card6"> <!-- 6 карточка - 6 вариант квартиры-->
+                        <div class="grid-item_variants-card6" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 6 карточка - 6 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat6.jpg"
@@ -1012,8 +1016,8 @@
                         </div>
 
                         <div class="grid-item_flats_buttons">
-                            <button type="button" class="btn btn-light px-3 py-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                <b>Связаться с нами</b>
+                            <button class="houses-flats-buttton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Связаться с нами
                             </button>
                         </div>
                     </div>
