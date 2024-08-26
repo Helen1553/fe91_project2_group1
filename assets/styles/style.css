@@ -11,15 +11,12 @@
 }
 .body .grid-container_body .grid-item_body_header {
   grid-area: 1/1/2/2;
-  border: solid red;
 }
 .body .grid-container_body .grid-item_body_main {
   grid-area: 2/1/3/2;
-  border: solid rgb(0, 51, 255);
 }
 .body .grid-container_body .grid-item_body_footer {
   grid-area: 3/1/4/2;
-  border: solid rgb(72, 255, 0);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -32,7 +29,7 @@
 }
 @media screen and (max-width: 767px) {
   .body {
-    height: 5600px;
+    height: 5450px;
   }
   .body .grid-container_body {
     grid-template: 16% 80% 4%/1fr;
@@ -362,8 +359,7 @@
 }
 .grid-container_main {
   display: grid;
-  /*grid-template: 13% 25% 34% 28%/1fr;*/
-  grid-template: 1fr 1.2fr 2.6fr 1.8fr/1fr;
+  grid-template: 13% 25% 34% 28%/1fr;
   height: 100%;
 }
 .grid-container_main .grid-item_main_block1 {
@@ -374,7 +370,6 @@
 }
 .grid-container_main .grid-item_main_block3 {
   grid-area: 3/1/4/2;
-  border: solid rgb(6, 242, 97);
 }
 .grid-container_main .grid-item_main_block4 {
   grid-area: 4/1/5/2;
@@ -393,14 +388,12 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-container_main {
-    /*grid-template: 20% 13% 37% 30%/1fr;*/
-    grid-template: 0.5fr 0.5fr 1.5fr 0.6fr/1fr;
+    grid-template: 20% 13% 37% 30%/1fr;
   }
 }
 @media screen and (max-width: 767px) {
   .grid-container_main {
-    /*grid-template: 22% 26% 22% 30%/1fr;*/
-    grid-template: 1fr 1fr 22% 0.6fr/1fr;
+    grid-template: 23% 26% 22% 30%/1fr;
   }
 }
 .flex-item_main_block1 {
@@ -810,7 +803,6 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
   grid-area: 1/1/2/4;
   background-color: rgba(187, 220, 214, 0.247);
-  border: solid red;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
   display: grid;
@@ -842,7 +834,6 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
   grid-area: 2/1/4/4;
   background-color: rgba(187, 220, 214, 0.247);
-  border: solid rgb(0, 8, 255);
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
   display: grid;
@@ -1564,8 +1555,8 @@
   height: 100%;
 }
 .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .svg {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 90%;
   background-color: white;
   border: solid rgba(0, 0, 0, 0.636);
 }
@@ -1579,6 +1570,12 @@
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .svg {
+    width: 70%;
+    height: 90%;
+  }
+}
 @media screen and (max-width: 767px) {
   .grid-item_body_footer .footer .grid-container_footer {
     grid-template: 70% 30%/1fr;
