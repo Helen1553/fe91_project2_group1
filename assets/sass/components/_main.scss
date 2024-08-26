@@ -8,6 +8,10 @@
 		grid-area: 1/1/2/2;
 	}
 
+    .flex-item_main_block2{
+        grid-area: 2/1/3/2;
+
+    }
 	.flex-item_main_block2 {
 		grid-area: 2/1/3/2;
 	}
@@ -44,4 +48,5 @@
 	.grid-container_main {
 		grid-template: 23% 26% 22% 30%/1fr;
 	}
+
 }
