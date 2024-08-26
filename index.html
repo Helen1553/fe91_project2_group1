@@ -7,13 +7,13 @@
 
 		<link rel="stylesheet" href="./assets/styles/style.css" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 			rel="stylesheet"
 		/>
-        
+
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -22,61 +22,88 @@
 		/>
 	</head>
 
-<body class="body">
-    <div class="grid-container_body">
+	<body class="body">
+		<div class="grid-container_body">
+			<div class="grid-item_body_header">
+				<header class="header">
+					<div class="header_row">
+						<div class="header_logo">
+							<img
+								class="header_logo_icon"
+								src="./assets/images/header/vector_logo.svg"
+								alt="logo"
+							/>
+							<h4 class="header_logo_text">
+								<i>Logo</i>
+							</h4>
+						</div>
 
-        <div class="grid-item_body_header">
-            <header class="header">
-                <div class="header_row">
+						<nav class="header_nav">
+							<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+							<label for="menu-toggle" class="burger-menu">
+								<div class="line line1"></div>
+								<div class="line line2"></div>
+								<div class="line line3"></div>
+							</label>
+							<ul class="header_links">
+								<li>
+									<a class="header_links-link" href="#Наши услуги"
+										>Наши услуги</a
+									>
+								</li>
+								<li>
+									<a class="header_links-link" href="#Ипотека">Ипотека</a>
+								</li>
+								<li>
+									<a class="header_links-link" href="#НашиПроекты">Проекты</a>
+								</li>
+								<li>
+									<a
+										class="header_links-link"
+										href="http://127.0.0.1:5500/pages/projects.html"
+										target="_blank"
+										>Дома и квартиры</a
+									>
+								</li>
+								<li>
+									<a class="header_links-link" href="#Контакты">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 
-                    <div class="header_logo">
-                        <img class="header_logo_icon" src="./assets/images/header/vector_logo.svg" alt="logo">
-                        <h4 class="header_logo_text">
-                            <i>Logo</i>
-                        </h4>
-                    </div>
-
-                    <nav class="header_nav">
-                        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-                        <label for="menu-toggle" class="burger-menu">
-                            <div class="line line1"></div>
-                            <div class="line line2"></div>
-                            <div class="line line3"></div>
-                        </label>
-                        <ul class="header_links">
-                            <li><a class="header_links-link" href='#Наши услуги'>Наши услуги</a></li>
-                            <li><a class="header_links-link" href='#Ипотека'>Ипотека</a></li>
-                            <li><a class="header_links-link" href='#НашиПроекты'>Проекты</a></li>
-                            <li><a class="header_links-link" href="http://127.0.0.1:5500/pages/projects.html"
-                                    target="_blank">Дома и
-                                    квартиры</a></li>
-                            <li><a class="header_links-link" href="#Контакты">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="header_content">
-                    <h1 class="header_content_title">Сделаем Вашу мечту - реальностью!</h1>
-                    <p class="header_content_text">
-                        Агенство недвижимости
-                    </p>
-                    <form class="header_content_form">
-                        <!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
-                        <button class="header_content_form_btn" type="button" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Связаться с менеджером
-                        </button>
-                        <!-- ниже идет кнопка с ссылкой на whatsApp заказчика -->
-                        <div class="header_content_form_btn2">
-                            <a class="header_content_form_whatsapp"
-                                href="https://api.whatsapp.com/send/?phone=79381590107&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%9F%D0%B8%D1%88%D1%83+%D0%B8%D0%B7+%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F+2%D0%93%D0%98%D0%A1.%0A%0A&type=phone_number&app_absent=0">Написать
-                                в</a>
-                            <span>
-                                <svg width="40px" height="20px" viewBox="-2.73 0 1225.016 1225.016"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    fill="#000000">
-
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+					<div class="header_content">
+						<h1 class="header_content_title">
+							Сделаем Вашу мечту - реальностью!
+						</h1>
+						<p class="header_content_text">Агенство недвижимости</p>
+						<form class="header_content_form">
+							<!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
+							<button
+								class="header_content_form_btn"
+								type="button"
+								data-bs-toggle="modal"
+								data-bs-target="#staticBackdrop"
+							>
+								Связаться с менеджером
+							</button>
+							<!-- ниже идет кнопка с ссылкой на whatsApp заказчика -->
+							<div class="header_content_form_btn2">
+								<a
+									class="header_content_form_whatsapp"
+									href="https://api.whatsapp.com/send/?phone=79381590107&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%9F%D0%B8%D1%88%D1%83+%D0%B8%D0%B7+%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F+2%D0%93%D0%98%D0%A1.%0A%0A&type=phone_number&app_absent=0"
+									>Написать в</a
+								>
+								<span>
+									<svg
+										width="40px"
+										height="20px"
+										viewBox="-2.73 0 1225.016 1225.016"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										fill="#000000"
+									>
+										<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
 										<g
 											id="SVGRepo_tracerCarrier"
@@ -124,232 +151,287 @@
 												d="M462.273 349.294c-11.234-24.977-23.062-25.477-33.75-25.914-8.742-.375-18.75-.352-28.742-.352-10 0-26.25 3.758-39.992 18.766-13.75 15.008-52.5 51.289-52.5 125.078 0 73.797 53.75 145.102 61.242 155.117 7.5 10 103.758 166.266 256.203 226.383 126.695 49.961 152.477 40.023 179.977 37.523s88.734-36.273 101.234-71.297c12.5-35.016 12.5-65.031 8.75-71.305-3.75-6.25-13.75-10-28.75-17.5s-88.734-43.789-102.484-48.789-23.75-7.5-33.75 7.516c-10 15-38.727 48.773-47.477 58.773-8.75 10.023-17.5 11.273-32.5 3.773-15-7.523-63.305-23.344-120.609-74.438-44.586-39.75-74.688-88.844-83.438-103.859-8.75-15-.938-23.125 6.586-30.602 6.734-6.719 15-17.508 22.5-26.266 7.484-8.758 9.984-15.008 14.984-25.008 5-10.016 2.5-18.773-1.25-26.273s-32.898-81.67-46.234-111.326z"
 											/>
 
-                                        <path fill="#FFF"
-                                            d="M1036.898 176.091C923.562 62.677 772.859.185 612.297.114 281.43.114 12.172 269.286 12.039 600.137 12 705.896 39.633 809.13 92.156 900.13L7 1211.067l318.203-83.438c87.672 47.812 186.383 73.008 286.836 73.047h.255.003c330.812 0 600.109-269.219 600.25-600.055.055-160.343-62.328-311.108-175.649-424.53zm-424.601 923.242h-.195c-89.539-.047-177.344-24.086-253.93-69.531l-18.227-10.805-188.828 49.508 50.414-184.039-11.875-18.867c-49.945-79.414-76.312-171.188-76.273-265.422.109-274.992 223.906-498.711 499.102-498.711 133.266.055 258.516 52 352.719 146.266 94.195 94.266 146.031 219.578 145.992 352.852-.118 274.999-223.923 498.749-498.899 498.749z" />
+											<path
+												fill="#FFF"
+												d="M1036.898 176.091C923.562 62.677 772.859.185 612.297.114 281.43.114 12.172 269.286 12.039 600.137 12 705.896 39.633 809.13 92.156 900.13L7 1211.067l318.203-83.438c87.672 47.812 186.383 73.008 286.836 73.047h.255.003c330.812 0 600.109-269.219 600.25-600.055.055-160.343-62.328-311.108-175.649-424.53zm-424.601 923.242h-.195c-89.539-.047-177.344-24.086-253.93-69.531l-18.227-10.805-188.828 49.508 50.414-184.039-11.875-18.867c-49.945-79.414-76.312-171.188-76.273-265.422.109-274.992 223.906-498.711 499.102-498.711 133.266.055 258.516 52 352.719 146.266 94.195 94.266 146.031 219.578 145.992 352.852-.118 274.999-223.923 498.749-498.899 498.749z"
+											/>
+										</g>
+									</svg>
+								</span>
+							</div>
+						</form>
+					</div>
+				</header>
+			</div>
 
-                                    </g>
-                                </svg>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-            </header>
-        </div>
+			<div class="grid-item_body_main">
+				<main class="grid-container_main">
+					<section class="flex-item_main_block1">
+						<!--блок 1 начинается - @a_brio-->
+						<h2>Делаем все услуги в комплексе</h2>
+						<aside class="flex-item_main_block1-card">
+							<div class="flex-item_main_block1-card_content">
+								<img
+									class="flex-item_main_block1-card__card_img"
+									src="./assets/images/main_block1_services/img__mainblock1-services-col1.jpeg"
+									alt="подбор участка"
+								/>
+								<div class="flex-item_main_block2-card_text">
+									<h3>Подбор земельного участка</h3>
+									<ul>
+										<li>
+											расскажем на что обращать внимание при выборе земли под
+											строительство дома
+										</li>
+										<li>
+											подберем земельный участок согласно вашим требованиям
+										</li>
+										<li>совместный просмотр участков</li>
+										<li>
+											проверим участок на юридическую чистоту и соответствие
+											градостроительным регламентам
+										</li>
+										<li>сопроводим сделку</li>
+									</ul>
+								</div>
+							</div>
 
-        <div class="grid-item_body_main">
-            <main class="grid-container_main">
-				<section class="flex-item_main_block1"><!--блок 1 начинается - @a_brio-->
-					<h2>Делаем все услуги в комплексе</h2>
-					<aside class="flex-item_main_block1-card">
-						<div class="flex-item_main_block1-card_content">
-							<img 
-								class="flex-item_main_block1-card__card_img" 
-								src="./assets/images/main_block1_services/img__mainblock1-services-col1.jpeg" 
-								alt="подбор участка"
+							<div class="flex-item_main_block1-card_content">
+								<img
+									class="flex-item_main_block1-card__card_img"
+									src="./assets/images/main_block1_services/vector__mainblock1-services-col2.png"
+									alt="ипотека"
+								/>
+								<div class="flex-item_main_block2-card_text">
+									<h3>Оформление ипотеки</h3>
+									<ul>
+										<li>
+											расскажем о действующих ипотечных программах и
+											предложениях банков
+										</li>
+										<li>
+											выберем подходящий вариант и рассчитаем ежемесячный
+											платеж, не превышающий аренду жилья
+										</li>
+										<li>
+											составим заявку на получение ипотеки и поможем с
+											одобрением
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="flex-item_main_block1-card_content">
+								<img
+									class="flex-item_main_block1-card__card_img"
+									src="assets/images/main_block1_services/vector__mainblock1-services-col3.png"
+									alt="строительство дома"
+								/>
+								<div class="flex-item_main_block2-card_text">
+									<h3>Строительство дома</h3>
+									<ul>
+										<li>покажем проекты домов</li>
+										<li>выберем понравившийся</li>
+										<li>проект дома и поедем посмотреть его вживую</li>
+										<li>при необходимости внесем изменения в проект</li>
+										<li>
+											лично встречаемся с подрядной организацией и уточняем все
+											детали вашего будущего дома
+										</li>
+										<li>
+											заключаем договор и подрядчик приступает к строительству
+										</li>
+									</ul>
+								</div>
+							</div>
+						</aside>
+					</section>
+
+					<div class="flex-item_main_block2" id="Ипотека">
+						<!--блок 2 начинается - @Klyukva_LA-->
+						<section class="grid-item_main_block2-hypothec">
+							<img
+								src="./assets/images/block_2/vector__hypothec_background.svg"
+								alt="#"
+								class="grid-item_main_block2-hypothec_img"
 							/>
-							<div class="flex-item_main_block2-card_text">
-								<h3>Подбор земельного участка</h3>
+							<div class="grid-item_main_block2-hypothec_col1">
+								<h2>Поможем получить ипотеку</h2>
+								<p>И ежемесячным платежом, не превышающим <br />аренду жилья</p>
+								<h3>Мы работаем с программами:</h3>
 								<ul>
+									<li>господдержка - ипотека под 8% годовых;</li>
+									<li>семейная ипотека - для семей с детьми под 6% годовых;</li>
 									<li>
-										расскажем на что обращать внимание при
-										выборе земли под строительство дома
+										IT ипотека - ипотека для сотрудников IT под 5% годовых;
 									</li>
-									<li>
-										подберем земельный участок согласно
-										вашим требованиям
-									</li>
-									<li>совместный просмотр участков</li>
-									<li>
-										проверим участок на юридическую чистоту
-										и соответствие градостроительным
-										регламентам
-									</li>
-									<li>сопроводим сделку</li>
+									<li>сельская ипотека - 3% годовых;</li>
+									<li>военная ипотека.</li>
 								</ul>
 							</div>
-						</div>
-
-						<div class="flex-item_main_block1-card_content">
-							<img 
-								class="flex-item_main_block1-card__card_img" 
-								src="./assets/images/main_block1_services/vector__mainblock1-services-col2.png" 
-								alt="ипотека"
-							/>
-							<div class="flex-item_main_block2-card_text">
-								<h3>Оформление ипотеки</h3>
+							<div class="grid-item_main_block2-hypothec_col2">
+								<h2>Также мы работаем с сертификатами:</h2>
 								<ul>
+									<li>Херсонский сертификат</li>
+									<li>Материнский капитал</li>
 									<li>
-										расскажем о действующих ипотечных
-										программах и предложениях банков
-									</li>
-									<li>
-										выберем подходящий вариант и рассчитаем
-										ежемесячный платеж, не превышающий
-										аренду жилья
-									</li>
-									<li>
-										составим заявку на получение ипотеки и
-										поможем с одобрением
+										и другие сертификаты, которые предоставляют <br />агентства
+										жилищных программ
 									</li>
 								</ul>
+								<h3>
+									Поможем с ипотекой <br />до заключения договора. <br />Это
+									бесплатно и ни к чему<br />
+									Вас не обязывает.
+								</h3>
 							</div>
-						</div>
-
-						<div class="flex-item_main_block1-card_content">
-							<img 
-								class="flex-item_main_block1-card__card_img" 
-								src="assets/images/main_block1_services/vector__mainblock1-services-col3.png"
-								alt="строительство дома"
+						</section>
+						<aside class="flex-item_main_block2-bank">
+							<img
+								src="./assets/images/block_2/vector__bank-logo_sber_large.svg"
+								alt="логотип банка сбер"
+								class="bank-logo_large"
 							/>
-							<div class="flex-item_main_block2-card_text">
-								<h3>Строительство дома</h3>
-								<ul>
-									<li>покажем проекты домов</li>
-									<li>выберем понравившийся</li>
-									<li>
-										проект дома и поедем посмотреть его
-										вживую
-									</li>
-									<li>
-										при необходимости внесем изменения в
-										проект
-									</li>
-									<li>
-										лично встречаемся с подрядной
-										организацией и уточняем все детали
-										вашего будущего дома
-									</li>
-									<li>
-										заключаем договор и подрядчик приступает
-										к строительству
-									</li>
-								</ul>
-							</div>
-						</div>
-					</aside>
-				</section>
-    
-                <div class="flex-item_main_block2" id="Ипотека"><!--блок 2 начинается - @Klyukva_LA-->
-                    <section class="grid-item_main_block2-hypothec">
-                        <img src="./assets/images/block_2/vector__hypothec_background.svg" alt="#"
-                            class="grid-item_main_block2-hypothec_img">
-                        <div class="grid-item_main_block2-hypothec_col1">
-                            <h2>Поможем получить ипотеку</h2>
-                            <p>И ежемесячным платежом, не превышающим <br>аренду жилья</p>
-                            <h3>Мы работаем с программами:</h3>
-                            <ul>
-                                <li>господдержка - ипотека под 8% годовых;</li>
-                                <li>семейная ипотека - для семей с детьми под 6% годовых;</li>
-                                <li>IT ипотека - ипотека для сотрудников IT под 5% годовых;</li>
-                                <li>сельская ипотека - 3% годовых;</li>
-                                <li>военная ипотека.</li>
-                            </ul>
-                        </div>
-                        <div class="grid-item_main_block2-hypothec_col2">
-                            <h2>Также мы работаем с сертификатами:</h2>
-                            <ul>
-                                <li>Херсонский сертификат</li>
-                                <li>Материнский капитал</li>
-                                <li>и другие сертификаты, которые предоставляют <br>агентства жилищных программ</li>
-                            </ul>
-                            <h3>
-                                Поможем с ипотекой <br>до заключения договора.
-                                <br>Это бесплатно и ни к чему<br> Вас не обязывает.
-                            </h3>
-                        </div>
-                    </section>
-                    <aside class="flex-item_main_block2-bank">
-                        <img src="./assets/images/block_2/vector__bank-logo_sber_large.svg" alt="логотип банка сбер"
-                            class="bank-logo_large" />
-                        <img src="./assets/images/block_2/vector__bank-logo_sber_small.svg" alt="логотип банка сбер"
-                            class="bank-logo_small" />
+							<img
+								src="./assets/images/block_2/vector__bank-logo_sber_small.svg"
+								alt="логотип банка сбер"
+								class="bank-logo_small"
+							/>
 
-                        <img src="./assets/images/block_2/vector__bank-logo_raiffeisen_large.svg"
-                            alt="логотип банка Райффайзенбанк" class="bank-logo_large" />
-                        <img src="./assets/images/block_2/vector__bank-logo_raiffeisen_small.svg"
-                            alt="логотип банка Райффайзенбанк" class="bank-logo_small" />
+							<img
+								src="./assets/images/block_2/vector__bank-logo_raiffeisen_large.svg"
+								alt="логотип банка Райффайзенбанк"
+								class="bank-logo_large"
+							/>
+							<img
+								src="./assets/images/block_2/vector__bank-logo_raiffeisen_small.svg"
+								alt="логотип банка Райффайзенбанк"
+								class="bank-logo_small"
+							/>
 
-                        <img src="./assets/images/block_2/vector__bank-logo_vtb_large.svg" alt="логотип банка ВТБ"
-                            class="bank-logo_large" />
-                        <img src="./assets/images/block_2/vector__bank-logo_vtb_small.svg" alt="логотип банка ВТБ"
-                            class="bank-logo_small" />
+							<img
+								src="./assets/images/block_2/vector__bank-logo_vtb_large.svg"
+								alt="логотип банка ВТБ"
+								class="bank-logo_large"
+							/>
+							<img
+								src="./assets/images/block_2/vector__bank-logo_vtb_small.svg"
+								alt="логотип банка ВТБ"
+								class="bank-logo_small"
+							/>
 
-                        <img src="./assets/images/block_2/vector__bank-logo_alfa_large.svg" alt="логотип банка Альфа"
-                            class="bank-logo_large" />
-                        <img src="./assets/images/block_2/vector__bank-logo_alfa_small.svg" alt="логотип банка Альфа"
-                            class="bank-logo_small" />
+							<img
+								src="./assets/images/block_2/vector__bank-logo_alfa_large.svg"
+								alt="логотип банка Альфа"
+								class="bank-logo_large"
+							/>
+							<img
+								src="./assets/images/block_2/vector__bank-logo_alfa_small.svg"
+								alt="логотип банка Альфа"
+								class="bank-logo_small"
+							/>
 
-                        <img src="./assets/images/block_2/vector__bank-logo_psb_large.svg" alt="логотип банка ПСБ"
-                            class="bank-logo_large" />
-                        <img src="./assets/images/block_2/vector__bank-logo_psb_small.svg" alt="логотип банка ПСБ"
-                            class="bank-logo_small" />
+							<img
+								src="./assets/images/block_2/vector__bank-logo_psb_large.svg"
+								alt="логотип банка ПСБ"
+								class="bank-logo_large"
+							/>
+							<img
+								src="./assets/images/block_2/vector__bank-logo_psb_small.svg"
+								alt="логотип банка ПСБ"
+								class="bank-logo_small"
+							/>
 
-                        <img src="./assets/images/block_2/vector__bank-logo_gpb_large.svg"
-                            alt="логотип банка Газпромбанк" class="bank-logo_large" />
-                        <img src="./assets/images/block_2/vector__bank-logo_gpb_small.svg"
-                            alt="логотип банка Газпромбанк" class="bank-logo_small" />
-                    </aside>
-                    <section class="flex-item_main_block2_benefit">
-                        <img src="./assets/images/block_2/vector__benefit_logo.svg" alt="логотип компании"
-                            class="flex-item_main_block2_benefit_logo" /><!--вместо логотипа-->
-                        <h1>Почему клиенты обращаются к нам</h1>
-                        <p>даже сравнив все предложения на рынке</p>
-                        <aside class="flex-item_main_block2-card">
+							<img
+								src="./assets/images/block_2/vector__bank-logo_gpb_large.svg"
+								alt="логотип банка Газпромбанк"
+								class="bank-logo_large"
+							/>
+							<img
+								src="./assets/images/block_2/vector__bank-logo_gpb_small.svg"
+								alt="логотип банка Газпромбанк"
+								class="bank-logo_small"
+							/>
+						</aside>
+						<section class="flex-item_main_block2_benefit">
+							<img
+								src="./assets/images/block_2/vector__benefit_logo.svg"
+								alt="логотип компании"
+								class="flex-item_main_block2_benefit_logo"
+							/><!--вместо логотипа-->
+							<h1>Почему клиенты обращаются к нам</h1>
+							<p>даже сравнив все предложения на рынке</p>
+							<aside class="flex-item_main_block2-card">
+								<div class="flex-item_main_block2-card_content">
+									<img
+										src="./assets/images/block_2/img__benefit_logo_card1.jpg"
+										alt=""
+										class="flex-item_main_block2-card__card_img"
+									/>
+									<div class="flex-item_main_block2-card_text">
+										<h2>Выгодно:</h2>
+										<ul>
+											<li>
+												НЕТ комиссии, НЕТ удорожания, прямой договор с
+												застройщиком;
+											</li>
+											<li>
+												Оплатим кухню и корпусную мебель на сумму 30 000 р.;
+											</li>
+											<li>
+												Организуем приемку объекта у застройщика, на предмет
+												соответствия СНиП.
+											</li>
+										</ul>
+									</div>
+								</div>
 
-                            <div class="flex-item_main_block2-card_content">
-                                <img src="./assets/images/block_2/img__benefit_logo_card1.jpg" alt=""
-                                    class="flex-item_main_block2-card__card_img" />
-                                <div class="flex-item_main_block2-card_text">
-                                    <h2>Выгодно:</h2>
-                                    <ul>
-                                        <li>
-                                            НЕТ комиссии, НЕТ удорожания, прямой
-                                            договор с застройщиком;
-                                        </li>
-                                        <li>
-                                            Оплатим кухню и корпусную мебель на
-                                            сумму 30 000 р.;
-                                        </li>
-                                        <li>
-                                            Организуем приемку объекта у
-                                            застройщика, на предмет соответствия
-                                            СНиП.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+								<div class="flex-item_main_block2-card_content">
+									<img
+										src="./assets/images/block_2/img__benefit_logo_card2.jpg"
+										alt=""
+										class="flex-item_main_block2-card__card_img"
+									/>
+									<div class="flex-item_main_block2-card_text">
+										<h2>Принцип «ОДНОГО ОКНА»:</h2>
+										<ul>
+											<li>
+												подберем земельный участок и надежного подрядчика,
+												аккредитованного Банком;
+											</li>
+											<li>
+												выберем программу и одобрим ипотеку без визита в банк;
+											</li>
+											<li>сопроводим клиента на всех этапах сделки.</li>
+										</ul>
+									</div>
+								</div>
 
-                            <div class="flex-item_main_block2-card_content">
-                                <img src="./assets/images/block_2/img__benefit_logo_card2.jpg" alt=""
-                                    class="flex-item_main_block2-card__card_img" />
-                                <div class="flex-item_main_block2-card_text">
-                                    <h2>Принцип «ОДНОГО ОКНА»:</h2>
-                                    <ul>
-                                        <li>подберем земельный участок и надежного подрядчика, аккредитованного Банком;
-                                        </li>
-                                        <li>выберем программу и одобрим ипотеку без визита в банк;</li>
-                                        <li>сопроводим клиента на всех этапах сделки.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="flex-item_main_block2-card_content">
-                                <img src="./assets/images/block_2/benefit_logo_card3_img.jpg" alt=""
-                                    class="flex-item_main_block2-card__card_img" />
-                                <div class="flex-item_main_block2-card_text">
-                                    <h2>Экспертность:</h2>
-                                    <ul>
-                                        <li>расскажем о технологии строительства, все плюсы и минусы объекта;</li>
-                                        <li>знаем динамику цен, ликвидность объектов, стоимость аренды объекта;</li>
-                                        <li>поможем вернуть налоговый вычет.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </aside>
-                    </section>
-                    <!--блок 2 заканчивается - @Klyukva_LA-->
-                </div>
+								<div class="flex-item_main_block2-card_content">
+									<img
+										src="./assets/images/block_2/benefit_logo_card3_img.jpg"
+										alt=""
+										class="flex-item_main_block2-card__card_img"
+									/>
+									<div class="flex-item_main_block2-card_text">
+										<h2>Экспертность:</h2>
+										<ul>
+											<li>
+												расскажем о технологии строительства, все плюсы и минусы
+												объекта;
+											</li>
+											<li>
+												знаем динамику цен, ликвидность объектов, стоимость
+												аренды объекта;
+											</li>
+											<li>поможем вернуть налоговый вычет.</li>
+										</ul>
+									</div>
+								</div>
+							</aside>
+						</section>
+						<!--блок 2 заканчивается - @Klyukva_LA-->
+					</div>
 
 					<section class="grid-item_main_block3" id="НашиПроекты">
 						<!--блок 3 начинается-->
@@ -1012,33 +1094,34 @@
 								</div>
 							</div>
 
-                        <div class="grid-item_main_block3_houses-excursion">
-                            <div class="flex-container_houses-excursion">
-                                <h3 class="flex-item_house-excursion-title">
-                                    Приглашаем на экскурсию
-                                    <br>
-                                    по готовым объектам
-                                </h3>
-                                <div class="flex-item_house-excursion-text-button">
-                                    <p class="house-excursion-text">
-                                        Посмотрите как будет выглядеть Ваш будущий дом
-                                    </p>
-                                    <form class="grid-item_main_block4_contacts-form">
-                                        <!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
-                                        <button
-                                            class="house-excursion-button"
-                                            type="button"
-                                            class="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop">
-                                            Записаться на экскурсию
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+							<div class="grid-item_main_block3_houses-excursion">
+								<div class="flex-container_houses-excursion">
+									<h3 class="flex-item_house-excursion-title">
+										Приглашаем на экскурсию
+										<br />
+										по готовым объектам
+									</h3>
+									<div class="flex-item_house-excursion-text-button">
+										<p class="house-excursion-text">
+											Посмотрите как будет выглядеть Ваш будущий дом
+										</p>
+										<form class="grid-item_main_block4_contacts-form">
+											<!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
+											<button
+												class="house-excursion-button"
+												type="button"
+												class="btn btn-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#staticBackdrop"
+											>
+												Записаться на экскурсию
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 
 					<section class="grid-item_main_block4">
 						<!--блок 4 начинается - @Marrria_L-->
@@ -1070,7 +1153,10 @@
 							<div class="grid-item_main_block4_about-company_logo">
 								<div class="grid-item_main_block4_about-company_logo_image">
 									<!-- Необходимо вставить логотип -->
-									<img src="./assets/images/header/vector_logo.svg" alt="logo" />
+									<img
+										src="./assets/images/header/vector_logo.svg"
+										alt="logo"
+									/>
 								</div>
 								<div class="grid-item_main_block4_about-company_logo_text">
 									Строительство домов не сложнее покупки квартиры
@@ -1295,51 +1381,70 @@
 							</div>
 						</div>
 
-                    <div class="grid-item_main_block4_contacts" id="Контакты">
-                        <div class="grid-item_main_block4_contacts-container">
-                            <h2 class="grid-item_main_block4_contacts-title">Контакты</h2>
-                            <div class="grid-item_main_block4_contacts-map">
-                                <a class="grid-item_main_block4_contacts-map-logo"
-                                    href="https://yandex.ru/maps/-/CDsQ707u">
-                                    <img src="assets/images/main-block4/vector_map.svg" alt="Значок карты"
-                                        class="grid-item_main_block4_contacts-map-logo2" />
-                                </a>
-                                <div class="grid-item_main_block4_contacts-map-text">
-                                    <h3 class="grid-item_main_block4_contacts-map-text-title">
-                                        г. Ростов-на-Дону
-                                    </h3>
-                                    <p class="grid-item_main_block4_contacts-map-text-desc">
-                                        ул. Варфоломеева 265, офис 32
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="grid-item_main_block4_contacts-data">
-                                <div class="grid-item_main_block4_contacts-data-logo">
-                                    <img src="assets/images/main-block4/vector_data.svg" alt="Значок календаря"
-                                        class="grid-item_main_block4_contacts-data-logo2" />
-                                </div>
-                                <div class="grid-item_main_block4_contacts-data-text">
-                                    Понедельник-пятница <br />10:00-19:00
-                                </div>
-                            </div>
-                            <div class="grid-item_main_block4_contacts-phone">
-                                <div class="grid-item_main_block4_contacts-phone-logo">
-                                    <img src="assets/images/main-block4/vector_phone.svg" alt="Значок телефона"
-                                        class="grid-item_main_block4_contacts-phone-logo2" />
-                                </div>
-                                <div class="grid-item_main_block4_contacts-phone-number">
-                                    <div class="grid-item_main_block4_contacts-phone-number-text">
-                                        <a href="tel:+7 918 535-23-26"
-                                            class="grid-item_main_block4_contacts-phone-number-text2">+7 918
-                                            535-23-26</a>
-                                    </div>
-                                    <div class="grid-item_main_block4_contacts-phone-number-text">
-                                        <a href="tel:+7 938 159-01-07"
-                                            class="grid-item_main_block4_contacts-phone-number-text2">+7 938
-                                            159-01-07</a>
-                                    </div>
-                                </div>
-                            </div>
+						<div class="grid-item_main_block4_contacts" id="Контакты">
+							<div class="grid-item_main_block4_contacts-container">
+								<h2 class="grid-item_main_block4_contacts-title">Контакты</h2>
+								<div class="grid-item_main_block4_contacts-map">
+									<a
+										class="grid-item_main_block4_contacts-map-logo"
+										href="https://yandex.ru/maps/-/CDsQ707u"
+									>
+										<img
+											src="assets/images/main-block4/vector_map.svg"
+											alt="Значок карты"
+											class="grid-item_main_block4_contacts-map-logo2"
+										/>
+									</a>
+									<div class="grid-item_main_block4_contacts-map-text">
+										<h3 class="grid-item_main_block4_contacts-map-text-title">
+											г. Ростов-на-Дону
+										</h3>
+										<p class="grid-item_main_block4_contacts-map-text-desc">
+											ул. Варфоломеева 265, офис 32
+										</p>
+									</div>
+								</div>
+								<div class="grid-item_main_block4_contacts-data">
+									<div class="grid-item_main_block4_contacts-data-logo">
+										<img
+											src="assets/images/main-block4/vector_data.svg"
+											alt="Значок календаря"
+											class="grid-item_main_block4_contacts-data-logo2"
+										/>
+									</div>
+									<div class="grid-item_main_block4_contacts-data-text">
+										Понедельник-пятница <br />10:00-19:00
+									</div>
+								</div>
+								<div class="grid-item_main_block4_contacts-phone">
+									<div class="grid-item_main_block4_contacts-phone-logo">
+										<img
+											src="assets/images/main-block4/vector_phone.svg"
+											alt="Значок телефона"
+											class="grid-item_main_block4_contacts-phone-logo2"
+										/>
+									</div>
+									<div class="grid-item_main_block4_contacts-phone-number">
+										<div
+											class="grid-item_main_block4_contacts-phone-number-text"
+										>
+											<a
+												href="tel:+7 918 535-23-26"
+												class="grid-item_main_block4_contacts-phone-number-text2"
+												>+7 918 535-23-26</a
+											>
+										</div>
+										<div
+											class="grid-item_main_block4_contacts-phone-number-text"
+										>
+											<a
+												href="tel:+7 938 159-01-07"
+												class="grid-item_main_block4_contacts-phone-number-text2"
+												>+7 938 159-01-07</a
+											>
+										</div>
+									</div>
+								</div>
 
 								<form class="grid-item_main_block4_contacts-form">
 									<!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
@@ -1429,7 +1534,7 @@
 					</div>
 				</main>
 			</div>
-			
+
 			<div class="grid-item_body_footer">
 				<footer class="footer">
 					<!--блок футера начинается -->
@@ -1451,17 +1556,22 @@
 									</div>
 								</div>
 
-                            <nav class="footer-itself_nav">
-                                <ul class="nav_links">
-                                    <li><a href="#Наши услуги">Наши услуги</a></li>
-                                    <li><a href="#Ипотека">Ипотека</a></li>
-                                    <li><a href="#НашиПроекты">Наши проекты</a></li>
-                                    <li><a href="http://127.0.0.1:5500/pages/projects.html" target="_blank">Дома и
-                                            квартиры</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+								<nav class="footer-itself_nav">
+									<ul class="nav_links">
+										<li><a href="#Наши услуги">Наши услуги</a></li>
+										<li><a href="#Ипотека">Ипотека</a></li>
+										<li><a href="#НашиПроекты">Наши проекты</a></li>
+										<li>
+											<a
+												href="http://127.0.0.1:5500/pages/projects.html"
+												target="_blank"
+												>Дома и квартиры</a
+											>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
 
 						<div class="grid-item_sub-footer">
 							<div class="sub-footer">
@@ -1477,28 +1587,35 @@
 									</p>
 								</div>
 
-                            <div class="sub-footer_itgirls">
-                                <div class="sub-footer_itgirls-logo">
-                                    <a href="https://itgirlschool.com/?ysclid=m077xgw8bb89371622" target="_blank">
-                                        <img src="./assets/images/footer/vector_itgirls.svg" alt="Логотип компании"
-                                            class="svg">
-                                        <p class="sub-footer_itgirls-logo">
-                                            Сайт создан командой разработчиц из itgirls
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!--блок футера заканчивается-->
-        </div>
-    </div>
+								<div class="sub-footer_itgirls">
+									<div class="sub-footer_itgirls-logo">
+										<a
+											href="https://itgirlschool.com/?ysclid=m077xgw8bb89371622"
+											target="_blank"
+										>
+											<img
+												src="./assets/images/footer/vector_itgirls.svg"
+												alt="Логотип компании"
+												class="svg"
+											/>
+											<p class="sub-footer_itgirls-logo">
+												Сайт создан командой разработчиц из itgirls
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!--блок футера заканчивается-->
+			</div>
+		</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-</body>
-
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
