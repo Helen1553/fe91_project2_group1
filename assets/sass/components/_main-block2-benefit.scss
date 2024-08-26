@@ -53,7 +53,7 @@
         }
 
         @media screen and (max-width: 767px) {
-            font-size: 2vw;
+            font-size: 3.2vw;
         }
     }
 
@@ -144,11 +144,6 @@
             .bank-logo_large {
                 width: 15%;
                 cursor: pointer;
-                transition: 0.5s;
-                &:hover {
-                    transform: scale(1.2);
-                }
-
 
                 @media screen and (min-width: 768px) and (max-width: 1023px) {
                     display: none;
@@ -162,10 +157,6 @@
             .bank-logo_small {
                 display: none;
                 cursor: pointer;
-                transition: 1s;
-                &:hover {
-                    transform: scale(1.2);
-                }
 
                 @media screen and (min-width: 768px) and (max-width: 1023px) {
                     display: block;
@@ -184,6 +175,10 @@
 
         .flex-item_main_block2_benefit_logo {
             width: 4vw;
+
+            @media screen and (max-width: 767px) {
+                width: 8vw;
+            }
         }
 
         h2 { 
