@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .body {
-  height: 8200px;
+  height: 8500px;
   border: solid black;
   font-family: "Roboto", sans-serif;
 }
@@ -11,15 +11,12 @@
 }
 .body .grid-container_body .grid-item_body_header {
   grid-area: 1/1/2/2;
-  border: solid red;
 }
 .body .grid-container_body .grid-item_body_main {
   grid-area: 2/1/3/2;
-  border: solid rgb(0, 51, 255);
 }
 .body .grid-container_body .grid-item_body_footer {
   grid-area: 3/1/4/2;
-  border: solid rgb(72, 255, 0);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -32,7 +29,7 @@
 }
 @media screen and (max-width: 767px) {
   .body {
-    height: 5600px;
+    height: 5450px;
   }
   .body .grid-container_body {
     grid-template: 16% 80% 4%/1fr;
@@ -362,8 +359,7 @@
 }
 .grid-container_main {
   display: grid;
-  /*grid-template: 13% 25% 34% 28%/1fr;*/
-  grid-template: 1fr 1.2fr 2.6fr 1.8fr/1fr;
+  grid-template: 13% 27% 32% 28%/1fr;
   height: 100%;
 }
 .grid-container_main .grid-item_main_block1 {
@@ -372,9 +368,11 @@
 .grid-container_main .flex-item_main_block2 {
   grid-area: 2/1/3/2;
 }
+.grid-container_main .flex-item_main_block2 {
+  grid-area: 2/1/3/2;
+}
 .grid-container_main .grid-item_main_block3 {
   grid-area: 3/1/4/2;
-  border: solid rgb(6, 242, 97);
 }
 .grid-container_main .grid-item_main_block4 {
   grid-area: 4/1/5/2;
@@ -393,14 +391,12 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-container_main {
-    /*grid-template: 20% 13% 37% 30%/1fr;*/
-    grid-template: 0.5fr 0.5fr 1.5fr 0.6fr/1fr;
+    grid-template: 17% 16% 37% 30%/1fr;
   }
 }
 @media screen and (max-width: 767px) {
   .grid-container_main {
-    /*grid-template: 22% 26% 22% 30%/1fr;*/
-    grid-template: 1fr 1fr 22% 0.6fr/1fr;
+    grid-template: 23% 26% 22% 30%/1fr;
   }
 }
 .flex-item_main_block1 {
@@ -414,33 +410,49 @@
   color: rgb(15, 33, 44);
 }
 .flex-item_main_block1 h2 {
-  font-size: 2.7vw;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 5.3125rem;
+  line-height: normal;
+  border: solid red;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block1 h2 {
-    font-size: 2vw;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: normal;
   }
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 h2 {
-    font-size: 3vw;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
   }
 }
 .flex-item_main_block1 h3 {
-  font-size: 1.8vw;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 500;
+  line-height: 1.5;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block1 h3 {
-    font-size: 2vw;
+    text-align: left;
   }
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 h3 {
+    text-align: left;
     font-size: 2.8vw;
+    font-weight: 500;
   }
 }
 .flex-item_main_block1 li {
   font-size: 1.3vw;
+  font-weight: 300;
+  line-height: 1.7;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block1 li {
@@ -449,7 +461,7 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 li {
-    font-size: 1.6vw;
+    font-size: 2vw;
   }
 }
 .flex-item_main_block1 h2 {
@@ -477,7 +489,7 @@
   .flex-item_main_block1 .flex-item_main_block1-card {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 4vh;
+    row-gap: 3.5vh;
   }
 }
 .flex-item_main_block1 .flex-item_main_block1-card_content {
@@ -520,8 +532,7 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 .flex-item_main_block1-card__card_img {
-    width: 54%;
-    border-radius: 10px 0 0 10px;
+    display: none;
   }
 }
 .flex-item_main_block1 .flex-item_main_block1-card_text {
@@ -552,42 +563,70 @@
 .flex-item_main_block2 h1, .flex-item_main_block2 h2, .flex-item_main_block2 h3, .flex-item_main_block2 p, .flex-item_main_block2 li {
   color: rgb(15, 33, 44);
 }
-.flex-item_main_block2 h1 {
-  font-size: 2.7vw;
+.flex-item_main_block2 h2 {
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 5.3125rem;
+  line-height: normal;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-item_main_block2 h1 {
-    font-size: 3vw;
+  .flex-item_main_block2 h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: normal;
   }
 }
 @media screen and (max-width: 767px) {
-  .flex-item_main_block2 h1 {
-    font-size: 3.2vw;
+  .flex-item_main_block2 h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
   }
 }
-.flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+.flex-item_main_block2 h3 {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-item_main_block2 h3 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 h3 {
+    text-align: left;
+    font-size: 2.8vw;
+    font-weight: 500;
+  }
+}
+.flex-item_main_block2 p {
   font-size: 1.8vw;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+  .flex-item_main_block2 p {
     font-size: 2vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+  .flex-item_main_block2 p {
     font-size: 3vw;
   }
 }
-.flex-item_main_block2 p, .flex-item_main_block2 li {
+.flex-item_main_block2 li {
   font-size: 1.3vw;
+  font-weight: 300;
+  line-height: 1.7;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-item_main_block2 p, .flex-item_main_block2 li {
+  .flex-item_main_block2 li {
     font-size: 1.7vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .flex-item_main_block2 p, .flex-item_main_block2 li {
+  .flex-item_main_block2 li {
     font-size: 2vw;
   }
 }
@@ -622,11 +661,14 @@
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col1 {
   grid-area: 1/1/2/3;
-  padding: 15%;
+  padding: 12%;
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col1 h3 {
+  text-align: left;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 {
   grid-area: 1/4/2/6;
-  padding: 15%;
+  padding: 12%;
   text-align: right;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 li {
@@ -642,7 +684,11 @@
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec h3 {
   margin-top: 4vh;
+  text-align: center;
   font-size: 2vw;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: right;
 }
 .flex-item_main_block2 .flex-item_main_block2-bank {
   justify-content: space-between;
@@ -709,14 +755,14 @@
 .flex-item_main_block2 .flex-item_main_block2_benefit .flex-item_main_block2_benefit_logo {
   width: 4vw;
 }
-.flex-item_main_block2 .flex-item_main_block2_benefit h1 {
+.flex-item_main_block2 .flex-item_main_block2_benefit h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .flex-item_main_block2 .flex-item_main_block2_benefit p {
   margin-bottom: 1rem;
 }
-.flex-item_main_block2 .flex-item_main_block2_benefit h2 {
+.flex-item_main_block2 .flex-item_main_block2_benefit h3 {
   padding-left: 0.5rem;
   display: block;
 }
@@ -736,7 +782,7 @@
   .flex-item_main_block2 .flex-item_main_block2-card {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 4vh;
+    row-gap: 3.5vh;
   }
 }
 .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
@@ -755,7 +801,6 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
-    /*width: 60%;*/
     flex-direction: row;
     width: 100%;
   }
@@ -780,8 +825,7 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card__card_img {
-    width: 52%;
-    border-radius: 10px 0 0 10px;
+    display: none;
   }
 }
 .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_text {
@@ -804,13 +848,12 @@
 
 .grid-container_main_block3_houses {
   display: grid;
-  grid-template: 35% 43% 11% 11%/10% 80% 10%;
+  grid-template: 32% 46% 11% 11%/10% 80% 10%;
   height: 100%;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished {
   grid-area: 1/1/2/4;
   background-color: rgba(187, 220, 214, 0.247);
-  border: solid red;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished {
   display: grid;
@@ -821,8 +864,9 @@
   grid-area: 1/2/2/3;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
-  font-size: 4.5vw;
+  font-size: 3vw;
   font-weight: 700;
+  line-height: 5.3125rem;
   line-height: normal;
   text-align: center;
   margin-top: 2rem;
@@ -842,7 +886,6 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants {
   grid-area: 2/1/4/4;
   background-color: rgba(187, 220, 214, 0.247);
-  border: solid rgb(0, 8, 255);
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
   display: grid;
@@ -854,8 +897,9 @@
   grid-area: 1/2/2/7;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title h2 {
-  font-size: 4.5vw;
+  font-size: 3vw;
   font-weight: 700;
+  line-height: 5.3125rem;
   line-height: normal;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card1 {
@@ -995,12 +1039,14 @@
     grid-template: 8% 7% 46% 6% 6% 27%/4% 44% 4% 44% 4%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: normal;
     grid-area: 1/2/2/6;
     text-align: center;
     margin-top: 2rem;
+  }
+  .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: normal;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card1 {
     grid-area: 3/2/4/3;
@@ -1048,7 +1094,7 @@
     grid-area: 1/1/2/2;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: normal;
     margin-top: 3rem;
@@ -1123,10 +1169,25 @@
   margin-top: 2vw;
 }
 .grid-item_main_block4 .grid-item_main_block4_about-company_title {
-  font-size: 4.5vw;
+  font-size: 3vw;
   font-weight: 700;
+  line-height: 5.3125rem;
   line-height: normal;
   align-self: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-item_main_block4 .grid-item_main_block4_about-company_title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-item_main_block4 .grid-item_main_block4_about-company_title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+  }
 }
 .grid-item_main_block4 .grid-item_main_block4_about-company_desc {
   grid-area: 2/1/3/2;
@@ -1250,8 +1311,9 @@
   margin: 0 auto;
 }
 .grid-item_main_block4 .grid-item_main_block4_contacts-title {
-  font-size: 4.5vw;
+  font-size: 3vw;
   font-weight: 700;
+  line-height: 5.3125rem;
   line-height: normal;
   font-size: 5vw;
 }
@@ -1564,8 +1626,8 @@
   height: 100%;
 }
 .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .svg {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 90%;
   background-color: white;
   border: solid rgba(0, 0, 0, 0.636);
 }
@@ -1579,6 +1641,12 @@
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer .grid-container_footer .grid-item_sub-footer .sub-footer .sub-footer_itgirls .svg {
+    width: 70%;
+    height: 90%;
+  }
+}
 @media screen and (max-width: 767px) {
   .grid-item_body_footer .footer .grid-container_footer {
     grid-template: 70% 30%/1fr;

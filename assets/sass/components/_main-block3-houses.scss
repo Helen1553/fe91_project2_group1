@@ -1,6 +1,6 @@
 .grid-container_main_block3_houses {
     display: grid;
-    grid-template: 35% 43% 11% 11%/10% 80% 10%;
+    grid-template: 32% 46% 11% 11%/10% 80% 10%;
     
     height: 100%;
 
@@ -8,7 +8,6 @@
         grid-area: 1/1/2/4;
 
         background-color: rgba(187, 220, 214, 0.247);
-        border: solid red;
 
         .grid-container_houses-finished {
             display: grid;
@@ -48,7 +47,6 @@
         grid-area: 2/1/4/4;
 
         background-color: rgba(187, 220, 214, 0.247);
-        border: solid rgb(0, 8, 255);
 
         .grid-container_houses-variants {
             display: grid;
@@ -232,10 +230,13 @@
                 grid-template: 8% 7% 46% 6% 6% 27%/4% 44% 4% 44% 4%;
     
                 .grid-item_houses-variants-title {
-                    @include title-adaptive-mobile;
                     grid-area: 1/2/2/6;
                     text-align: center;
                     margin-top: 2rem;
+
+                    h2{
+                        @include title-adaptive-mobile;
+                    }
                 }
     
                 .grid-item_houses-variants-card1 {
@@ -297,7 +298,7 @@
                     grid-area: 1/1/2/2;
     
                     h2 {
-                        @include title-adaptive-mobile;
+                        @include title-adaptive-mobile-phone;
                         margin-top: 3rem;
                     }
                 }
