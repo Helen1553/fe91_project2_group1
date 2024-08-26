@@ -420,7 +420,6 @@
   font-weight: 700;
   line-height: 5.3125rem;
   line-height: normal;
-  border: solid red;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block1 h2 {
@@ -752,6 +751,11 @@
 }
 .flex-item_main_block2 .flex-item_main_block2_benefit .flex-item_main_block2_benefit_logo {
   width: 4vw;
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 .flex-item_main_block2_benefit .flex-item_main_block2_benefit_logo {
+    width: 8vw;
+  }
 }
 .flex-item_main_block2 .flex-item_main_block2_benefit h2 {
   margin-top: 1rem;
