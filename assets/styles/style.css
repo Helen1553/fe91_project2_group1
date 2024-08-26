@@ -889,7 +889,7 @@
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants {
   display: grid;
-  grid-template: 8% 5% 52% 4% 5% 26%/5% 28% 3% 28% 3% 28% 5%;
+  grid-template: 8% 5% 52% 4% 5% 26%/4% 29% 2.5% 29% 2.5% 29% 4%;
   height: 100%;
   width: 100%;
 }
