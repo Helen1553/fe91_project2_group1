@@ -1,6 +1,6 @@
 .grid-container_main {
 	display: grid;
-	grid-template: 13% 25% 34% 28%/1fr;
+	grid-template: 13% 27% 32% 28%/1fr;
 
 	height: 100%;
 
@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.grid-container_main {
-		grid-template: 20% 13% 37% 30%/1fr;
+		grid-template: 17% 16% 37% 30%/1fr;
 	}
 }
 
