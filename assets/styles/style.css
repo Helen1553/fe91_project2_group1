@@ -419,6 +419,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2vh;
   background-color: rgba(187, 220, 214, 0.247);
 }
 .flex-item_main_block1 h2, .flex-item_main_block1 h3, .flex-item_main_block1 li {
@@ -714,10 +715,6 @@
 .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large {
   width: 15%;
   cursor: pointer;
-  transition: 0.5s;
-}
-.flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large:hover {
-  transform: scale(1.2);
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_large {
@@ -732,10 +729,6 @@
 .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small {
   display: none;
   cursor: pointer;
-  transition: 1s;
-}
-.flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small:hover {
-  transform: scale(1.2);
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block2 .flex-item_main_block2-bank .bank-logo_small {

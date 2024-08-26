@@ -139,11 +139,6 @@
             .bank-logo_large {
                 width: 15%;
                 cursor: pointer;
-                transition: 0.5s;
-                &:hover {
-                    transform: scale(1.2);
-                }
-
 
                 @media screen and (min-width: 768px) and (max-width: 1023px) {
                     display: none;
@@ -157,10 +152,6 @@
             .bank-logo_small {
                 display: none;
                 cursor: pointer;
-                transition: 1s;
-                &:hover {
-                    transform: scale(1.2);
-                }
 
                 @media screen and (min-width: 768px) and (max-width: 1023px) {
                     display: block;
