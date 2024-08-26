@@ -1,7 +1,6 @@
 .grid-container_main {
 	display: grid;
-	/*grid-template: 13% 25% 34% 28%/1fr;*/
-	grid-template: 1fr 1.2fr 2.6fr 1.8fr/1fr;
+	grid-template: 13% 27% 32% 28%/1fr;
 
 	height: 100%;
 
@@ -19,7 +18,6 @@
 
 	.grid-item_main_block3 {
 		grid-area: 3/1/4/2;
-		border: solid rgb(6, 242, 97);
 	}
 
 	.grid-item_main_block4 {

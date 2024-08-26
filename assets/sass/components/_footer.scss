@@ -116,8 +116,8 @@
                     height: 100%;
 
                     .svg{
-                        width: 60%;
-                        height: 60%;
+                        width: 50%;
+                        height: 90%;
 
                         background-color: white;
                         border: solid rgba(0, 0, 0, 0.636);
@@ -131,6 +131,23 @@
                             text-decoration: none;
                             color: white;
                             text-shadow: 5px 5px 5px rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .footer{
+        .grid-container_footer{
+            .grid-item_sub-footer{
+                .sub-footer{
+                    .sub-footer_itgirls{
+                        .svg{
+                            width: 70%;
+                            height: 90%;
                         }
                     }
                 }
