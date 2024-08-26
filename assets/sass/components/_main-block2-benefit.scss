@@ -190,13 +190,13 @@
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             flex-direction: row;
             flex-wrap: wrap;
-            row-gap: 2.5vh;
+            row-gap: 3vh;
         }
 
         @media screen and (max-width: 767px) {
             flex-direction: row;
             flex-wrap: wrap;
-            row-gap: 2.5vh;
+            row-gap: 4vh;
         }
 
         .flex-item_main_block2-card_content {
