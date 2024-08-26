@@ -400,7 +400,7 @@
 @media screen and (max-width: 767px) {
   .grid-container_main {
     /*grid-template: 22% 26% 22% 30%/1fr;*/
-    grid-template: 1fr 1fr 22% 1fr/1fr;
+    grid-template: 0.3fr 0.35fr 22% 1fr/1fr;
   }
 }
 .flex-item_main_block1 {
@@ -414,33 +414,41 @@
   color: rgb(15, 33, 44);
 }
 .flex-item_main_block1 h2 {
+  /*font-size: 4.5vw;
+  font-weight: 700;*/
   font-size: 2.7vw;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-item_main_block1 h2 {
-    font-size: 2vw;
-  }
+  font-weight: 600;
+  line-height: normal;
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 h2 {
     font-size: 3vw;
+    font-weight: 600;
+    line-height: normal;
   }
 }
 .flex-item_main_block1 h3 {
-  font-size: 1.8vw;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 500;
+  line-height: 1.5;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block1 h3 {
-    font-size: 2vw;
+    text-align: left;
   }
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 h3 {
+    text-align: left;
     font-size: 2.8vw;
+    font-weight: 500;
   }
 }
 .flex-item_main_block1 li {
   font-size: 1.3vw;
+  font-weight: 300;
+  line-height: 1.7;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .flex-item_main_block1 li {
@@ -449,7 +457,7 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 li {
-    font-size: 1.6vw;
+    font-size: 2vw;
   }
 }
 .flex-item_main_block1 h2 {
@@ -477,7 +485,7 @@
   .flex-item_main_block1 .flex-item_main_block1-card {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 4vh;
+    row-gap: 3.5vh;
   }
 }
 .flex-item_main_block1 .flex-item_main_block1-card_content {
@@ -520,8 +528,7 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 .flex-item_main_block1-card__card_img {
-    width: 54%;
-    border-radius: 10px 0 0 10px;
+    display: none;
   }
 }
 .flex-item_main_block1 .flex-item_main_block1-card_text {
@@ -552,42 +559,63 @@
 .flex-item_main_block2 h1, .flex-item_main_block2 h2, .flex-item_main_block2 h3, .flex-item_main_block2 p, .flex-item_main_block2 li {
   color: rgb(15, 33, 44);
 }
-.flex-item_main_block2 h1 {
+.flex-item_main_block2 h2 {
+  /*font-size: 4.5vw;
+  font-weight: 700;*/
   font-size: 2.7vw;
+  font-weight: 600;
+  line-height: normal;
+}
+@media screen and (max-width: 767px) {
+  .flex-item_main_block2 h2 {
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+.flex-item_main_block2 h3 {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 500;
+  line-height: 1.5;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-item_main_block2 h1 {
-    font-size: 3vw;
+  .flex-item_main_block2 h3 {
+    text-align: left;
   }
 }
 @media screen and (max-width: 767px) {
-  .flex-item_main_block2 h1 {
-    font-size: 3.2vw;
+  .flex-item_main_block2 h3 {
+    text-align: left;
+    font-size: 2.8vw;
+    font-weight: 500;
   }
 }
-.flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+.flex-item_main_block2 p {
   font-size: 1.8vw;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+  .flex-item_main_block2 p {
     font-size: 2vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .flex-item_main_block2 h2, .flex-item_main_block2 h3 {
+  .flex-item_main_block2 p {
     font-size: 3vw;
   }
 }
-.flex-item_main_block2 p, .flex-item_main_block2 li {
+.flex-item_main_block2 li {
   font-size: 1.3vw;
+  font-weight: 300;
+  line-height: 1.7;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-item_main_block2 p, .flex-item_main_block2 li {
+  .flex-item_main_block2 li {
     font-size: 1.7vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .flex-item_main_block2 p, .flex-item_main_block2 li {
+  .flex-item_main_block2 li {
     font-size: 2vw;
   }
 }
@@ -622,11 +650,14 @@
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col1 {
   grid-area: 1/1/2/3;
-  padding: 15%;
+  padding: 12%;
+}
+.flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col1 h3 {
+  text-align: left;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 {
   grid-area: 1/4/2/6;
-  padding: 15%;
+  padding: 12%;
   text-align: right;
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec .grid-item_main_block2-hypothec_col2 li {
@@ -642,7 +673,11 @@
 }
 .flex-item_main_block2 .grid-item_main_block2-hypothec h3 {
   margin-top: 4vh;
+  text-align: center;
   font-size: 2vw;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: right;
 }
 .flex-item_main_block2 .flex-item_main_block2-bank {
   justify-content: space-between;
@@ -709,14 +744,14 @@
 .flex-item_main_block2 .flex-item_main_block2_benefit .flex-item_main_block2_benefit_logo {
   width: 4vw;
 }
-.flex-item_main_block2 .flex-item_main_block2_benefit h1 {
+.flex-item_main_block2 .flex-item_main_block2_benefit h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .flex-item_main_block2 .flex-item_main_block2_benefit p {
   margin-bottom: 1rem;
 }
-.flex-item_main_block2 .flex-item_main_block2_benefit h2 {
+.flex-item_main_block2 .flex-item_main_block2_benefit h3 {
   padding-left: 0.5rem;
   display: block;
 }
@@ -736,7 +771,7 @@
   .flex-item_main_block2 .flex-item_main_block2-card {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 4vh;
+    row-gap: 3.5vh;
   }
 }
 .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
@@ -755,7 +790,6 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
-    /*width: 60%;*/
     flex-direction: row;
     width: 100%;
   }
@@ -780,8 +814,7 @@
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card__card_img {
-    width: 52%;
-    border-radius: 10px 0 0 10px;
+    display: none;
   }
 }
 .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_text {
@@ -821,8 +854,10 @@
   grid-area: 1/2/2/3;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
-  font-size: 4.5vw;
-  font-weight: 700;
+  /*font-size: 4.5vw;
+  font-weight: 700;*/
+  font-size: 2.7vw;
+  font-weight: 600;
   line-height: normal;
   text-align: center;
   margin-top: 2rem;
@@ -854,8 +889,10 @@
   grid-area: 1/2/2/7;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title h2 {
-  font-size: 4.5vw;
-  font-weight: 700;
+  /*font-size: 4.5vw;
+  font-weight: 700;*/
+  font-size: 2.7vw;
+  font-weight: 600;
   line-height: normal;
 }
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-card1 {
@@ -986,7 +1023,7 @@
     grid-template: 20% 2% 78%/5% 1fr 5%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
-    font-size: 2.5rem;
+    font-size: 3vw;
     font-weight: 600;
     line-height: normal;
     margin-top: 3rem;
@@ -995,7 +1032,7 @@
     grid-template: 8% 7% 46% 6% 6% 27%/4% 44% 4% 44% 4%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title {
-    font-size: 2.5rem;
+    font-size: 3vw;
     font-weight: 600;
     line-height: normal;
     grid-area: 1/2/2/6;
@@ -1048,7 +1085,7 @@
     grid-area: 1/1/2/2;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
-    font-size: 2.5rem;
+    font-size: 3vw;
     font-weight: 600;
     line-height: normal;
     margin-top: 3rem;
@@ -1122,8 +1159,10 @@
   margin-top: 5vw;
 }
 .grid-item_main_block4 .grid-item_main_block4_about-company_title {
-  font-size: 4.5vw;
-  font-weight: 700;
+  /*font-size: 4.5vw;
+  font-weight: 700;*/
+  font-size: 2.7vw;
+  font-weight: 600;
   line-height: normal;
   align-self: center;
 }
@@ -1246,8 +1285,10 @@
   margin: 0 auto;
 }
 .grid-item_main_block4 .grid-item_main_block4_contacts-title {
-  font-size: 4.5vw;
-  font-weight: 700;
+  /*font-size: 4.5vw;
+  font-weight: 700;*/
+  font-size: 2.7vw;
+  font-weight: 600;
   line-height: normal;
   font-size: 5vw;
 }
