@@ -1,12 +1,12 @@
-@import "variables";
-@import "mixin";
+@import 'variables';
+@import 'mixin';
 
-@import "components/body";
-@import "components/main";
-@import "components/main-block4";
-@import "components/main-block3";
-@import "components/footer";
-@import "components/benefit";
-@import "components/projects";
-@import "components/services";
-@import "components/header";
+@import 'components/body';
+@import 'components/header';
+@import 'components/main';
+@import 'components/main-block1-services';
+@import 'components/main-block2-benefit';
+@import 'components/main-block3-houses';
+@import 'components/main-block4';
+@import 'components/footer';
+@import 'components/projects';

@@ -1,13 +1,13 @@
 .body {
-	height: 8000px;
+	height: 8200px;
 
 	border: solid black;
 
 	font-family: "Roboto", sans-serif;
 
-	.grid-container_body {
-		display: grid;
-		grid-template: 9% 89% 2%/1fr;
+    .grid-container_body{
+        display: grid;
+        grid-template: 10% 86% 4%/1fr;
 
 		height: 100%;
 
@@ -36,17 +36,17 @@
 		height: 7500px;
 
 		.grid-container_body {
-			grid-template: 10% 88% 2%/1fr;
+			grid-template: 8% 88% 3%/1fr;
 		}
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.body {
-		height: 6000px;
+		height: 5000px;
 
 		.grid-container_body {
-			grid-template: 20% 78% 2%/1fr;
+			grid-template: 16% 80% 4%/1fr;
 		}
 	}
 }

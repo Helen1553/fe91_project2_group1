@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="../assets/styles/style.css">
 
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -34,22 +39,15 @@
             </div>
 
             <nav class="nav">
-                <!-- <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-                <label for="menu-toggle" class="burger-menu">
-                    <div class="line line1"></div>
-                    <div class="line line2"></div>
-                    <div class="line line3"></div>
-                </label> бургер-меню!!!!! -->
                 <ul class="nav_links">
                     <li><a href="http://127.0.0.1:5500/index.html">На главную</a></li>
                     <li><a href="#Houses">Дома</a></li>
                     <li><a href="#Flats">Квартиры</a></li>
-                    <li><a href="#Contacts">Контакты</a></li>
                 </ul>
             </nav>
 
             <div class="buttons">
-                <button class="buttons_contact">
+                <button class="buttons_contact" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Связаться с нами
                 </button>
             </div>
@@ -58,7 +56,6 @@
 
     <div class="grid-item_projects_body_main">
         <main class="projects_main">
-
             <section class="grid-container_projects_main_houses" id="Houses">
                 <div class="grid_item_projects_main_houses_title">
                     <h2 class="projects_main_houses_title">
@@ -68,7 +65,7 @@
 
                 <div class="grid-item_projects_main_houses_cards">
                     <div class="grid-container_houses-variants">
-                        <div class="grid-item_variants-card1"> <!-- 1 карточка - 1 вариант дома-->
+                        <div class="grid-item_variants-card1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 1 карточка - 1 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house1.jpg"
@@ -85,7 +82,7 @@
                                                 от 22,000 ₽/месяц
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -153,7 +150,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card2"> <!-- 2 карточка - 2 вариант дома-->
+                        <div class="grid-item_variants-card2" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 2 карточка - 2 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house2.jpg"
@@ -170,7 +167,7 @@
                                                 от 35,000 ₽/месяц
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -238,7 +235,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card3"> <!-- 3 карточка - 3 вариант дома-->
+                        <div class="grid-item_variants-card3" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 3 карточка - 3 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house3.jpg"
@@ -255,7 +252,7 @@
                                                 от 25,000 ₽/месяц
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -325,7 +322,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card4"> <!-- 4 карточка - 4 вариант дома-->
+                        <div class="grid-item_variants-card4" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 4 карточка - 4 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house4.jpg"
@@ -342,7 +339,7 @@
                                                 от 12,000 ₽/месяц
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -412,7 +409,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card5"> <!-- 5 карточка - 5 вариант дома-->
+                        <div class="grid-item_variants-card5" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 5 карточка - 5 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house5.jpg"
@@ -429,7 +426,7 @@
                                                 от 22,000 ₽/месяц
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -499,7 +496,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card6"> <!-- 6 карточка - 6 вариант дома-->
+                        <div class="grid-item_variants-card6" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 6 карточка - 6 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/main_block3-houses/img_house6.jpg"
@@ -516,7 +513,7 @@
                                                 от 27,000 ₽/месяц
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -589,8 +586,8 @@
                 </div>
 
                 <div class="grid-item_buttons">
-                    <button type="button" class="btn btn-light px-3 py-3 shadow-sm">
-                        <b>Связаться с нами</b>
+                    <button class="houses-flats-buttton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Связаться с нами
                     </button>
                 </div>
             </section>
@@ -604,7 +601,7 @@
 
                 <div class="grid-item_projects_main_flats_cards">
                     <div class="grid-container_flats-variants">
-                        <div class="grid-item_variants-card1"> <!-- 1 карточка - 1 вариант квартиры-->
+                        <div class="grid-item_variants-card1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 1 карточка - 1 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat1.jpg"
@@ -623,7 +620,7 @@
                                                 цена за м<sup>2</sup> - 151 111 ₽
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -673,7 +670,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card2"> <!-- 2 карточка - 2 вариант квартиры-->
+                        <div class="grid-item_variants-card2" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 2 карточка - 2 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat2.jpg"
@@ -692,7 +689,7 @@
                                                 цена за м<sup>2</sup> - 162 500 ₽
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -742,7 +739,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card3"> <!-- 3 карточка - 3 вариант квартиры-->
+                        <div class="grid-item_variants-card3" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 3 карточка - 3 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat3.jpg"
@@ -761,7 +758,7 @@
                                                 цена за м<sup>2</sup> - 171 621 ₽
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -811,7 +808,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card4"> <!-- 4 карточка - 4 вариант квартиры-->
+                        <div class="grid-item_variants-card4" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 4 карточка - 4 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat4.jpg"
@@ -830,7 +827,7 @@
                                                 цена за м<sup>2</sup> - 177 611 ₽
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -880,7 +877,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card5"> <!-- 5 карточка - 5 вариант квартиры-->
+                        <div class="grid-item_variants-card5" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 5 карточка - 5 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat5.jpg"
@@ -899,7 +896,7 @@
                                                 цена за м<sup>2</sup> - 158 333 ₽
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -949,7 +946,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-item_variants-card6"> <!-- 6 карточка - 6 вариант квартиры-->
+                        <div class="grid-item_variants-card6" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 6 карточка - 6 вариант квартиры-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
                                     src="../assets/images/pages_projects/img_flat6.jpg"
@@ -968,7 +965,7 @@
                                                 цена за м<sup>2</sup> - 161 538 ₽
                                             </p>
                                         </div>
-                                        <div class="d-flex gap-5">
+                                        <div class="d-flex justify-content-around">
                                             <div class="d-flex flex-column gap-3">
                                                 <div>
                                                     <img
@@ -1019,16 +1016,85 @@
                         </div>
 
                         <div class="grid-item_flats_buttons">
-                            <button type="button" class="btn btn-light px-3 py-3 shadow-sm">
-                                <b>Связаться с нами</b>
+                            <button class="houses-flats-buttton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Связаться с нами
                             </button>
                         </div>
                     </div>
                 </div>
 
-            </section>
+                <!-- Модальное окно для обратной связи -->
+					<div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">
+                                    Оставьте заявку и мы с Вами свяжемся
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Закрыть"
+                                ></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="contact-form__input-wrapper input-group mb-5">
+                                    <input
+                                        name="name"
+                                        type="text"
+                                        class="contact-form__input contact-form__input_name form-control form-control-lg"
+                                        placeholder="Имя"
+                                        required
+                                    />
+                                    <div
+                                        class="contact-form__error contact-form__error_name"
+                                    ></div>
+                                </form>
+                                <form class="contact-form__input-wrapper input-group mb-5">
+                                    <input
+                                        name="tel"
+                                        type="tel"
+                                        class="contact-form__input contact-form__input_tel form-control form-control-lg"
+                                        placeholder="+7 (999) 999-99-99"
+                                        required
+                                    />
+                                    <div
+                                        class="contact-form__error contact-form__error_tel"
+                                    ></div>
+                                </form>
+                                <form class="contact-form__input-wrapper input-group mb-2">
+                                    <input
+                                        name="email"
+                                        type="email"
+                                        class="contact-form__input contact-form__input_email form-control form-control-lg"
+                                        placeholder="Введите ваш email"
+                                        required
+                                    />
+                                    <div
+                                        class="contact-form__error contact-form__error_email"
+                                    ></div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    Оставить заявку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        </main>
+            </section>
+        </div>
     </div>
 
     <div class="grid-item_projects_body_footer"> <!-- Здесь начинается блок футера, где снова повторяются необходимые ссылки -->
@@ -1053,5 +1119,8 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 </html>

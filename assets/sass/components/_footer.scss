@@ -1,7 +1,184 @@
 .footer{
-    background-color: rgb(238, 238, 231);
-
-    text-align: center;
-
     height: 100%;
+    text-align: center;
+    border-top: solid black;
+    
+    .grid-container_footer{
+        display: grid;
+        grid-template: 60% 40%/1fr;
+
+        height: 100%;
+        background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
+        background-attachment: fixed;
+        background-position:top;
+
+        .grid-item_footer-itself{
+            grid-area: 1/1/2/2;
+
+            .footer-itself{
+                display: flex;
+
+                height: 100%;
+                width: 100%;
+
+                .footer-itself_logo{
+                    width: 15%;
+                    height: 100%;
+
+                    .logo{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        height: 100%;
+                        cursor: pointer;
+
+                        .logo_text{
+                            font-size: 1.5rem;
+
+                            a{
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+                
+                        .svg{
+                            width: 30%;
+                            height: 30%;
+                        }
+                    }
+                }
+
+                .footer-itself_nav{
+                    width: 85%;
+                    height: 100%;
+
+                    .nav_links{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        height: 100%;
+                        width: 100%;
+
+                        list-style: none;
+    
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            text-shadow: 5px 5px 5px rgb(0, 0, 0);
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            line-height: 1.5rem;
+                        }
+    
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .grid-item_sub-footer{
+            grid-area: 2/1/3/2;
+
+            .sub-footer{
+                display: flex;
+                height: 100%;
+                width: 100%;
+
+                .sub-footer_inf{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    font-size: 0.8rem;
+                    color: white;
+                    width: 20%;
+                    height: 100%;
+                }
+
+                .sub-footer_rights{
+                    align-content: end;
+
+                    width: 60%;
+                    height: 100%;
+                    color: white;
+                }
+
+                .sub-footer_itgirls{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    width: 20%;
+                    height: 100%;
+
+                    .svg{
+                        width: 60%;
+                        height: 60%;
+
+                        background-color: white;
+                        border: solid rgba(0, 0, 0, 0.636);
+                    }
+
+                    .sub-footer_itgirls-logo{
+                        height: 40%;
+                        font-size: 0.9rem;
+                        
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            text-shadow: 5px 5px 5px rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .grid-item_body_footer{
+        .footer{
+            .grid-container_footer{
+                .grid-item_footer-itself{
+                    .footer-itself{
+                        .footer-itself_logo{
+                            display: none;
+                        }
+                        .footer-itself_nav{
+                            width: 100%;
+                            
+                            .nav_links{
+                                a{
+                                    font-size: 0.9rem;
+                                    justify-content: space-between;
+                                    gap: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .grid-item_sub-footer{
+                    .sub-footer{
+                        .sub-footer_inf{
+                            display: none;
+                        }
+
+                        .sub-footer_rights{
+                            width: 100%;
+                            font-size: 1rem;
+                        }
+
+                        .sub-footer_itgirls{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

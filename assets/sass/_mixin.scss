@@ -1,19 +1,71 @@
-@mixin title {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 3.375rem;
+// Для заголовка хедера
+@mixin title-header {
+	display: flex;
+	justify-content: center;
+
+	margin: 5rem 0;
+	text-shadow: 5px 5px 5px black;
 	font-weight: 700;
-	line-height: 5.3125rem;
+	font-size: 3.3vw;
+	line-height: normal;
+	color: #ffff;
 }
 
+// Для навигации хедера и футера
+@mixin links-header-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	font-size: 1.4vw;
+	font-weight: 600;
+	line-height: normal;
+}
+
+// Для заголовков блоков
+@mixin title {
+	// font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 4.5vw;
+	font-weight: 700;
+	// line-height: 5.3125rem;
+	line-height: normal;
+}
+// Для заголовков блоков в адаптиве
 @mixin title-adaptive-mobile {
 	font-size: 2.5rem;
+	// font-size: 2.2vw;
 	font-weight: 600;
-	line-height: 2rem;
+	// line-height: 2vw;
+	line-height: normal;
 }
 
+// Для заголовков карточек
+@mixin title-card {
+	text-align: center;
+
+	font-size: 2vw;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+// Для текста карточек
+@mixin text-card {
+	font-size: 1.3vw;
+	font-weight: 300;
+	line-height: 1.7;
+}
+
+// Для обычного текста
+@mixin text {
+	font-size: 1.3vw;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+// Для заголовка страницы проектов на фоне background image
 @mixin background-image-title {
-	font-weight: 900;
-	font-size: 3.125rem;
+	font-weight: 700;
+	font-size: 3.4vw;
 	color: white;
 	text-shadow: 5px 5px 5px black;
 }
@@ -22,13 +74,17 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
+// Для ссылок навигации в хедере и футере страницы готовых проектов
 @mixin projects_nav_links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 8rem;
+
+	color: black;
 
 	height: 100%;
 	width: 100%;
@@ -36,17 +92,17 @@
 	list-style: none;
 }
 
+// Для кнопок на модальное окно
 @mixin background {
 	background-color: rgba(187, 220, 214, 0.247);
 }
 @mixin button($hover) {
-	width: 20vw;
-	height: 5vw;
 	border: 0px solid transparent;
 	border-radius: 10px;
 	background: linear-gradient(to bottom right, #469ce3, #2c60b9);
 	box-shadow: 1px 1px 2px 2px #469ce3;
 	color: #ffffff;
+
 	&:hover {
 		background: #ffffff;
 		color: #2c60b9;
