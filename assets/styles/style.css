@@ -470,14 +470,14 @@
   .flex-item_main_block1 .flex-item_main_block1-card {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 2.5vh;
+    row-gap: 3vh;
   }
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 .flex-item_main_block1-card {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 2.5vh;
+    row-gap: 4vh;
   }
 }
 .flex-item_main_block1 .flex-item_main_block1-card_content {
@@ -729,14 +729,14 @@
   .flex-item_main_block2 .flex-item_main_block2-card {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 2.5vh;
+    row-gap: 3vh;
   }
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block2 .flex-item_main_block2-card {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 2.5vh;
+    row-gap: 4vh;
   }
 }
 .flex-item_main_block2 .flex-item_main_block2-card .flex-item_main_block2-card_content {
