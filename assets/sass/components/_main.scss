@@ -38,15 +38,21 @@
 	}
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+	.grid-container_main {
+		grid-template: 0.8fr 1.2fr 3.3fr 3fr/1fr;
+	}
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.grid-container_main {
-		grid-template: 17% 16% 37% 30%/1fr;
+		grid-template: 0.2fr 0.4fr 1.5fr 0.6fr/1fr;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.grid-container_main {
-		grid-template: 23% 26% 22% 30%/1fr;
+		grid-template: 0.2fr 0.2fr 22% 0.6fr/1fr;
 	}
-
 }
