@@ -416,13 +416,13 @@
 .flex-item_main_block1 h2 {
   /*font-size: 4.5vw;
   font-weight: 700;*/
-  font-size: 2.7vw;
+  font-size: 3vw;
   font-weight: 600;
   line-height: normal;
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block1 h2 {
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: 600;
     line-height: normal;
   }
@@ -562,13 +562,13 @@
 .flex-item_main_block2 h2 {
   /*font-size: 4.5vw;
   font-weight: 700;*/
-  font-size: 2.7vw;
+  font-size: 3vw;
   font-weight: 600;
   line-height: normal;
 }
 @media screen and (max-width: 767px) {
   .flex-item_main_block2 h2 {
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: 600;
     line-height: normal;
   }
@@ -856,7 +856,7 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
   /*font-size: 4.5vw;
   font-weight: 700;*/
-  font-size: 2.7vw;
+  font-size: 3vw;
   font-weight: 600;
   line-height: normal;
   text-align: center;
@@ -891,7 +891,7 @@
 .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title h2 {
   /*font-size: 4.5vw;
   font-weight: 700;*/
-  font-size: 2.7vw;
+  font-size: 3vw;
   font-weight: 600;
   line-height: normal;
 }
@@ -1023,7 +1023,7 @@
     grid-template: 20% 2% 78%/5% 1fr 5%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: 600;
     line-height: normal;
     margin-top: 3rem;
@@ -1032,7 +1032,7 @@
     grid-template: 8% 7% 46% 6% 6% 27%/4% 44% 4% 44% 4%;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-variants .grid-container_houses-variants .grid-item_houses-variants-title {
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: 600;
     line-height: normal;
     grid-area: 1/2/2/6;
@@ -1085,7 +1085,7 @@
     grid-area: 1/1/2/2;
   }
   .grid-container_main_block3_houses .grid-item_main_block3_houses-finished .grid-container_houses-finished .grid-item_houses-finished-text h2 {
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: 600;
     line-height: normal;
     margin-top: 3rem;
@@ -1161,7 +1161,7 @@
 .grid-item_main_block4 .grid-item_main_block4_about-company_title {
   /*font-size: 4.5vw;
   font-weight: 700;*/
-  font-size: 2.7vw;
+  font-size: 3vw;
   font-weight: 600;
   line-height: normal;
   align-self: center;
@@ -1287,7 +1287,7 @@
 .grid-item_main_block4 .grid-item_main_block4_contacts-title {
   /*font-size: 4.5vw;
   font-weight: 700;*/
-  font-size: 2.7vw;
+  font-size: 3vw;
   font-weight: 600;
   line-height: normal;
   font-size: 5vw;
