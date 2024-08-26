@@ -25,7 +25,7 @@
 <body class="body">
     <div class="grid-container_body">
 
-        <div class="grid-item_body_header">
+        <div class="grid-item_body_header"> <!-- Здесь начинается хедер (или шапка сайта) -->
             <header class="header">
                 <div class="header_row">
 
@@ -61,7 +61,7 @@
                         Агенство недвижимости
                     </p>
                     <form class="header_content_form">
-                        <!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
+
                         <button class="header_content_form_btn" type="button" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Связаться с менеджером
@@ -133,12 +133,12 @@
                         </div>
                     </form>
                 </div>
-            </header>
+            </header> <!-- Хедер (или шапка сайта) заканчивается -->
         </div>
 
-        <div class="grid-item_body_main">
+        <div class="grid-item_body_main"> <!-- Здесь начинается main - основная часть сайта-->
             <main class="grid-container_main">
-				<section class="flex-item_main_block1"><!--блок 1 начинается - @a_brio-->
+				<section class="flex-item_main_block1" id="Наши услуги"><!-- Здесь начинается 1 блок main -->
 					<h2>Делаем все услуги в комплексе</h2>
 					<aside class="flex-item_main_block1-card">
 						<div class="flex-item_main_block1-card_content">
@@ -227,9 +227,9 @@
 							</div>
 						</div>
 					</aside>
-				</section>
+				</section> <!-- 1 блок main заканчивается-->
     
-                <div class="flex-item_main_block2" id="Ипотека"><!--блок 2 начинается - @Klyukva_LA-->
+                <div class="flex-item_main_block2" id="Ипотека"><!--блок 2  main начинается -->
                     <section class="grid-item_main_block2-hypothec">
                         <img src="./assets/images/block_2/vector__hypothec_background.svg" alt="#"
                             class="grid-item_main_block2-hypothec_img">
@@ -348,671 +348,670 @@
 
                         </aside>
                     </section>
-                    <!--блок 2 заканчивается - @Klyukva_LA-->
+                    <!--блок 2 main заканчивается -->
                 </div>
 
-					<section class="grid-item_main_block3" id="НашиПроекты">
-						<!--блок 3 начинается-->
-						<div class="grid-container_main_block3_houses">
-							<div class="grid-item_main_block3_houses-finished">
-								<div class="grid-container_houses-finished">
-									<div class="grid-item_houses-finished-text">
-										<h2>Наши готовые проекты</h2>
-									</div>
-									<div class="grid-item_houses-finished-carousel">
-										<!--здесь начинается карусель из нескольких слайдов готовых проектов компании-->
-										<div class="container">
-											<div class="row">
-												<div
-													class="col-12 col-sm-12 col-md-12 col-xl-8 offset-xl-2"
-												>
-													<div
-														id="carouselExampleIndicators"
-														class="carousel slide shadow-lg"
-														data-bs-ride="carousel"
-													>
-														<div class="carousel-indicators">
-															<!--здесь код для индикаторов слайдов карусели-->
-															<button
-																type="button"
-																data-bs-target="#carouselExampleIndicators"
-																data-bs-slide-to="0"
-																class="active"
-																aria-current="true"
-																aria-label="Slide 1"
-															></button>
-															<button
-																type="button"
-																data-bs-target="#carouselExampleIndicators"
-																data-bs-slide-to="1"
-																aria-label="Slide 2"
-															></button>
-															<button
-																type="button"
-																data-bs-target="#carouselExampleIndicators"
-																data-bs-slide-to="2"
-																aria-label="Slide 3"
-															></button>
-															<button
-																type="button"
-																data-bs-target="#carouselExampleIndicators"
-																data-bs-slide-to="3"
-																aria-label="Slide 4"
-															></button>
-															<button
-																type="button"
-																data-bs-target="#carouselExampleIndicators"
-																data-bs-slide-to="4"
-																aria-label="Slide 5"
-															></button>
-														</div>
-														<div class="carousel-inner">
-															<!--здесь начинается код для самих слайдов карусели-->
-															<div class="carousel-item active">
-																<!--здесь код для первого слайда карусели-->
-																<img
-																	src="./assets/images/main_block3-houses/img_house(wood).jpg"
-																	class="d-block w-100"
-																	alt="Дом из клееного бруса с террасой"
-																/>
-																<div class="carousel-caption">
-																	<h5>
-																		Двухэтажный дом из клееного бруса с террасой
-																	</h5>
-																	<p>Воронеж, 2024</p>
-																</div>
-															</div>
-
-															<div class="carousel-item">
-																<!--здесь код для второго слайда карусели-->
-																<img
-																	src="./assets/images/main_block3-houses/img_house(block).jpg"
-																	class="d-block w-100"
-																	alt=">Дом из арболита с гаражом"
-																/>
-																<div class="carousel-caption">
-																	<h5>Двухэтажный дом из арболита с гаражом</h5>
-																	<p>Сочи, 2021</p>
-																</div>
-															</div>
-
-															<div class="carousel-item">
-																<!--здесь код для третьего слайда карусели-->
-																<img
-																	src="./assets/images/main_block3-houses/img_house(stone).jpg"
-																	class="d-block w-100"
-																	alt="Дом кирпичный"
-																/>
-																<div class="carousel-caption">
-																	<h5>Дом кирпичный (баня)</h5>
-																	<p>Сочи, 2019</p>
-																</div>
-															</div>
-
-															<div class="carousel-item">
-																<!--здесь код для четвертого слайда карусели-->
-																<img
-																	src="./assets/images/main_block3-houses/img_house(terrace).jpg"
-																	class="d-block w-100"
-																	alt="Дом из клееного бруса с террасой"
-																/>
-																<div class="carousel-caption">
-																	<h5>
-																		Одноэтажный дом из клееного бруса с террасой
-																	</h5>
-																	<p>Краснодарский край, 2023</p>
-																</div>
-															</div>
-
-															<div class="carousel-item">
-																<!--здесь код для пятого слайда карусели-->
-																<img
-																	src="./assets/images/main_block3-houses/img_house(block2).jpg"
-																	class="d-block w-100"
-																	alt="Дом из клееного бруса"
-																/>
-																<div class="carousel-caption">
-																	<h5>Одноэтажный дом с мансардой</h5>
-																	<p>Ростов-на-Дону, 2022</p>
-																</div>
-															</div>
-														</div>
-														<!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
-														<button
-															class="carousel-control-prev"
-															type="button"
-															data-bs-target="#carouselExampleIndicators"
-															data-bs-slide="prev"
-														>
-															<span
-																class="carousel-control-prev-icon"
-																aria-hidden="true"
-															></span>
-															<span class="visually-hidden"> Previous </span>
-														</button>
-														<button
-															class="carousel-control-next"
-															type="button"
-															data-bs-target="#carouselExampleIndicators"
-															data-bs-slide="next"
-														>
-															<span
-																class="carousel-control-next-icon"
-																aria-hidden="true"
-															></span>
-															<span class="visually-hidden"> Next </span>
-														</button>
-													</div>
-												</div>
-												<div class="houses-finished-button">
-													<a
-														href="./pages/projects.html"
-														target="_blank"
-														class="shadow-lg finished-button"
-													>
-														Показать все проекты
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
+				<div class="grid-item_main_block3" id="НашиПроекты"> <!--блок 3 main начинается-->
+					<div class="grid-container_main_block3_houses">
+						<section class="grid-item_main_block3_houses-finished">
+							<div class="grid-container_houses-finished">
+								<div class="grid-item_houses-finished-text">
+									<h2>Наши готовые проекты</h2>
 								</div>
-							</div>
-
-							<div class="grid-item_main_block3_houses-variants">
-								<!--здесь начинается блок с вариантами проектов компании-->
-								<div class="grid-container_houses-variants">
-									<div class="grid-item_houses-variants-title">
-										<h2>Варианты наших проектов</h2>
-									</div>
-
-									<div class="grid-item_houses-variants-card1">
-										<!-- 1 карточка - 1 вариант дома-->
-										<div class="card link rounded-3 shadow-lg">
-											<!-- далее идет код для карусели фотографий для данного варианта дома-->
+								<div class="grid-item_houses-finished-carousel">
+									<!--здесь начинается карусель из нескольких слайдов готовых проектов компании-->
+									<div class="container">
+										<div class="row">
 											<div
-												id="ExampleIndicators"
-												class="carousel slide shadow-lg"
+												class="col-12 col-sm-12 col-md-12 col-xl-8 offset-xl-2"
 											>
-												<div class="carousel-indicators">
-													<!--здесь код для индикаторов слайдов карусели-->
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="0"
-														class="active"
-														aria-current="true"
-														aria-label="Slide 1"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="1"
-														aria-label="Slide 2"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="2"
-														aria-label="Slide 3"
-													></button>
-												</div>
-												<div class="carousel-inner">
-													<!--здесь начинается код для самих слайдов карусели-->
-													<div class="carousel-item active">
-														<!--здесь код для первого слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house1.jpg"
-															class="d-block w-100"
-															alt="Дом на продажу от агенства недвижимости №1"
-														/>
-													</div>
-
-													<div class="carousel-item">
-														<!--здесь код для второго слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house1.jpg"
-															class="d-block w-100"
-															alt=">Дом на продажу от агенства недвижимости №1"
-														/>
-													</div>
-
-													<div class="carousel-item">
-														<!--здесь код для третьего слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house1.jpg"
-															class="d-block w-100"
-															alt="Дом на продажу от агенства недвижимости №1"
-														/>
-													</div>
-												</div>
-												<!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
-												<button
-													class="carousel-control-prev"
-													type="button"
-													data-bs-target="#ExampleIndicators"
-													data-bs-slide="prev"
+												<div
+													id="carouselExampleIndicators"
+													class="carousel slide shadow-lg"
+													data-bs-ride="carousel"
 												>
-													<span
-														class="carousel-control-prev-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden"> Previous </span>
-												</button>
-												<button
-													class="carousel-control-next"
-													type="button"
-													data-bs-target="#ExampleIndicators"
-													data-bs-slide="next"
-												>
-													<span
-														class="carousel-control-next-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden"> Next </span>
-												</button>
+													<div class="carousel-indicators">
+														<!--здесь код для индикаторов слайдов карусели-->
+														<button
+															type="button"
+															data-bs-target="#carouselExampleIndicators"
+															data-bs-slide-to="0"
+															class="active"
+															aria-current="true"
+															aria-label="Slide 1"
+														></button>
+														<button
+															type="button"
+															data-bs-target="#carouselExampleIndicators"
+															data-bs-slide-to="1"
+															aria-label="Slide 2"
+														></button>
+														<button
+															type="button"
+															data-bs-target="#carouselExampleIndicators"
+															data-bs-slide-to="2"
+															aria-label="Slide 3"
+														></button>
+														<button
+															type="button"
+															data-bs-target="#carouselExampleIndicators"
+															data-bs-slide-to="3"
+															aria-label="Slide 4"
+														></button>
+														<button
+															type="button"
+															data-bs-target="#carouselExampleIndicators"
+															data-bs-slide-to="4"
+															aria-label="Slide 5"
+														></button>
+													</div>
+													<div class="carousel-inner">
+														<!--здесь начинается код для самих слайдов карусели-->
+														<div class="carousel-item active">
+															<!--здесь код для первого слайда карусели-->
+															<img
+																src="./assets/images/main_block3-houses/img_house(wood).jpg"
+																class="d-block w-100"
+																alt="Дом из клееного бруса с террасой"
+															/>
+															<div class="carousel-caption">
+																<h5>
+																	Двухэтажный дом из клееного бруса с террасой
+																</h5>
+																<p>Воронеж, 2024</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<!--здесь код для второго слайда карусели-->
+															<img
+																src="./assets/images/main_block3-houses/img_house(block).jpg"
+																class="d-block w-100"
+																alt=">Дом из арболита с гаражом"
+															/>
+															<div class="carousel-caption">
+																<h5>Двухэтажный дом из арболита с гаражом</h5>
+																<p>Сочи, 2021</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<!--здесь код для третьего слайда карусели-->
+															<img
+																src="./assets/images/main_block3-houses/img_house(stone).jpg"
+																class="d-block w-100"
+																alt="Дом кирпичный"
+															/>
+															<div class="carousel-caption">
+																<h5>Дом кирпичный (баня)</h5>
+																<p>Сочи, 2019</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<!--здесь код для четвертого слайда карусели-->
+															<img
+																src="./assets/images/main_block3-houses/img_house(terrace).jpg"
+																class="d-block w-100"
+																alt="Дом из клееного бруса с террасой"
+															/>
+															<div class="carousel-caption">
+																<h5>
+																	Одноэтажный дом из клееного бруса с террасой
+																</h5>
+																<p>Краснодарский край, 2023</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<!--здесь код для пятого слайда карусели-->
+															<img
+																src="./assets/images/main_block3-houses/img_house(block2).jpg"
+																class="d-block w-100"
+																alt="Дом из клееного бруса"
+															/>
+															<div class="carousel-caption">
+																<h5>Одноэтажный дом с мансардой</h5>
+																<p>Ростов-на-Дону, 2022</p>
+															</div>
+														</div>
+													</div>
+													<!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
+													<button
+														class="carousel-control-prev"
+														type="button"
+														data-bs-target="#carouselExampleIndicators"
+														data-bs-slide="prev"
+													>
+														<span
+															class="carousel-control-prev-icon"
+															aria-hidden="true"
+														></span>
+														<span class="visually-hidden"> Previous </span>
+													</button>
+													<button
+														class="carousel-control-next"
+														type="button"
+														data-bs-target="#carouselExampleIndicators"
+														data-bs-slide="next"
+													>
+														<span
+															class="carousel-control-next-icon"
+															aria-hidden="true"
+														></span>
+														<span class="visually-hidden"> Next </span>
+													</button>
+												</div>
 											</div>
-											<!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
-
-											<div class="card-body">
-												<div class="d-flex flex-column gap-4">
-													<div>
-														<h5 class="fw-bold text-center">Дом одноэтажный</h5>
-														<p class="text-center">от 22,000 ₽/месяц</p>
-													</div>
-													<div class="d-flex gap-5">
-														<div class="d-flex flex-column gap-3">
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_meters.svg"
-																	alt="картинка-иконка метража помещения"
-																/>
-																<p class="card-text">
-																	Площадь: <b>51 м<sup>2</sup></b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_repair.svg"
-																	alt="картинка-иконка ремонтной кисти"
-																/>
-																<p class="card-text">Предчистовая отделка</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_clock.svg"
-																	alt="картинка-иконка часов"
-																/>
-																<p class="card-text">
-																	Cтроительство:
-																	<br />
-																	<b>от 5 месяцев</b>
-																</p>
-															</div>
-														</div>
-														<div class="d-flex flex-column gap-3">
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_room.svg"
-																	alt="картинка-иконка комнаты"
-																/>
-																<p class="card-text">
-																	Количество комнат <b>2</b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_bed.svg"
-																	alt="картинка-иконка кровати"
-																/>
-																<p class="card-text">
-																	Количество спален:<b>1</b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_wc.svg"
-																	alt="картинка-иконка туалета"
-																/>
-																<p class="card-text">
-																	Количество санузлов:
-																	<b>1</b>
-																</p>
-															</div>
-														</div>
-													</div>
-												</div>
+											<div class="houses-finished-button">
+												<a
+													href="./pages/projects.html"
+													target="_blank"
+													class="shadow-lg finished-button"
+												>
+													Показать все проекты
+												</a>
 											</div>
 										</div>
-									</div>
-
-									<div class="grid-item_houses-variants-card2">
-										<!-- 2 карточка - 2 вариант дома-->
-										<div class="card link rounded-3 shadow-lg">
-											<!-- далее идет код для карусели фотографий для данного варианта дома-->
-											<div id="Indicators" class="carousel slide shadow-lg">
-												<div class="carousel-indicators">
-													<!--здесь код для индикаторов слайдов карусели-->
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="0"
-														class="active"
-														aria-current="true"
-														aria-label="Slide 1"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="1"
-														aria-label="Slide 2"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="2"
-														aria-label="Slide 3"
-													></button>
-												</div>
-												<div class="carousel-inner">
-													<!--здесь начинается код для самих слайдов карусели-->
-													<div class="carousel-item active">
-														<!--здесь код для первого слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house2.jpg"
-															class="d-block w-100"
-															alt="Дом на продажу от агенства недвижимости №2"
-														/>
-													</div>
-
-													<div class="carousel-item">
-														<!--здесь код для второго слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house2.jpg"
-															class="d-block w-100"
-															alt=">Дом на продажу от агенства недвижимости №2"
-														/>
-													</div>
-
-													<div class="carousel-item">
-														<!--здесь код для третьего слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house2.jpg"
-															class="d-block w-100"
-															alt="Дом на продажу от агенства недвижимости №2"
-														/>
-													</div>
-												</div>
-												<!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
-												<button
-													class="carousel-control-prev"
-													type="button"
-													data-bs-target="#Indicators"
-													data-bs-slide="prev"
-												>
-													<span
-														class="carousel-control-prev-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden"> Previous </span>
-												</button>
-												<button
-													class="carousel-control-next"
-													type="button"
-													data-bs-target="#Indicators"
-													data-bs-slide="next"
-												>
-													<span
-														class="carousel-control-next-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden"> Next </span>
-												</button>
-											</div>
-											<!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
-
-											<div class="card-body">
-												<div class="d-flex flex-column gap-4">
-													<div>
-														<h5 class="fw-bold text-center">Дом двухэтажный</h5>
-														<p class="text-center">от 35,000 ₽/месяц</p>
-													</div>
-													<div class="d-flex gap-5">
-														<div class="d-flex flex-column gap-3">
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_meters.svg"
-																	alt="картинка-иконка метража помещения"
-																/>
-																<p class="card-text">
-																	Площадь: <b>97 м<sup>2</sup></b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_repair.svg"
-																	alt="картинка-иконка ремонтной кисти"
-																/>
-																<p class="card-text">Предчистовая отделка</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_clock.svg"
-																	alt="картинка-иконка часов"
-																/>
-																<p class="card-text">
-																	Cтроительство:
-																	<br />
-																	<b>от 10 месяцев</b>
-																</p>
-															</div>
-														</div>
-														<div class="d-flex flex-column gap-3">
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_room.svg"
-																	alt="картинка-иконка комнаты"
-																/>
-																<p class="card-text">
-																	Количество комнат <b>6</b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_bed.svg"
-																	alt="картинка-иконка кровати"
-																/>
-																<p class="card-text">
-																	Количество спален:<b>3</b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_wc.svg"
-																	alt="картинка-иконка туалета"
-																/>
-																<p class="card-text">
-																	Количество санузлов:
-																	<b>2</b>
-																</p>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="grid-item_houses-variants-card3">
-										<!-- 3 карточка - 3 вариант дома-->
-										<div class="card link rounded-3 shadow-lg">
-											<!-- далее идет код для карусели фотографий для данного варианта дома-->
-											<div id="Indicators2" class="carousel slide shadow-lg">
-												<div class="carousel-indicators">
-													<!--здесь код для индикаторов слайдов карусели-->
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="0"
-														class="active"
-														aria-current="true"
-														aria-label="Slide 1"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="1"
-														aria-label="Slide 2"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators"
-														data-bs-slide-to="2"
-														aria-label="Slide 3"
-													></button>
-												</div>
-												<div class="carousel-inner">
-													<!--здесь начинается код для самих слайдов карусели-->
-													<div class="carousel-item active">
-														<!--здесь код для первого слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house3.jpg"
-															class="d-block w-100"
-															alt="Дом на продажу от агенства недвижимости №3"
-														/>
-													</div>
-
-													<div class="carousel-item">
-														<!--здесь код для второго слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house3.jpg"
-															class="d-block w-100"
-															alt=">Дом на продажу от агенства недвижимости №3"
-														/>
-													</div>
-
-													<div class="carousel-item">
-														<!--здесь код для третьего слайда карусели-->
-														<img
-															src="./assets/images/main_block3-houses/img_house3.jpg"
-															class="d-block w-100"
-															alt="Дом на продажу от агенства недвижимости №3"
-														/>
-													</div>
-												</div>
-												<!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
-												<button
-													class="carousel-control-prev"
-													type="button"
-													data-bs-target="#Indicators2"
-													data-bs-slide="prev"
-												>
-													<span
-														class="carousel-control-prev-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden"> Previous </span>
-												</button>
-												<button
-													class="carousel-control-next"
-													type="button"
-													data-bs-target="#Indicators2"
-													data-bs-slide="next"
-												>
-													<span
-														class="carousel-control-next-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden"> Next </span>
-												</button>
-											</div>
-											<!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
-
-											<div class="card-body">
-												<div class="d-flex flex-column gap-4">
-													<div>
-														<h5 class="fw-bold text-center">Дом одноэтажный</h5>
-														<p class="text-center">от 25,000 ₽/месяц</p>
-													</div>
-													<div class="d-flex gap-5">
-														<div class="d-flex flex-column gap-3">
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_meters.svg"
-																	alt="картинка-иконка метража помещения"
-																/>
-																<p class="card-text">
-																	Площадь: <b>63 м<sup>2</sup></b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_repair.svg"
-																	alt="картинка-иконка ремонтной кисти"
-																/>
-																<p class="card-text">Предчистовая отделка</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_clock.svg"
-																	alt="картинка-иконка часов"
-																/>
-																<p class="card-text">
-																	Cтроительство:
-																	<br />
-																	<b>от 6 месяцев</b>
-																</p>
-															</div>
-														</div>
-														<div class="d-flex flex-column gap-3">
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_room.svg"
-																	alt="картинка-иконка комнаты"
-																/>
-																<p class="card-text">
-																	Количество комнат <b>3</b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_bed.svg"
-																	alt="картинка-иконка кровати"
-																/>
-																<p class="card-text">
-																	Количество спален:<b>2</b>
-																</p>
-															</div>
-															<div>
-																<img
-																	src="./assets/images/main_block3-houses/vector_wc.svg"
-																	alt="картинка-иконка туалета"
-																/>
-																<p class="card-text">
-																	Количество санузлов:
-																	<b>1</b>
-																</p>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="grid-item_houses-variants-button">
-										<a
-											href="./pages/projects.html"
-											target="_blank"
-											class="shadow-lg houses-variants-button"
-										>
-											Показать все проекты
-										</a>
 									</div>
 								</div>
 							</div>
+						</section>
 
-                        <div class="grid-item_main_block3_houses-excursion">
+						<section class="grid-item_main_block3_houses-variants">
+							<!--здесь начинается блок с вариантами проектов компании-->
+							<div class="grid-container_houses-variants">
+								<div class="grid-item_houses-variants-title">
+									<h2>Варианты наших проектов</h2>
+								</div>
+
+								<div class="grid-item_houses-variants-card1">
+									<!-- 1 карточка - 1 вариант дома-->
+									<div class="card link rounded-3 shadow-lg">
+										<!-- далее идет код для карусели фотографий для данного варианта дома-->
+										<div
+											id="ExampleIndicators"
+											class="carousel slide shadow-lg"
+										>
+											<div class="carousel-indicators">
+												<!--здесь код для индикаторов слайдов карусели-->
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="0"
+													class="active"
+													aria-current="true"
+													aria-label="Slide 1"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="1"
+													aria-label="Slide 2"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="2"
+													aria-label="Slide 3"
+												></button>
+											</div>
+											<div class="carousel-inner">
+												<!--здесь начинается код для самих слайдов карусели-->
+												<div class="carousel-item active">
+													<!--здесь код для первого слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house1.jpg"
+														class="d-block w-100"
+														alt="Дом на продажу от агенства недвижимости №1"
+													/>
+												</div>
+
+												<div class="carousel-item">
+													<!--здесь код для второго слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house1.jpg"
+														class="d-block w-100"
+														alt=">Дом на продажу от агенства недвижимости №1"
+													/>
+												</div>
+
+												<div class="carousel-item">
+													<!--здесь код для третьего слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house1.jpg"
+														class="d-block w-100"
+														alt="Дом на продажу от агенства недвижимости №1"
+													/>
+												</div>
+											</div>
+											<!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
+											<button
+												class="carousel-control-prev"
+												type="button"
+												data-bs-target="#ExampleIndicators"
+												data-bs-slide="prev"
+											>
+												<span
+													class="carousel-control-prev-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden"> Previous </span>
+											</button>
+											<button
+												class="carousel-control-next"
+												type="button"
+												data-bs-target="#ExampleIndicators"
+												data-bs-slide="next"
+											>
+												<span
+													class="carousel-control-next-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden"> Next </span>
+											</button>
+										</div>
+										<!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
+
+										<div class="card-body">
+											<div class="d-flex flex-column gap-4">
+												<div>
+													<h5 class="fw-bold text-center">Дом одноэтажный</h5>
+													<p class="text-center">от 22,000 ₽/месяц</p>
+												</div>
+												<div class="d-flex gap-5">
+													<div class="d-flex flex-column gap-3">
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_meters.svg"
+																alt="картинка-иконка метража помещения"
+															/>
+															<p class="card-text">
+																Площадь: <b>51 м<sup>2</sup></b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_repair.svg"
+																alt="картинка-иконка ремонтной кисти"
+															/>
+															<p class="card-text">Предчистовая отделка</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_clock.svg"
+																alt="картинка-иконка часов"
+															/>
+															<p class="card-text">
+																Cтроительство:
+																<br />
+																<b>от 5 месяцев</b>
+															</p>
+														</div>
+													</div>
+													<div class="d-flex flex-column gap-3">
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_room.svg"
+																alt="картинка-иконка комнаты"
+															/>
+															<p class="card-text">
+																Количество комнат <b>2</b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_bed.svg"
+																alt="картинка-иконка кровати"
+															/>
+															<p class="card-text">
+																Количество спален:<b>1</b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_wc.svg"
+																alt="картинка-иконка туалета"
+															/>
+															<p class="card-text">
+																Количество санузлов:
+																<b>1</b>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item_houses-variants-card2">
+									<!-- 2 карточка - 2 вариант дома-->
+									<div class="card link rounded-3 shadow-lg">
+										<!-- далее идет код для карусели фотографий для данного варианта дома-->
+										<div id="Indicators" class="carousel slide shadow-lg">
+											<div class="carousel-indicators">
+												<!--здесь код для индикаторов слайдов карусели-->
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="0"
+													class="active"
+													aria-current="true"
+													aria-label="Slide 1"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="1"
+													aria-label="Slide 2"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="2"
+													aria-label="Slide 3"
+												></button>
+											</div>
+											<div class="carousel-inner">
+												<!--здесь начинается код для самих слайдов карусели-->
+												<div class="carousel-item active">
+													<!--здесь код для первого слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house2.jpg"
+														class="d-block w-100"
+														alt="Дом на продажу от агенства недвижимости №2"
+													/>
+												</div>
+
+												<div class="carousel-item">
+													<!--здесь код для второго слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house2.jpg"
+														class="d-block w-100"
+														alt=">Дом на продажу от агенства недвижимости №2"
+													/>
+												</div>
+
+												<div class="carousel-item">
+													<!--здесь код для третьего слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house2.jpg"
+														class="d-block w-100"
+														alt="Дом на продажу от агенства недвижимости №2"
+													/>
+												</div>
+											</div>
+											<!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
+											<button
+												class="carousel-control-prev"
+												type="button"
+												data-bs-target="#Indicators"
+												data-bs-slide="prev"
+											>
+												<span
+													class="carousel-control-prev-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden"> Previous </span>
+											</button>
+											<button
+												class="carousel-control-next"
+												type="button"
+												data-bs-target="#Indicators"
+												data-bs-slide="next"
+											>
+												<span
+													class="carousel-control-next-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden"> Next </span>
+											</button>
+										</div>
+										<!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
+
+										<div class="card-body">
+											<div class="d-flex flex-column gap-4">
+												<div>
+													<h5 class="fw-bold text-center">Дом двухэтажный</h5>
+													<p class="text-center">от 35,000 ₽/месяц</p>
+												</div>
+												<div class="d-flex gap-5">
+													<div class="d-flex flex-column gap-3">
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_meters.svg"
+																alt="картинка-иконка метража помещения"
+															/>
+															<p class="card-text">
+																Площадь: <b>97 м<sup>2</sup></b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_repair.svg"
+																alt="картинка-иконка ремонтной кисти"
+															/>
+															<p class="card-text">Предчистовая отделка</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_clock.svg"
+																alt="картинка-иконка часов"
+															/>
+															<p class="card-text">
+																Cтроительство:
+																<br />
+																<b>от 10 месяцев</b>
+															</p>
+														</div>
+													</div>
+													<div class="d-flex flex-column gap-3">
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_room.svg"
+																alt="картинка-иконка комнаты"
+															/>
+															<p class="card-text">
+																Количество комнат <b>6</b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_bed.svg"
+																alt="картинка-иконка кровати"
+															/>
+															<p class="card-text">
+																Количество спален:<b>3</b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_wc.svg"
+																alt="картинка-иконка туалета"
+															/>
+															<p class="card-text">
+																Количество санузлов:
+																<b>2</b>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item_houses-variants-card3">
+									<!-- 3 карточка - 3 вариант дома-->
+									<div class="card link rounded-3 shadow-lg">
+										<!-- далее идет код для карусели фотографий для данного варианта дома-->
+										<div id="Indicators2" class="carousel slide shadow-lg">
+											<div class="carousel-indicators">
+												<!--здесь код для индикаторов слайдов карусели-->
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="0"
+													class="active"
+													aria-current="true"
+													aria-label="Slide 1"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="1"
+													aria-label="Slide 2"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide-to="2"
+													aria-label="Slide 3"
+												></button>
+											</div>
+											<div class="carousel-inner">
+												<!--здесь начинается код для самих слайдов карусели-->
+												<div class="carousel-item active">
+													<!--здесь код для первого слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house3.jpg"
+														class="d-block w-100"
+														alt="Дом на продажу от агенства недвижимости №3"
+													/>
+												</div>
+
+												<div class="carousel-item">
+													<!--здесь код для второго слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house3.jpg"
+														class="d-block w-100"
+														alt=">Дом на продажу от агенства недвижимости №3"
+													/>
+												</div>
+
+												<div class="carousel-item">
+													<!--здесь код для третьего слайда карусели-->
+													<img
+														src="./assets/images/main_block3-houses/img_house3.jpg"
+														class="d-block w-100"
+														alt="Дом на продажу от агенства недвижимости №3"
+													/>
+												</div>
+											</div>
+											<!--ниже идет код для кнопок "вперед" и "назад" для перелистывания слайдов карусели-->
+											<button
+												class="carousel-control-prev"
+												type="button"
+												data-bs-target="#Indicators2"
+												data-bs-slide="prev"
+											>
+												<span
+													class="carousel-control-prev-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden"> Previous </span>
+											</button>
+											<button
+												class="carousel-control-next"
+												type="button"
+												data-bs-target="#Indicators2"
+												data-bs-slide="next"
+											>
+												<span
+													class="carousel-control-next-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden"> Next </span>
+											</button>
+										</div>
+										<!-- здесь карусель заканчивается и начинается код для смыслового наполнения карточки объекта -->
+
+										<div class="card-body">
+											<div class="d-flex flex-column gap-4">
+												<div>
+													<h5 class="fw-bold text-center">Дом одноэтажный</h5>
+													<p class="text-center">от 25,000 ₽/месяц</p>
+												</div>
+												<div class="d-flex gap-5">
+													<div class="d-flex flex-column gap-3">
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_meters.svg"
+																alt="картинка-иконка метража помещения"
+															/>
+															<p class="card-text">
+																Площадь: <b>63 м<sup>2</sup></b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_repair.svg"
+																alt="картинка-иконка ремонтной кисти"
+															/>
+															<p class="card-text">Предчистовая отделка</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_clock.svg"
+																alt="картинка-иконка часов"
+															/>
+															<p class="card-text">
+																Cтроительство:
+																<br />
+																<b>от 6 месяцев</b>
+															</p>
+														</div>
+													</div>
+													<div class="d-flex flex-column gap-3">
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_room.svg"
+																alt="картинка-иконка комнаты"
+															/>
+															<p class="card-text">
+																Количество комнат <b>3</b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_bed.svg"
+																alt="картинка-иконка кровати"
+															/>
+															<p class="card-text">
+																Количество спален:<b>2</b>
+															</p>
+														</div>
+														<div>
+															<img
+																src="./assets/images/main_block3-houses/vector_wc.svg"
+																alt="картинка-иконка туалета"
+															/>
+															<p class="card-text">
+																Количество санузлов:
+																<b>1</b>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item_houses-variants-button">
+									<a
+										href="./pages/projects.html"
+										target="_blank"
+										class="shadow-lg houses-variants-button"
+									>
+										Показать все проекты
+									</a>
+								</div>
+							</div>
+						</section>
+
+                        <section class="grid-item_main_block3_houses-excursion">
                             <div class="flex-container_houses-excursion">
                                 <h3 class="flex-item_house-excursion-title">
                                     Приглашаем на экскурсию
@@ -1036,469 +1035,472 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
-                </section>
+                </div> <!--блок 3 main заканчивается-->
 
-					<section class="grid-item_main_block4">
-						<!--блок 4 начинается - @Marrria_L-->
-						<div class="grid-item_main_block4_about-company">
-							<h2 class="grid-item_main_block4_about-company_title">
-								О компании
-							</h2>
-							<div class="grid-item_main_block4_about-company_desc">
-								<p class="grid-item_main_block4_about-company_desc_text">
-									Компания "Ассоциация застройщиков" является объединенным
-									отделом продаж и предлагает широкий спектр квартир от ЭКОНОМ
-									до БИЗНЕС-класса, а также разработанные различные программы
-									приобретения жилья в новостройках.
-								</p>
-								<p class="grid-item_main_block4_about-company_desc_text">
-									Мы работаем на строительном рынке в двух регионах России -
-									Ростовская область и Краснодарский край, и занимаемся
-									стратегической разработкой развития строительных компаний,
-									реализации квартир на первичном рынке, предоставляем полный
-									аутсорсинг для строительных компаний в рамках партнерских или
-									аутсорсинговых договоров.
-								</p>
-								<p class="grid-item_main_block4_about-company_desc_text">
-									Наша цель - развитие собственной филиальной сети в
-									городах-миллионниках по всей России с целью создания
-									комфортной и безопасной среды проживания граждан.
-								</p>
+				<div class="grid-item_main_block4"> <!--блок 4 main начинается -->
+					<section class="grid-item_main_block4_about-company">
+						<h2 class="grid-item_main_block4_about-company_title">
+							О компании
+						</h2>
+						<div class="grid-item_main_block4_about-company_desc">
+							<p class="grid-item_main_block4_about-company_desc_text">
+								Компания "Ассоциация застройщиков" является объединенным
+								отделом продаж и предлагает широкий спектр квартир от ЭКОНОМ
+								до БИЗНЕС-класса, а также разработанные различные программы
+								приобретения жилья в новостройках.
+							</p>
+							<p class="grid-item_main_block4_about-company_desc_text">
+								Мы работаем на строительном рынке в двух регионах России -
+								Ростовская область и Краснодарский край, и занимаемся
+								стратегической разработкой развития строительных компаний,
+								реализации квартир на первичном рынке, предоставляем полный
+								аутсорсинг для строительных компаний в рамках партнерских или
+								аутсорсинговых договоров.
+							</p>
+							<p class="grid-item_main_block4_about-company_desc_text">
+								Наша цель - развитие собственной филиальной сети в
+								городах-миллионниках по всей России с целью создания
+								комфортной и безопасной среды проживания граждан.
+							</p>
+						</div>
+						<div class="grid-item_main_block4_about-company_logo">
+							<div class="grid-item_main_block4_about-company_logo_image">
+								<!-- Необходимо вставить логотип -->
+								<img src="./assets/images/header/vector_logo.svg" alt="logo" />
 							</div>
-							<div class="grid-item_main_block4_about-company_logo">
-								<div class="grid-item_main_block4_about-company_logo_image">
-									<!-- Необходимо вставить логотип -->
-									<img src="./assets/images/header/vector_logo.svg" alt="logo" />
-								</div>
-								<div class="grid-item_main_block4_about-company_logo_text">
-									Строительство домов не сложнее покупки квартиры
-								</div>
-							</div>
-							<div class="grid-item_main_block4_about-company_image">
-								<img
-									src="assets/images/main-block4/img_house.png"
-									alt="Фото дома"
-									class="grid-item_main_block4_about-company_image2"
-								/>
+							<div class="grid-item_main_block4_about-company_logo_text">
+								Строительство домов не сложнее покупки квартиры
 							</div>
 						</div>
-
-						<div class="grid-item_main_block4_reviews">
-							<!-- Значок отзывов на Яндекс -->
-							<div class="grid-item_main_block4_reviews_wrap-yandex">
-								<a
-									href="https://yandex.ru/maps/-/CDV37Z0b"
-									target="_blank"
-									class="grid-item_main_block4_reviews_wrap-yandex2"
-								>
-									<div class="grid-item_main_block4_reviews_logo">
-										<img
-											src="assets/images/main-block4/vector_logo-yandex.svg"
-											alt="Значок Яндекс"
-											class="grid-item_main_block4_reviews_logo2"
-										/>
-									</div>
-									<div class="grid-item_main_block4_reviews_wrap2">
-										<div class="grid-item_main_block4_reviews_wrap2-rating">
-											5.0
-										</div>
-										<div class="grid-item_main_block4_reviews_wrap2-wrap">
-											<div class="grid-item_main_block4_reviews_wrap2-stars">
-												<img
-													src="assets/images/main-block4/vector_stars.svg"
-													alt="Оценка"
-													class="grid-item_main_block4_reviews_wrap2-stars2"
-												/>
-											</div>
-											<div class="grid-item_main_block4_reviews_wrap2-desc">
-												36 отзывов
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Значок отзывов на 2Gis -->
-							<div class="grid-item_main_block4_reviews_wrap-2gis">
-								<a
-									class="grid-item_main_block4_reviews_wrap-2gis2"
-									href="https://go.2gis.com/otkap"
-									target="_blank"
-								>
-									<div class="grid-item_main_block4_reviews_logo">
-										<img
-											src="assets/images/main-block4/vector_logo-2gis.svg"
-											alt="Значок 2GIS"
-											class="grid-item_main_block4_reviews_logo2"
-										/>
-									</div>
-									<div class="grid-item_main_block4_reviews_wrap2">
-										<div class="grid-item_main_block4_reviews_wrap2-rating">
-											5.0
-										</div>
-										<div class="grid-item_main_block4_reviews_wrap2-wrap">
-											<div class="grid-item_main_block4_reviews_wrap2-stars">
-												<img
-													src="assets/images/main-block4/vector_stars.svg"
-													alt="Оценка"
-													class="grid-item_main_block4_reviews_wrap2-stars2"
-												/>
-											</div>
-											<div class="grid-item_main_block4_reviews_wrap2-desc">
-												36 отзывов
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Карусель отзывов -->
-							<div class="grid-item_main_block4_reviews_carousel">
-								<div class="container">
-									<div class="row">
-										<div class="col-md-8 offset-md-2">
-											<div
-												id="carouselExampleIndicators2"
-												class="carousel slide shadow-lg carousel-dark carousel-fade"
-												data-bs-ride="carousel"
-											>
-												<!-- ИНдикаторы карусели -->
-												<div class="carousel-indicators">
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators2"
-														data-bs-slide-to="0"
-														class="active"
-														aria-current="true"
-														aria-label="Slide 1"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators2"
-														data-bs-slide-to="1"
-														aria-label="Slide 2"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators2"
-														data-bs-slide-to="2"
-														aria-label="Slide 3"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators2"
-														data-bs-slide-to="3"
-														aria-label="Slide 4"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators2"
-														data-bs-slide-to="4"
-														aria-label="Slide 5"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators2"
-														data-bs-slide-to="5"
-														aria-label="Slide 6"
-													></button>
-													<button
-														type="button"
-														data-bs-target="#carouselExampleIndicators2"
-														data-bs-slide-to="6"
-														aria-label="Slide 7"
-													></button>
-												</div>
-												<!-- Отзывы -->
-												<div class="carousel-inner">
-													<div class="carousel-item active">
-														<img
-															src="assets/images/main-block4/img_review1.png"
-															class="d-block w-100"
-															alt="Отзывы"
-														/>
-													</div>
-													<div class="carousel-item">
-														<img
-															src="assets/images/main-block4/img_review2.png"
-															class="d-block w-100"
-															alt="Отзывы"
-														/>
-													</div>
-													<div class="carousel-item">
-														<img
-															src="assets/images/main-block4/img_review3.png"
-															class="d-block w-100"
-															alt="Отзывы"
-														/>
-													</div>
-													<div class="carousel-item">
-														<img
-															src="assets/images/main-block4/img_review4.png"
-															class="d-block w-100"
-															alt="Отзывы"
-														/>
-													</div>
-													<div class="carousel-item">
-														<img
-															src="assets/images/main-block4/img_review5.png"
-															class="d-block w-100"
-															alt="Отзывы"
-														/>
-													</div>
-													<div class="carousel-item">
-														<img
-															src="assets/images/main-block4/img_review6.png"
-															class="d-block w-100"
-															alt="Отзывы"
-														/>
-													</div>
-													<div class="carousel-item">
-														<img
-															src="assets/images/main-block4/img_review7.png"
-															class="d-block w-100"
-															alt="Отзывы"
-														/>
-													</div>
-												</div>
-												<!-- Кнопки перелистывания -->
-												<button
-													class="carousel-control-prev"
-													type="button"
-													data-bs-target="#carouselExampleIndicators2"
-													data-bs-slide="prev"
-												>
-													<span
-														class="carousel-control-prev-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden">Предыдущий</span>
-												</button>
-												<button
-													class="carousel-control-next"
-													type="button"
-													data-bs-target="#carouselExampleIndicators2"
-													data-bs-slide="next"
-												>
-													<span
-														class="carousel-control-next-icon"
-														aria-hidden="true"
-													></span>
-													<span class="visually-hidden">Следующий</span>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="grid-item_main_block4_about-company_image">
+							<img
+								src="assets/images/main-block4/img_house.png"
+								alt="Фото дома"
+								class="grid-item_main_block4_about-company_image2"
+							/>
 						</div>
-
-                    <div class="grid-item_main_block4_contacts" id="Контакты">
-                        <div class="grid-item_main_block4_contacts-container">
-                            <h2 class="grid-item_main_block4_contacts-title">Контакты</h2>
-                            <div class="grid-item_main_block4_contacts-map">
-                                <a class="grid-item_main_block4_contacts-map-logo"
-                                    href="https://yandex.ru/maps/-/CDsQ707u">
-                                    <img src="assets/images/main-block4/vector_map.svg" alt="Значок карты"
-                                        class="grid-item_main_block4_contacts-map-logo2" />
-                                </a>
-                                <div class="grid-item_main_block4_contacts-map-text">
-                                    <h3 class="grid-item_main_block4_contacts-map-text-title">
-                                        г. Ростов-на-Дону
-                                    </h3>
-                                    <p class="grid-item_main_block4_contacts-map-text-desc">
-                                        ул. Варфоломеева 265, офис 32
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="grid-item_main_block4_contacts-data">
-                                <div class="grid-item_main_block4_contacts-data-logo">
-                                    <img src="assets/images/main-block4/vector_data.svg" alt="Значок календаря"
-                                        class="grid-item_main_block4_contacts-data-logo2" />
-                                </div>
-                                <div class="grid-item_main_block4_contacts-data-text">
-                                    Понедельник-пятница <br />10:00-19:00
-                                </div>
-                            </div>
-                            <div class="grid-item_main_block4_contacts-phone">
-                                <div class="grid-item_main_block4_contacts-phone-logo">
-                                    <img src="assets/images/main-block4/vector_phone.svg" alt="Значок телефона"
-                                        class="grid-item_main_block4_contacts-phone-logo2" />
-                                </div>
-                                <div class="grid-item_main_block4_contacts-phone-number">
-                                    <div class="grid-item_main_block4_contacts-phone-number-text">
-                                        <a href="tel:+7 918 535-23-26"
-                                            class="grid-item_main_block4_contacts-phone-number-text2">+7 918
-                                            535-23-26</a>
-                                    </div>
-                                    <div class="grid-item_main_block4_contacts-phone-number-text">
-                                        <a href="tel:+7 938 159-01-07"
-                                            class="grid-item_main_block4_contacts-phone-number-text2">+7 938
-                                            159-01-07</a>
-                                    </div>
-                                </div>
-                            </div>
-
-								<form class="grid-item_main_block4_contacts-form">
-									<!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
-									<button
-										class="grid-item_main_block4_contacts-button"
-										type="button"
-										class="btn btn-primary"
-										data-bs-toggle="modal"
-										data-bs-target="#staticBackdrop"
-									>
-										ОСТАВИТЬ ЗАЯВКУ
-									</button>
-								</form>
-							</div>
-						</div>
-						<!--блок 4 заканчивается - @Marrria_L-->
 					</section>
 
-					<!-- Модальное окно для обратной связи -->
-					<div
-						class="modal fade"
-						id="staticBackdrop"
-						data-bs-backdrop="static"
-						data-bs-keyboard="false"
-						tabindex="-1"
-						aria-labelledby="staticBackdropLabel"
-						aria-hidden="true"
-					>
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="staticBackdropLabel">
-										Оставьте заявку и мы с Вами свяжемся
-									</h5>
-									<button
-										type="button"
-										class="btn-close"
-										data-bs-dismiss="modal"
-										aria-label="Закрыть"
-									></button>
+					<section class="grid-item_main_block4_reviews">
+						<!-- Значок отзывов на Яндекс -->
+						<div class="grid-item_main_block4_reviews_wrap-yandex">
+							<a
+								href="https://yandex.ru/maps/-/CDV37Z0b"
+								target="_blank"
+								class="grid-item_main_block4_reviews_wrap-yandex2"
+							>
+								<div class="grid-item_main_block4_reviews_logo">
+									<img
+										src="assets/images/main-block4/vector_logo-yandex.svg"
+										alt="Значок Яндекс"
+										class="grid-item_main_block4_reviews_logo2"
+									/>
 								</div>
-								<div class="modal-body">
-									<form class="contact-form__input-wrapper input-group mb-5">
-										<input
-											name="name"
-											type="text"
-											class="contact-form__input contact-form__input_name form-control form-control-lg"
-											placeholder="Имя"
-											required
-										/>
-										<div
-											class="contact-form__error contact-form__error_name"
-										></div>
-									</form>
-									<form class="contact-form__input-wrapper input-group mb-5">
-										<input
-											name="tel"
-											type="tel"
-											class="contact-form__input contact-form__input_tel form-control form-control-lg"
-											placeholder="+7 (999) 999-99-99"
-											required
-										/>
-										<div
-											class="contact-form__error contact-form__error_tel"
-										></div>
-									</form>
-									<form class="contact-form__input-wrapper input-group mb-2">
-										<input
-											name="email"
-											type="email"
-											class="contact-form__input contact-form__input_email form-control form-control-lg"
-											placeholder="Введите ваш email"
-											required
-										/>
-										<div
-											class="contact-form__error contact-form__error_email"
-										></div>
-									</form>
+								<div class="grid-item_main_block4_reviews_wrap2">
+									<div class="grid-item_main_block4_reviews_wrap2-rating">
+										5.0
+									</div>
+									<div class="grid-item_main_block4_reviews_wrap2-wrap">
+										<div class="grid-item_main_block4_reviews_wrap2-stars">
+											<img
+												src="assets/images/main-block4/vector_stars.svg"
+												alt="Оценка"
+												class="grid-item_main_block4_reviews_wrap2-stars2"
+											/>
+										</div>
+										<div class="grid-item_main_block4_reviews_wrap2-desc">
+											36 отзывов
+										</div>
+									</div>
 								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-primary">
-										Оставить заявку
-									</button>
+							</a>
+						</div>
+
+						<!-- Значок отзывов на 2Gis -->
+						<div class="grid-item_main_block4_reviews_wrap-2gis">
+							<a
+								class="grid-item_main_block4_reviews_wrap-2gis2"
+								href="https://go.2gis.com/otkap"
+								target="_blank"
+							>
+								<div class="grid-item_main_block4_reviews_logo">
+									<img
+										src="assets/images/main-block4/vector_logo-2gis.svg"
+										alt="Значок 2GIS"
+										class="grid-item_main_block4_reviews_logo2"
+									/>
+								</div>
+								<div class="grid-item_main_block4_reviews_wrap2">
+									<div class="grid-item_main_block4_reviews_wrap2-rating">
+										5.0
+									</div>
+									<div class="grid-item_main_block4_reviews_wrap2-wrap">
+										<div class="grid-item_main_block4_reviews_wrap2-stars">
+											<img
+												src="assets/images/main-block4/vector_stars.svg"
+												alt="Оценка"
+												class="grid-item_main_block4_reviews_wrap2-stars2"
+											/>
+										</div>
+										<div class="grid-item_main_block4_reviews_wrap2-desc">
+											36 отзывов
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<!-- Карусель отзывов -->
+						<div class="grid-item_main_block4_reviews_carousel">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-8 offset-md-2">
+										<div
+											id="carouselExampleIndicators2"
+											class="carousel slide shadow-lg carousel-dark carousel-fade"
+											data-bs-ride="carousel"
+										>
+											<!-- ИНдикаторы карусели -->
+											<div class="carousel-indicators">
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators2"
+													data-bs-slide-to="0"
+													class="active"
+													aria-current="true"
+													aria-label="Slide 1"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators2"
+													data-bs-slide-to="1"
+													aria-label="Slide 2"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators2"
+													data-bs-slide-to="2"
+													aria-label="Slide 3"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators2"
+													data-bs-slide-to="3"
+													aria-label="Slide 4"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators2"
+													data-bs-slide-to="4"
+													aria-label="Slide 5"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators2"
+													data-bs-slide-to="5"
+													aria-label="Slide 6"
+												></button>
+												<button
+													type="button"
+													data-bs-target="#carouselExampleIndicators2"
+													data-bs-slide-to="6"
+													aria-label="Slide 7"
+												></button>
+											</div>
+											<!-- Отзывы -->
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img
+														src="assets/images/main-block4/img_review1.png"
+														class="d-block w-100"
+														alt="Отзывы"
+													/>
+												</div>
+												<div class="carousel-item">
+													<img
+														src="assets/images/main-block4/img_review2.png"
+														class="d-block w-100"
+														alt="Отзывы"
+													/>
+												</div>
+												<div class="carousel-item">
+													<img
+														src="assets/images/main-block4/img_review3.png"
+														class="d-block w-100"
+														alt="Отзывы"
+													/>
+												</div>
+												<div class="carousel-item">
+													<img
+														src="assets/images/main-block4/img_review4.png"
+														class="d-block w-100"
+														alt="Отзывы"
+													/>
+												</div>
+												<div class="carousel-item">
+													<img
+														src="assets/images/main-block4/img_review5.png"
+														class="d-block w-100"
+														alt="Отзывы"
+													/>
+												</div>
+												<div class="carousel-item">
+													<img
+														src="assets/images/main-block4/img_review6.png"
+														class="d-block w-100"
+														alt="Отзывы"
+													/>
+												</div>
+												<div class="carousel-item">
+													<img
+														src="assets/images/main-block4/img_review7.png"
+														class="d-block w-100"
+														alt="Отзывы"
+													/>
+												</div>
+											</div>
+											<!-- Кнопки перелистывания -->
+											<button
+												class="carousel-control-prev"
+												type="button"
+												data-bs-target="#carouselExampleIndicators2"
+												data-bs-slide="prev"
+											>
+												<span
+													class="carousel-control-prev-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden">Предыдущий</span>
+											</button>
+											<button
+												class="carousel-control-next"
+												type="button"
+												data-bs-target="#carouselExampleIndicators2"
+												data-bs-slide="next"
+											>
+												<span
+													class="carousel-control-next-icon"
+													aria-hidden="true"
+												></span>
+												<span class="visually-hidden">Следующий</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="grid-item_main_block4_contacts" id="Контакты">
+						<div class="grid-item_main_block4_contacts-container">
+							<h2 class="grid-item_main_block4_contacts-title">
+								Контакты
+							</h2>
+							<div class="grid-item_main_block4_contacts-map">
+								<a class="grid-item_main_block4_contacts-map-logo"
+									href="https://yandex.ru/maps/-/CDsQ707u">
+									<img src="assets/images/main-block4/vector_map.svg" alt="Значок карты"
+										class="grid-item_main_block4_contacts-map-logo2" />
+								</a>
+								<div class="grid-item_main_block4_contacts-map-text">
+									<h3 class="grid-item_main_block4_contacts-map-text-title">
+										г. Ростов-на-Дону
+									</h3>
+									<p class="grid-item_main_block4_contacts-map-text-desc">
+										ул. Варфоломеева 265, офис 32
+									</p>
+								</div>
+							</div>
+							<div class="grid-item_main_block4_contacts-data">
+								<div class="grid-item_main_block4_contacts-data-logo">
+									<img src="assets/images/main-block4/vector_data.svg" alt="Значок календаря"
+										class="grid-item_main_block4_contacts-data-logo2" />
+								</div>
+								<div class="grid-item_main_block4_contacts-data-text">
+									Понедельник-пятница <br />10:00-19:00
+								</div>
+							</div>
+							<div class="grid-item_main_block4_contacts-phone">
+								<div class="grid-item_main_block4_contacts-phone-logo">
+									<img src="assets/images/main-block4/vector_phone.svg" alt="Значок телефона"
+										class="grid-item_main_block4_contacts-phone-logo2" />
+								</div>
+								<div class="grid-item_main_block4_contacts-phone-number">
+									<div class="grid-item_main_block4_contacts-phone-number-text">
+										<a href="tel:+7 918 535-23-26"
+											class="grid-item_main_block4_contacts-phone-number-text2">+7 918
+											535-23-26</a>
+									</div>
+									<div class="grid-item_main_block4_contacts-phone-number-text">
+										<a href="tel:+7 938 159-01-07"
+											class="grid-item_main_block4_contacts-phone-number-text2">+7 938
+											159-01-07</a>
+									</div>
+								</div>
+							</div>
+
+							<form class="grid-item_main_block4_contacts-form">
+								<!-- Для вызова модального окна вставить в кнопку следующий текст: type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
+								<button
+									class="grid-item_main_block4_contacts-button"
+									type="button"
+									class="btn btn-primary"
+									data-bs-toggle="modal"
+									data-bs-target="#staticBackdrop"
+								>
+									ОСТАВИТЬ ЗАЯВКУ
+								</button>
+							</form>
+						</div>
+					</section>
+					<!--блок 4 main заканчивается -->
+				</div>
+
+				<!-- Здесь начинается код для модального окна обратной связи -->
+				<div
+					class="modal fade"
+					id="staticBackdrop"
+					data-bs-backdrop="static"
+					data-bs-keyboard="false"
+					tabindex="-1"
+					aria-labelledby="staticBackdropLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">
+									Оставьте заявку и мы с Вами свяжемся
+								</h5>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Закрыть"
+								></button>
+							</div>
+							<div class="modal-body">
+								<form class="contact-form__input-wrapper input-group mb-5">
+									<input
+										name="name"
+										type="text"
+										class="contact-form__input contact-form__input_name form-control form-control-lg"
+										placeholder="Имя"
+										required
+									/>
+									<div
+										class="contact-form__error contact-form__error_name"
+									></div>
+								</form>
+								<form class="contact-form__input-wrapper input-group mb-5">
+									<input
+										name="tel"
+										type="tel"
+										class="contact-form__input contact-form__input_tel form-control form-control-lg"
+										placeholder="+7 (999) 999-99-99"
+										required
+									/>
+									<div
+										class="contact-form__error contact-form__error_tel"
+									></div>
+								</form>
+								<form class="contact-form__input-wrapper input-group mb-2">
+									<input
+										name="email"
+										type="email"
+										class="contact-form__input contact-form__input_email form-control form-control-lg"
+										placeholder="Введите ваш email"
+										required
+									/>
+									<div
+										class="contact-form__error contact-form__error_email"
+									></div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">
+									Оставить заявку
+								</button>
+							</div>
+						</div>
+					</div>
+				</div> <!-- Заканчивается код для модального окна обратной связи -->
+				
+			</main>
+		</div>
+			
+		<div class="grid-item_body_footer"> <!--блок футера (подвала сайта) начинается -->
+			<footer class="footer"> 
+				<div class="grid-container_footer">
+
+					<div class="grid-item_footer-itself"> <!--верхний блок футера -->
+						<div class="footer-itself">
+
+							<div class="footer-itself_logo">
+								<div class="logo">
+									<img
+										src="https://www.svgrepo.com/show/503810/home.svg"
+										alt="Логотип компании"
+										class="svg"
+									/>
+									<h3 class="logo_text">
+										<a href="#">
+											<i>Logo</i>
+										</a>
+									</h3>
+								</div>
+							</div>
+
+							<nav class="footer-itself_nav"> <!--навигация по странице -->
+								<ul class="nav_links">
+									<li><a href="#Наши услуги">Наши услуги</a></li>
+									<li><a href="#Ипотека">Ипотека</a></li>
+									<li><a href="#НашиПроекты">Наши проекты</a></li>
+									<li><a href="http://127.0.0.1:5500/pages/projects.html" target="_blank">Дома и
+											квартиры</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+					<div class="grid-item_sub-footer"> <!--нижний блок футера -->
+						<div class="sub-footer">
+
+							<div class="sub-footer_inf"> <!--дополнительная юридическая информация -->
+								<p>ОГРН 0959595954549</p>
+								<p>ИНН 949449494</p>
+								<p>КПП 494949</p>
+							</div>
+
+							<div class="sub-footer_rights">
+								<p>
+									<b>2024. Все права защищены</b>
+								</p>
+							</div>
+
+							<div class="sub-footer_itgirls">
+								<div class="sub-footer_itgirls-logo">
+									<a href="https://itgirlschool.com/?ysclid=m077xgw8bb89371622" target="_blank">
+										<img src="./assets/images/footer/vector_itgirls.svg" alt="Логотип компании"
+											class="svg">
+										<p class="sub-footer_itgirls-logo">
+											Сайт создан командой разработчиц из itgirls
+										</p>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</main>
-			</div>
-			
-			<div class="grid-item_body_footer">
-				<footer class="footer">
-					<!--блок футера начинается -->
-					<div class="grid-container_footer">
-						<div class="grid-item_footer-itself">
-							<div class="footer-itself">
-								<div class="footer-itself_logo">
-									<div class="logo">
-										<img
-											src="https://www.svgrepo.com/show/503810/home.svg"
-											alt="Логотип компании"
-											class="svg"
-										/>
-										<h3 class="logo_text">
-											<a href="#">
-												<i>Logo</i>
-											</a>
-										</h3>
-									</div>
-								</div>
-
-                            <nav class="footer-itself_nav">
-                                <ul class="nav_links">
-                                    <li><a href="#Наши услуги">Наши услуги</a></li>
-                                    <li><a href="#Ипотека">Ипотека</a></li>
-                                    <li><a href="#НашиПроекты">Наши проекты</a></li>
-                                    <li><a href="http://127.0.0.1:5500/pages/projects.html" target="_blank">Дома и
-                                            квартиры</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
-						<div class="grid-item_sub-footer">
-							<div class="sub-footer">
-								<div class="sub-footer_inf">
-									<p>ОГРН 0959595954549</p>
-									<p>ИНН 949449494</p>
-									<p>КПП 494949</p>
-								</div>
-
-								<div class="sub-footer_rights">
-									<p>
-										<b>2024. Все права защищены</b>
-									</p>
-								</div>
-
-                            <div class="sub-footer_itgirls">
-                                <div class="sub-footer_itgirls-logo">
-                                    <a href="https://itgirlschool.com/?ysclid=m077xgw8bb89371622" target="_blank">
-                                        <img src="./assets/images/footer/vector_itgirls.svg" alt="Логотип компании"
-                                            class="svg">
-                                        <p class="sub-footer_itgirls-logo">
-                                            Сайт создан командой разработчиц из itgirls
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!--блок футера заканчивается-->
-        </div>
-    </div>
+				</div>
+			</footer> <!--блок футера заканчивается-->
+		</div>
+	</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-</body>
+    </script>
 
+</body>
 </html>
