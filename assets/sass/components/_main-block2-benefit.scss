@@ -13,8 +13,13 @@
     h2 {
         @include title;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
             @include title-adaptive-mobile;
+        }
+
+        @media screen and (max-width: 767px) {
+            @include title-adaptive-mobile-phone;
+            text-align: center;
         }
     }
 
