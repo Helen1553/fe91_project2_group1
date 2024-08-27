@@ -1719,9 +1719,13 @@
   width: 35%;
   height: 100%;
 }
+.footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_itgirls .footer-itself_itgirls-logo {
+  width: 50%;
+  height: 60%;
+}
 .footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_itgirls .footer-itself_itgirls-logo .itgirls-logo {
-  width: 40%;
-  height: 55%;
+  width: 50%;
+  height: 45%;
   background-color: white;
   border-radius: 6px;
 }
@@ -1848,8 +1852,8 @@
     font-size: 0.8rem;
   }
   .grid-item_body_footer .footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_itgirls .footer-itself_itgirls-logo .itgirls-logo {
-    width: 40%;
-    height: 55%;
+    width: 55%;
+    height: 45%;
   }
   .grid-item_body_footer .footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_itgirls .footer-itself_itgirls-logo .itgirls-text {
     font-size: 0.8rem;
