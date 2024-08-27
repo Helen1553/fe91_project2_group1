@@ -397,7 +397,6 @@
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
 	.grid-item_main_block4{
-		border: solid red;
 		.grid-container_main_block4{
 			grid-template: 37% 33% 30%/5% 1fr 5%;
 
@@ -417,7 +416,6 @@
 		
 						.grid-item_main_block4_about-company_desc_text {
 							font-size: 1rem;
-							border: solid red
 						}
 					}
 		
@@ -432,8 +430,6 @@
 			}
 
 			.grid-item_main_block4_reviews {
-
-				border: solid black;
 				.grid-container_main_block4_reviews{
 					display: flex;
 					flex-direction: column;
@@ -473,7 +469,6 @@
 					}
 
 					.grid-item_main_block4_reviews_carousel {
-						border: solid red;
 						margin-top: 1rem;
 						width: 30rem;
 						height: 15rem;
@@ -518,7 +513,6 @@
 
 @media screen and (max-width: 499px) {
 	.grid-item_main_block4{
-		border: solid red;
 		.grid-container_main_block4{
 			grid-template: 46% 28% 26%/5% 1fr 5%;
 
@@ -538,7 +532,6 @@
 		
 						.grid-item_main_block4_about-company_desc_text {
 							font-size: 1.5rem;
-							border: solid red
 						}
 					}
 		
@@ -555,7 +548,6 @@
 			.grid-item_main_block4_reviews {
 				margin-top: 5rem;
 
-				border: solid black;
 				.grid-container_main_block4_reviews{
 					display: flex;
 					flex-direction: column;
@@ -595,7 +587,6 @@
 					}
 
 					.grid-item_main_block4_reviews_carousel {
-						border: solid red;
 						margin-top: 1rem;
 						width: 30rem;
 						height: 15rem;
