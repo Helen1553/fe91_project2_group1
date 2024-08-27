@@ -1,7 +1,6 @@
 .footer{
     height: 100%;
     text-align: center;
-    border-top: solid black;
     
     .grid-container_footer{
         display: grid;
@@ -67,6 +66,7 @@
                 }
 
                 .footer-itself_itgirls{
+                    margin-top: 0.5rem;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -77,8 +77,8 @@
 
                     .footer-itself_itgirls-logo{
                         .itgirls-logo{
-                            width: 50%;
-                            height: 70%;
+                            width: 40%;
+                            height: 55%;
     
                             background-color: white;
                             border-radius: 6px;
@@ -298,31 +298,31 @@
                         .footer-itself_logo{
                             .logo{
                                 .logo_text{
-                                    font-size: 2rem;
+                                    font-size: 1rem;
                                 }
                         
                                 .svg{
-                                    width: 40%;
-                                    height: 40%;
+                                    width: 35%;
+                                    height: 35%;
                                 }
                             }
                         }
         
                         .footer-itself_inf{
                             p{
-                                font-size: 1.3rem;
+                                font-size: 0.8rem;
                             }
                         }
         
                         .footer-itself_itgirls{
                             .footer-itself_itgirls-logo{
                                 .itgirls-logo{
-                                    width: 50%;
-                                    height: 60%;
+                                    width: 40%;
+                                    height: 55%;
                                 }
             
                                 .itgirls-text{
-                                    font-size: 1.3rem;
+                                    font-size: 0.8rem;
                                 }
                             }
                         }
@@ -330,12 +330,12 @@
                         .footer-itself_arrow{
                             .footer-itself_arrow-up{
                                 .footer-itself_arrow-img{
-                                    width: 40%;
-                                    height: 40%;
+                                    width: 30%;
+                                    height: 30%;
                                 }
             
                                 .footer-itself_arrow-text{
-                                    font-size: 1.3rem;
+                                    font-size: 0.7rem;
                                 }
                             }
                         }
@@ -347,7 +347,7 @@
                 .grid-item_sub-footer{
                     .sub-footer{
                         .sub-footer_rights{
-                            font-size: 1.3rem;
+                            font-size: 0.7rem;
                         }
                     }
                 }
@@ -368,12 +368,12 @@
 
                             .logo{
                                 .logo_text{
-                                    font-size: 2rem;
+                                    font-size: 0.9rem;
                                 }
                         
                                 .svg{
-                                    width: 40%;
-                                    height: 40%;
+                                    width: 35%;
+                                    height: 35%;
                                 }
                             }
                         }
@@ -392,13 +392,13 @@
 
                             .footer-itself_arrow-up{
                                 .footer-itself_arrow-img{
-                                    margin-top: 30px;
+                                    margin-top: 20px;
                                     width: 20%;
                                     height: 20%;
                                 }
             
                                 .footer-itself_arrow-text{
-                                    font-size: 1.3rem;
+                                    font-size: 0.7rem;
                                 }
                             }
                         }
@@ -410,7 +410,7 @@
                 .grid-item_sub-footer{
                     .sub-footer{
                         .sub-footer_rights{
-                            font-size: 1.5rem;
+                            font-size: 0.7rem;
                         }
                     }
                 }

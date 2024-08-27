@@ -1,7 +1,5 @@
 .body {
-	height: 8500px;
-
-	border: solid black;
+	height: 8200px;
 
 	font-family: "Roboto", sans-serif;
 
@@ -27,10 +25,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.body {
-		height: 7500px;
+		height: 7000px;
 
 		.grid-container_body {
-			grid-template: 10% 86% 4%/1fr;
+			grid-template: 10% 87% 3%/1fr;
 		}
 	}
 }
@@ -40,7 +38,7 @@
 		height: 5450px;
 
 		.grid-container_body {
-			grid-template: 16% 80% 4%/1fr;
+			grid-template: 16% 81% 3%/1fr;
 		}
 	}
 }

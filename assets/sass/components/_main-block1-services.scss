@@ -13,6 +13,7 @@
 
     h2 {
         @include title;
+        padding: 2rem;
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             @include title-adaptive-mobile;
