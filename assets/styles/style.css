@@ -1476,9 +1476,6 @@
   }
 }
 @media screen and (min-width: 500px) and (max-width: 767px) {
-  .grid-item_main_block4 {
-    border: solid red;
-  }
   .grid-item_main_block4 .grid-container_main_block4 {
     grid-template: 37% 33% 30%/5% 1fr 5%;
   }
@@ -1498,16 +1495,12 @@
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_about-company .grid-container_main_block4_about-company .grid-item_main_block4_about-company_desc .grid-item_main_block4_about-company_desc_text {
     font-size: 1rem;
-    border: solid red;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_about-company .grid-container_main_block4_about-company .grid-item_main_block4_about-company_logo {
     display: none;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_about-company .grid-container_main_block4_about-company .grid-item_main_block4_about-company_image {
     display: none;
-  }
-  .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_reviews {
-    border: solid black;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_reviews .grid-container_main_block4_reviews {
     display: flex;
@@ -1538,7 +1531,6 @@
     font-size: 1rem;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_reviews .grid-container_main_block4_reviews .grid-item_main_block4_reviews_carousel {
-    border: solid red;
     margin-top: 1rem;
     width: 30rem;
     height: 15rem;
@@ -1570,9 +1562,6 @@
   }
 }
 @media screen and (max-width: 499px) {
-  .grid-item_main_block4 {
-    border: solid red;
-  }
   .grid-item_main_block4 .grid-container_main_block4 {
     grid-template: 46% 28% 26%/5% 1fr 5%;
   }
@@ -1592,7 +1581,6 @@
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_about-company .grid-container_main_block4_about-company .grid-item_main_block4_about-company_desc .grid-item_main_block4_about-company_desc_text {
     font-size: 1.5rem;
-    border: solid red;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_about-company .grid-container_main_block4_about-company .grid-item_main_block4_about-company_logo {
     display: none;
@@ -1602,7 +1590,6 @@
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_reviews {
     margin-top: 5rem;
-    border: solid black;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_reviews .grid-container_main_block4_reviews {
     display: flex;
@@ -1633,12 +1620,15 @@
     font-size: 1rem;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_reviews .grid-container_main_block4_reviews .grid-item_main_block4_reviews_carousel {
-    border: solid red;
     margin-top: 1rem;
     width: 30rem;
     height: 15rem;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_contacts .container_main_block4_contacts {
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
     gap: 5rem;
   }
   .grid-item_main_block4 .grid-container_main_block4 .grid-item_main_block4_contacts .container_main_block4_contacts .item_main_block4_contacts-title {

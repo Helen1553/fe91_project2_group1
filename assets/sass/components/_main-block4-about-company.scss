@@ -596,6 +596,10 @@
 
 			.grid-item_main_block4_contacts {
 				.container_main_block4_contacts {
+					-webkit-background-size: 100%;
+					-moz-background-size: 100%;
+					-o-background-size: 100%;
+					background-size: 100%;
 					gap: 5rem;
 					.item_main_block4_contacts-title {
 						@include title-adaptive-mobile-phone;
