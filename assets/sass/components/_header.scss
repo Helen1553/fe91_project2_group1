@@ -42,6 +42,7 @@
 
             .header_links{
                 @include links-header-footer;
+                text-shadow: 1px 1px 1px rgb(0, 0, 0);
 
                 padding: 0.5rem 2.5rem;
                 gap: 3rem;

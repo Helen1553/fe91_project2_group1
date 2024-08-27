@@ -1,4 +1,4 @@
-.flex-item_main_block2 {
+.flex-container_main_block2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,6 +60,10 @@
     .flex-item_main_block2_benefit,
     .flex-item_main_block2-bank {
         display: flex;
+    }
+
+    .flex-item_main_block2_benefit{
+        padding: 2rem;
     }
 
     .grid-item_main_block2-hypothec {

@@ -3,6 +3,7 @@
 	grid-template: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% / 100%;
 	color: #2a2c1f;
 	overflow: hidden;
+	margin-top: 5rem;
 
 	height: 100%;
 
@@ -161,7 +162,11 @@
 	}
 	.grid-item_main_block4_contacts-title {
 		@include title;
-		font-size: 5vw;
+		// font-size: 5vw;
+		
+		@media screen and (max-width: 767px) {
+			@include title-adaptive-mobile-phone;
+		}
 	}
 	.grid-item_main_block4_contacts-map {
 		display: flex;
@@ -319,6 +324,7 @@
 			padding-top: 23vw;
 			width: 50%;
 			height: fit-content;
+			gap: 3rem;
 
 			grid-area: 2 / 1 / 3 / 2;
 

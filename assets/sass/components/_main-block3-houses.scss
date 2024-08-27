@@ -1,6 +1,6 @@
 .grid-container_main_block3_houses {
     display: grid;
-    grid-template: 32% 46% 11% 11%/10% 80% 10%;
+    grid-template: 30% 46% 12% 12%/10% 80% 10%;
     
     height: 100%;
 
@@ -50,7 +50,7 @@
 
         .grid-container_houses-variants {
             display: grid;
-            grid-template: 8% 5% 52% 4% 5% 26%/5% 28% 3% 28% 3% 28% 5%;
+            grid-template: 8% 5% 52% 4% 5% 26%/4% 29% 2.5% 29% 2.5% 29% 4%;
 
             height: 100%;
             width: 100%;
@@ -227,7 +227,7 @@
 
         .grid-item_main_block3_houses-variants {
             .grid-container_houses-variants {
-                grid-template: 8% 7% 46% 6% 6% 27%/4% 44% 4% 44% 4%;
+                grid-template: 8% 7% 46% 2% 6% 29%/4% 44% 4% 44% 4%;
     
                 .grid-item_houses-variants-title {
                     grid-area: 1/2/2/6;
@@ -286,7 +286,7 @@
 
 @media screen and (max-width: 767px) {
     .grid-container_main_block3_houses {
-        grid-template: 60% 40%/1fr;
+        grid-template: 63% 37%/1fr;
 
         .grid-item_main_block3_houses-finished {
             grid-area: 1/1/2/2;
@@ -322,7 +322,7 @@
                             border: 0.2rem solid  white;
                             border-radius: 6px;
                             text-decoration: none;
-                            margin-top: 2.5rem;
+                            margin-top: 1.5rem;
                         }
         
                         .finished-button:hover {
