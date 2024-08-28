@@ -432,6 +432,7 @@
     font-size: 2rem;
     font-weight: 600;
     line-height: normal;
+    text-align: center;
   }
 }
 .flex-container_main_block1 h3 {
@@ -578,6 +579,7 @@
     font-size: 2rem;
     font-weight: 600;
     line-height: normal;
+    text-align: center;
   }
 }
 .flex-container_main_block2 h3 {
