@@ -433,24 +433,17 @@
     font-size: 2rem;
     font-weight: 600;
     line-height: normal;
-    text-align: center;
   }
 }
 .flex-container_main_block1 h3 {
-  text-align: center;
+  text-align: left;
   font-size: 2vw;
   font-weight: 500;
   line-height: 1.5;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-container_main_block1 h3 {
-    text-align: left;
-  }
-}
 @media screen and (max-width: 767px) {
   .flex-container_main_block1 h3 {
-    text-align: left;
-    font-size: 2.8vw;
+    font-size: 4vw;
     font-weight: 500;
   }
 }
@@ -586,24 +579,17 @@
     font-size: 2rem;
     font-weight: 600;
     line-height: normal;
-    text-align: center;
   }
 }
 .flex-container_main_block2 h3 {
-  text-align: center;
+  text-align: left;
   font-size: 2vw;
   font-weight: 500;
   line-height: 1.5;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-container_main_block2 h3 {
-    text-align: left;
-  }
-}
 @media screen and (max-width: 767px) {
   .flex-container_main_block2 h3 {
-    text-align: left;
-    font-size: 2.8vw;
+    font-size: 4vw;
     font-weight: 500;
   }
 }
@@ -692,7 +678,7 @@
 }
 .flex-container_main_block2 .grid-item_main_block2-hypothec h3 {
   margin-top: 4vh;
-  text-align: center;
+  text-align: left;
   font-size: 2vw;
   font-weight: 500;
   line-height: 1.5;

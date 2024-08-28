@@ -21,7 +21,7 @@
 
         @media screen and (max-width: 767px) {
             @include title-adaptive-mobile-phone;
-            text-align: center;
+
         }
     }
 
@@ -29,12 +29,7 @@
     h3 {
         @include title-card;
         
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            text-align: left;
-        }
-
         @media screen and (max-width: 767px) {
-            text-align: left;
             @include text-card_mobile;
         }
     }
