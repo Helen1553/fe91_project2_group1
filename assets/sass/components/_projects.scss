@@ -37,6 +37,12 @@
 
                 display: flex;
                 justify-content: center;
+
+                .logo-text{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    text-align: center;
+                }
             }
 
             .nav {
@@ -251,9 +257,16 @@
                 display: flex;
                 justify-content: center;
 
+                .svg{
+                    margin-top: 1rem;
+                    width: 40%;
+                    height: 40%;
+                }
+
                 .logo_text{
-                    font-size: 1.1rem;
+                    font-size: 1.5vw;
                     color: white;
+                    text-align: center;
                 }
             }
 
@@ -310,6 +323,15 @@
 
                     .projects_title{
                         font-size: 5vw;
+                    }
+                }
+
+                .header_logo {
+                    .logo{
+                        .logo-text{
+                            font-size: 1rem;
+                            font-weight: 700;
+                        }
                     }
                 }
 
@@ -399,6 +421,13 @@
 
         .grid-item_projects_body_footer{
             .grid-container_footer{
+                .footer_logo{
+                    .logo{
+                        .logo_text{
+                            font-size: 2vw;
+                        }
+                    }
+                }
                 .footer_nav{
                     .nav_links{
                         
@@ -420,11 +449,20 @@
 
         .grid-item_projects_body_header{
             .grid-container_header{
-                grid-template: 80% 20%/20% 80%;
+                grid-template: 70% 30%/20% 80%;
 
                 .grid-item_sup-header{
                     .projects_title{
                         font-size: 7vw;
+                    }
+                }
+
+                .header_logo {
+                    .logo{
+                        .logo-text{
+                            font-size: 1rem;
+                            font-weight: 700;
+                        }
                     }
                 }
 
@@ -519,9 +557,15 @@
 
         .grid-item_projects_body_footer{
             .grid-container_footer{
+                .footer_logo{
+                    .logo{
+                        .logo_text{
+                            font-size: 2vw;
+                        }
+                    }
+                }
                 .footer_nav{
                     .nav_links{
-                        
                         a {
                             font-size: 2vw;
                         }
@@ -540,11 +584,20 @@
 
         .grid-item_projects_body_header{
             .grid-container_header{
-                grid-template: 80% 20%/20% 80%;
+                grid-template: 70% 30%/20% 80%;
 
                 .grid-item_sup-header{
                     .projects_title{
                         font-size: 7.5vw;
+                    }
+                }
+
+                .header_logo {
+                    margin-left: 2rem;
+
+                    .logo-text{
+                        font-size: 3.3vw;
+                        font-weight: 600;
                     }
                 }
 
@@ -643,6 +696,14 @@
 
         .grid-item_projects_body_footer{
             .grid-container_footer{
+                .footer_logo{
+                    margin-left: 3rem;
+                    .logo{
+                        .logo_text{
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
                 .footer_nav{
                         height: 100%;
                     .nav_links{

@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+            rel="shortcut icon"
+            href="https://www.svgrepo.com/show/513309/house.svg"
+            type="image/x-svg">
+            
     <title>Варианты наших проектов</title>
 
     <link rel="stylesheet" href="../assets/styles/style.css">
@@ -20,24 +26,21 @@
 </head>
 <body class="grid-container_projects_body">
 
-    <div class="grid-item_projects_body_header">
+    <div class="grid-item_projects_body_header"> <!-- Здесь начинается хедер (шапка) второй странички - странички готовых проектов -->
         <header class="grid-container_header">
-
             <div class="grid-item_sup-header">
                 <h1 class="projects_title">
                     Варианты наших готовых проектов
                 </h1>
             </div>
-
-            <div class="header_logo">
+            <div class="header_logo"> 
                 <div class="logo">
                     <img src="https://www.svgrepo.com/show/503810/home.svg" alt="Логотип компании" class="svg">
-                    <h3 class="logo_text">
-                        <i>Logo</i>
+                    <h3 class="logo-text">
+                        <i>Ассоциация <br> застройщиков</i>
                     </h3>
                 </div>
             </div>
-
             <nav class="nav">
                 <ul class="nav_links">
                     <li><a href="http://127.0.0.1:5500/index.html">На главную</a></li>
@@ -45,18 +48,18 @@
                     <li><a href="#Flats">Квартиры</a></li>
                 </ul>
             </nav>
-
             <div class="buttons">
                 <button class="buttons_contact" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Связаться с нами
                 </button>
             </div>
-        </header>
-    </div>
+        </header> 
+    </div> <!-- Здесь блок хедера заканчивается -->
 
-    <div class="grid-item_projects_body_main">
+    <div class="grid-item_projects_body_main"> <!-- Здесь начинается main - основная часть странички готовых проектов  -->
         <main class="projects_main">
-            <section class="grid-container_projects_main_houses" id="Houses">
+
+            <section class="grid-container_projects_main_houses" id="Houses"><!-- Здесь начинается блок готовых проектов домов -->
                 <div class="grid_item_projects_main_houses_title">
                     <h2 class="projects_main_houses_title">
                         Проекты готовых домов
@@ -483,7 +486,7 @@
                         <div class="grid-item_variants-card6" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- 6 карточка - 6 вариант дома-->
                             <div class="card link rounded-3 shadow-lg">
                                 <img
-                                    src="../assets/images/main_block3-houses/img_house6.jpg"
+                                    src="../assets/images/main_block3-houses/img_house1.jpg"
                                     class="card-img-top"
                                     alt="Дом на продажу от агенства недвижимости №6"
                                 />
@@ -565,14 +568,14 @@
                     </div>
                 </div>
 
-                <div class="grid-item_buttons">
+                <div class="grid-item_buttons"> 
                     <button class="houses-flats-buttton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Связаться с нами
                     </button>
                 </div>
-            </section>
+            </section> <!-- Здесь блок готовых проектов домов заканчивается-->
 
-            <section class="grid-container_projects_main_flats" id="Flats">
+            <section class="grid-container_projects_main_flats" id="Flats"> <!-- Здесь начинается блок готовых проектов квартир-->
                 <div class="grid-item_projects_main_flats_title">
                     <h2 class="projects_main_flats_title">
                         Проекты готовых квартир
@@ -659,12 +662,12 @@
                                     <div class="d-flex flex-column gap-4">
                                         <div>
                                             <h5 class="fw-bold text-center">
-                                                Студия, 32 м<sup>2</sup>
+                                                1-комнатная, 42 м<sup>2</sup>
                                                 <br>
                                                 5 200 000 ₽
                                             </h5>
                                             <p class="text-center">
-                                                цена за м<sup>2</sup> - 162 500 ₽
+                                                цена за м<sup>2</sup> - 129 809 ₽
                                             </p>
                                         </div>
                                         <div class="d-flex justify-content-between">
@@ -1065,14 +1068,14 @@
         </div>
     </div>
 
-    <div class="grid-item_projects_body_footer"> <!-- Здесь начинается блок футера, где снова повторяются необходимые ссылки -->
+    <div class="grid-item_projects_body_footer"> <!-- Здесь начинается блок футера -->
         <footer class="grid-container_footer">
 
             <div class="footer_logo">
                 <div class="logo">
                     <img src="https://www.svgrepo.com/show/503810/home.svg" alt="Логотип компании" class="svg">
                     <h3 class="logo_text">
-                        <i>Logo</i>
+                        <i>Ассоциация <br> застройщиков</i>
                     </h3>
                 </div>
             </div>
@@ -1084,7 +1087,7 @@
                     <li><a href="#Flats">Проекты квартир</a></li>
                 </ul>
             </nav>
-        </footer>
+        </footer>  <!-- Здесь блок футера заканчивается -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

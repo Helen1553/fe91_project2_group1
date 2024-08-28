@@ -6,6 +6,9 @@
 
 "Ассоциация застройщиков" - агенство недвижимости со штаб-квартирой в г. Ростов-на-Дону, специализурующееся на строительстве и продаже домов, а также на продаже квартир под ключ в Южном и Центральном ФО России.
 
+### Сайт состоит из 2 страниц: основной, включающей в себя 4 информационных блока (Услуги компании, преимущества компании, проекты, контакты), и дополнительной - отдельной страницы по готовым проектам агенства.
+
+<br>
 
 ### Проект выполнен с использованием графического редактора Figma
 ### и реализован на базе технологий `html5`, `css3` и фреймворка `bootstrap5`
@@ -18,26 +21,35 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" height=150px width=200px >
 </div>
 
+### Сайт кроссбраузерный (корректно открывается через Google Chrome, Microsoft Edge, Opera, Safari) 
 ### Сайт адаптирован под разные виды устройств (desktop, tablet, mobile):
 
-* Desktop 
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
+#### Основная страница:
+![image](./assets/images/readme/desktop-header.png)
+![image](./assets/images/readme/desktop-main_block1.png)
+![image](./assets/images/readme/desktop-main_block2.png)
+![image](./assets/images/readme/desktop-main_block3.png)
+![image](./assets/images/readme/desktop-main_block4.png)
+![image](./assets/images/readme/desktop-main_block4-footer.png)
 
-* Tablet
-![image]()
-![image]()
-![image]()
+<br>
 
-* Mobile
-![image]()
-![image]()
-![image]()
+#### Дополнительная страница:
+![image](./assets/images/readme/desktop-projects-header.png)
+![image](./assets/images/readme/desktop-projects-houses.png)
+![image](./assets/images/readme/desktop-projects-flats.png)
 
-### На сайте также реализована форма обратной связи по просьбе заказчика.
+
+### Код оснащен необходимыми для понимания структуры проекта комментариями.
+
+### На сайте реализована форма обратной связи по просьбе заказчика.
+
+### Команда разработчиков проекта:
+* MariaLukyanova
+* AlenaGorina
+* NadezhdaKov
+* Basulka
+* Helen1553
 
 #### <u>**Памятка по работе с GIT**</u>
 * <i>Клонирование репозитория:</i>
@@ -58,12 +70,3 @@
 5. Техлид принимает ваш пулл-реквест и пишет об этом в чат, чтобы все в команде знали, что main изменился и нужно его подтянуть к себе;
 6. ВСЕ подтягивают себе изменения с гитхаба (сначала проверяем ветку main --> подтягиваем изменения в main c гх `git pull` --> далее подтягиваем изменения из main к себе в ветку  `git merge main` или, если через интерфейс: через 3 точки --> `Push,Pull` --> `Pull from main` ) !
 7. как подтянули все нужные изменения из main - запушьте это в свою ветку - чтобы на гитхабе ваша ветка не отставала от main<b>
-
-<br>
-
-### Команда разработчиков проекта:
-* MariaLukyanova
-* AlenaGorina
-* NadezhdaKov
-* Basulka
-* Helen1553

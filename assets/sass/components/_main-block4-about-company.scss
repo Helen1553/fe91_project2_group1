@@ -10,11 +10,7 @@
 
 	// Здесь начинается 1 секция 4 блока - О компании
 	.grid-item_main_block4_about-company {
-		// grid-area: 1 / 1 / 7 / 2;
 		grid-area: 1 / 2 / 2 / 3;
-		// width: 80%;
-		// height: fit-content;
-		// margin: 0 auto;
 
 		.grid-container_main_block4_about-company{
 			display: grid;
@@ -24,7 +20,6 @@
 
 			.grid-item_main_block4_about-company_title {
 				@include title;
-				// font-size: 5vw;
 				grid-area: 1 / 1 / 2 / 2;
 
 				display: flex;
@@ -51,8 +46,6 @@
 				gap: 1rem;
 
 				.grid-item_main_block4_about-company_desc_text {
-					// font-size: 1.3vw;
-					// text-align: justify;
 					@include text;
 				}
 			}
@@ -61,18 +54,12 @@
 				grid-area: 1 / 2 / 2 / 3;
 
 				display: flex;
-				// justify-content: space-between;
-				// margin-top: 2vw;
 
 				.grid-item_main_block4_about-company_logo_image {
 					width: 15%;
 
 					align-self: center;
 				}
-
-				// .grid-item_main_block4_about-company_logo_image2 {
-					// 	border: solid yellow;
-				// }
 
 				.grid-item_main_block4_about-company_logo_text {
 
@@ -99,16 +86,11 @@
 	
 	// Здесь начинается 2 секция 4 блока - Отзывы
 	.grid-item_main_block4_reviews {
-		// width: 80%;
-		// margin: 0 auto;
 		grid-area: 2 / 2 / 3 / 3;
 
 		.grid-container_main_block4_reviews{
 			display: grid;
 			grid-template: 1fr 1fr / 1fr 2fr;
-
-			// padding-top: 7vw;
-			// padding-bottom: 5vw;
 
 			height: 100%;
 			width: 100%;
@@ -156,8 +138,6 @@
 				height: 10vw;
 
 				margin-top: 3rem;
-
-				
 			}
 		
 			.grid-item_main_block4_reviews_wrap-2gis:hover {
@@ -210,7 +190,6 @@
 	// Здесь начинается 3 секция 4 блока - Контакты
 	.grid-item_main_block4_contacts {
 		grid-area: 3 / 1 / 4 / 4;
-		// background-image: url("/assets/images/main-block4/img_house3.png");
 		background-image: url(https://static.tildacdn.com/tild6131-6332-4663-a363-323331653361/Object.png);
 		background-repeat: no-repeat;
 		background-position: right;
@@ -232,7 +211,6 @@
 
 			.item_main_block4_contacts-title {
 				@include title;
-				// font-size: 5vw;
 				
 				@media screen and (max-width: 767px) {
 					@include title-adaptive-mobile-phone;
@@ -632,526 +610,3 @@
 		
 	}
 }
-
-// @media screen and (min-width: 1600px) and (max-width: 1999px) {
-// 	.grid-item_main_block4
-// 		.grid-item_main_block4_contacts
-// 		.grid-item_main_block4_contacts-container {
-// 		margin-top: 5vw;
-// 	}
-// }
-
-// @media screen and (min-width: 1120px) and (max-width: 1400px) {
-// 	.grid-item_main_block4 {
-// 		grid-template: 11% 11% 11% 11% 11% 11% 11% 12% 11% / 100%;
-// 		.grid-item_main_block4_about-company {
-// 			grid-area: 1 / 1 / 3 / 2;
-// 		}
-
-// 		.grid-item_main_block4_reviews {
-// 			width: 80%;
-// 			margin: 0 auto;
-// 			grid-area: 4 / 1 / 5 / 2;
-// 		}
-
-// 		.grid-item_main_block4_contacts {
-// 			grid-area: 6 / 1 / 9 / 2;
-// 		}
-// 	}
-// }
-
-// @media screen and (min-width: 768px) and (max-width: 1120px) {
-// 	.grid-item_main_block4 {
-// 		grid-template: 14% 14% 15% 15% 14% 14% 14% / 100%;
-// 		.grid-item_main_block4_about-company {
-// 			grid-area: 1 / 1 / 3 / 2;
-// 			grid-template: 1fr 4fr / 60% 40%;
-
-// 			.grid-item_main_block4_about-company_desc_text {
-// 				font-size: 1.8vw;
-// 			}
-// 			.grid-item_main_block4_about-company_image {
-// 				align-self: center;
-// 			}
-// 		}
-
-// 		.grid-item_main_block4_reviews {
-// 			width: 80%;
-// 			margin: 0 auto;
-// 			grid-area: 4 / 1 / 5 / 2;
-// 		}
-
-// 		.grid-item_main_block4_contacts {
-// 			grid-area: 6 / 1 / 8 / 2;
-
-// 			.grid-item_main_block4_contacts-button {
-// 				font-size: 1.2vw;
-// 			}
-// 		}
-// 	}
-// }
-
-// @media screen and (min-width: 600px) and (max-width: 767px) {
-// 	.grid-item_main_block4 {
-// 		grid-template: 22% 20% 18% 20% 20% / 100%;
-// 		.grid-item_main_block4_about-company {
-// 			grid-area: 1 / 1 / 2 / 2;
-// 			grid-template: 1fr 4fr / 100%;
-// 			.grid-item_main_block4_about-company_logo {
-// 				display: none;
-// 			}
-// 			.grid-item_main_block4_about-company_desc {
-// 				grid-area: 2 / 1 / 3 / 2;
-
-// 				.grid-item_main_block4_about-company_desc_text {
-// 					font-size: 1.8vw;
-// 				}
-// 			}
-// 			.grid-item_main_block4_about-company_image {
-// 				display: none;
-// 			}
-// 		}
-
-// 		.grid-item_main_block4_reviews {
-// 			display: flex;
-// 			flex-direction: row;
-// 			padding-top: 23vw;
-// 			width: 50%;
-// 			height: fit-content;
-// 			gap: 3rem;
-
-// 			grid-area: 2 / 1 / 3 / 2;
-
-// 			.grid-item_main_block4_reviews_wrap-yandex {
-// 				width: 20vw;
-// 				height: 10vw;
-// 				.grid-item_main_block4_reviews_logo2 {
-// 					width: 10vw;
-// 				}
-// 				.grid-item_main_block4_reviews_wrap2 {
-// 					.grid-item_main_block4_reviews_wrap2-rating {
-// 						font-size: 3vw;
-// 					}
-// 					.grid-item_main_block4_reviews_wrap2-wrap {
-// 						.grid-item_main_block4_reviews_wrap2-stars2 {
-// 							width: 7vw;
-// 						}
-// 						.grid-item_main_block4_reviews_wrap2-desc {
-// 							font-size: 2vw;
-// 						}
-// 					}
-// 				}
-// 			}
-
-// 			.grid-item_main_block4_reviews_wrap-2gis {
-// 				grid-area: 1 / 2 / 2 / 3;
-// 				width: 20vw;
-// 				height: 10vw;
-// 				.grid-item_main_block4_reviews_logo2 {
-// 					width: 5vw;
-// 				}
-// 				.grid-item_main_block4_reviews_wrap2 {
-// 					.grid-item_main_block4_reviews_wrap2-rating {
-// 						font-size: 3vw;
-// 					}
-// 					.grid-item_main_block4_reviews_wrap2-wrap {
-// 						.grid-item_main_block4_reviews_wrap2-stars2 {
-// 							width: 7vw;
-// 						}
-// 						.grid-item_main_block4_reviews_wrap2-desc {
-// 							font-size: 2vw;
-// 						}
-// 					}
-// 				}
-// 			}
-
-// 			.grid-item_main_block4_reviews_carousel {
-// 				display: none;
-// 			}
-// 		}
-
-// 		.grid-item_main_block4_contacts {
-// 			grid-area: 4 / 1 / 6 / 2;
-// 			.grid-item_main_block4_contacts {
-// 				grid-area: 4 / 1 / 6 / 2;
-// 				.grid-item_main_block4_contacts-container {
-// 					.grid-item_main_block4_contacts-map {
-// 						.grid-item_main_block4_contacts-map-logo
-// 							.grid-item_main_block4_contacts-map-logo2 {
-// 							width: 4vw;
-// 						}
-// 						.grid-item_main_block4_contacts-map-text {
-// 							display: flex;
-// 							flex-direction: column;
-// 							justify-content: center;
-
-// 							.grid-item_main_block4_contacts-map-text-title {
-// 								margin-bottom: 0.3vw;
-// 							}
-// 							.grid-item_main_block4_contacts-map-text-desc {
-// 								margin-bottom: 0.3vw;
-// 							}
-// 						}
-// 					}
-// 					.grid-item_main_block4_contacts-data {
-// 						.grid-item_main_block4_contacts-data-text {
-// 							display: flex;
-// 							align-items: center;
-// 						}
-
-// 						.grid-item_main_block4_contacts-data-logo
-// 							.grid-item_main_block4_contacts-data-logo2 {
-// 							width: 4vw;
-// 						}
-// 					}
-// 					.grid-item_main_block4_contacts-phone {
-// 						.grid-item_main_block4_contacts-phone-number {
-// 							display: flex;
-// 							flex-direction: column;
-// 							justify-content: center;
-// 							.grid-item_main_block4_contacts-phone-number-text {
-// 								margin-bottom: 0.3vw;
-// 								margin-top: 0.3vw;
-// 								.grid-item_main_block4_contacts-phone-number-text2 {
-// 									margin-bottom: 0.3vw;
-// 									margin-top: 0.3vw;
-// 								}
-// 							}
-// 						}
-// 						.grid-item_main_block4_contacts-phone-logo {
-// 							align-self: center;
-
-// 							.grid-item_main_block4_contacts-phone-logo2 {
-// 								width: 3vw;
-// 								height: auto;
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 			.grid-item_main_block4_contacts-button {
-// 				font-size: 1.5vw;
-// 			}
-// 		}
-// 	}
-// }
-
-// @media screen and (min-width: 320px) and (max-width: 599px) {
-// 	.grid-item_main_block4 {
-// 		grid-template: 40% 20% 40% / 100%;
-// 		.grid-item_main_block4_about-company {
-// 			grid-area: 1 / 1 / 2 / 2;
-// 			grid-template: 1fr 4fr / 100%;
-// 			.grid-item_main_block4_about-company_logo {
-// 				display: none;
-// 			}
-// 			.grid-item_main_block4_about-company_desc {
-// 				grid-area: 2 / 1 / 3 / 2;
-
-// 				.grid-item_main_block4_about-company_desc_text {
-// 					font-size: 2.6vw;
-// 				}
-// 			}
-// 			.grid-item_main_block4_about-company_image {
-// 				display: none;
-// 			}
-// 		}
-
-// 		.grid-item_main_block4_reviews {
-// 			display: flex;
-// 			flex-direction: column;
-// 			padding-top: 5vw;
-// 			width: 50%;
-// 			height: fit-content;
-
-// 			grid-area: 2 / 1 / 3 / 2;
-
-// 			.grid-item_main_block4_reviews_wrap-yandex {
-// 				width: 45vw;
-// 				height: 20vw;
-// 				.grid-item_main_block4_reviews_logo2 {
-// 					width: 20vw;
-// 				}
-// 				.grid-item_main_block4_reviews_wrap2 {
-// 					.grid-item_main_block4_reviews_wrap2-rating {
-// 						font-size: 7vw;
-// 					}
-// 					.grid-item_main_block4_reviews_wrap2-wrap {
-// 						.grid-item_main_block4_reviews_wrap2-stars2 {
-// 							width: 15vw;
-// 						}
-// 						.grid-item_main_block4_reviews_wrap2-desc {
-// 							font-size: 3vw;
-// 						}
-// 					}
-// 				}
-// 			}
-
-// 			.grid-item_main_block4_reviews_wrap-2gis {
-// 				grid-area: 1 / 2 / 2 / 3;
-// 				width: 45vw;
-// 				height: 20vw;
-// 				.grid-item_main_block4_reviews_logo2 {
-// 					width: 10vw;
-// 				}
-// 				.grid-item_main_block4_reviews_wrap2 {
-// 					.grid-item_main_block4_reviews_wrap2-rating {
-// 						font-size: 7vw;
-// 					}
-// 					.grid-item_main_block4_reviews_wrap2-wrap {
-// 						.grid-item_main_block4_reviews_wrap2-stars2 {
-// 							width: 15vw;
-// 						}
-// 						.grid-item_main_block4_reviews_wrap2-desc {
-// 							font-size: 2.5vw;
-// 						}
-// 					}
-// 				}
-// 			}
-
-// 			.grid-item_main_block4_reviews_carousel {
-// 				display: none;
-// 			}
-// 		}
-// 		.grid-item_main_block4_contacts {
-// 			grid-area: 3 / 1 / 4 / 2;
-// 			background-position: bottom;
-// 			-webkit-background-size: 100%;
-// 			-moz-background-size: 100%;
-// 			-o-background-size: 100%;
-// 			background-size: 100%;
-// 			.grid-item_main_block4_contacts-container {
-// 				.grid-item_main_block4_contacts-map {
-// 					margin-top: 0vw;
-// 					margin-bottom: 7vw;
-// 					.grid-item_main_block4_contacts-map-logo
-// 						.grid-item_main_block4_contacts-map-logo2 {
-// 						width: 12vw;
-// 					}
-// 					.grid-item_main_block4_contacts-map-text {
-// 						display: flex;
-// 						flex-direction: column;
-// 						justify-content: center;
-// 						margin-left: 5vw;
-
-// 						.grid-item_main_block4_contacts-map-text-title {
-// 							margin-bottom: 0.3vw;
-// 							font-size: 4vw;
-// 						}
-// 						.grid-item_main_block4_contacts-map-text-desc {
-// 							margin-bottom: 0.3vw;
-// 							font-size: 2.5vw;
-// 						}
-// 					}
-// 				}
-// 				.grid-item_main_block4_contacts-data {
-// 					margin-bottom: 7vw;
-// 					.grid-item_main_block4_contacts-data-text {
-// 						display: flex;
-// 						align-items: center;
-// 						font-size: 2.5vw;
-// 						margin-left: 5vw;
-// 					}
-
-// 					.grid-item_main_block4_contacts-data-logo
-// 						.grid-item_main_block4_contacts-data-logo2 {
-// 						width: 12vw;
-// 					}
-// 				}
-// 				.grid-item_main_block4_contacts-phone {
-// 					margin-bottom: 7vw;
-// 					.grid-item_main_block4_contacts-phone-number {
-// 						display: flex;
-// 						flex-direction: column;
-// 						justify-content: center;
-// 						.grid-item_main_block4_contacts-phone-number-text {
-// 							margin-bottom: 0vw;
-// 							margin-top: 0vw;
-// 							font-size: 3vw;
-// 							margin-left: 5vw;
-
-// 							.grid-item_main_block4_contacts-phone-number-text2 {
-// 								margin-bottom: 0vw;
-// 								margin-top: 0vw;
-// 								font-size: 3vw;
-// 							}
-// 						}
-// 					}
-// 					.grid-item_main_block4_contacts-phone-logo {
-// 						align-self: center;
-
-// 						.grid-item_main_block4_contacts-phone-logo2 {
-// 							width: 12vw;
-// 							height: auto;
-// 						}
-// 					}
-// 				}
-// 				.grid-item_main_block4_contacts-button {
-// 					font-size: 2vw;
-// 					width: 35vw;
-// 					height: 12vw;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// @media screen and (max-width: 319px) {
-// 	.grid-item_main_block4 {
-// 		grid-template: 40% 20% 40% / 100%;
-// 		.grid-item_main_block4_about-company {
-// 			grid-area: 1 / 1 / 2 / 2;
-// 			grid-template: 1fr 4fr / 100%;
-// 			.grid-item_main_block4_about-company_logo {
-// 				display: none;
-// 			}
-// 			.grid-item_main_block4_about-company_desc {
-// 				grid-area: 2 / 1 / 3 / 2;
-
-// 				.grid-item_main_block4_about-company_desc_text {
-// 					font-size: 3.5vw;
-// 				}
-// 			}
-// 			.grid-item_main_block4_about-company_image {
-// 				display: none;
-// 			}
-// 		}
-
-// 		.grid-item_main_block4_reviews {
-// 			display: flex;
-// 			flex-direction: column;
-// 			padding-top: 12vw;
-// 			width: 50%;
-// 			height: fit-content;
-
-// 			grid-area: 2 / 1 / 3 / 2;
-
-// 			.grid-item_main_block4_reviews_wrap-yandex {
-// 				width: 50vw;
-// 				height: 20vw;
-// 				.grid-item_main_block4_reviews_logo2 {
-// 					width: 25vw;
-// 				}
-// 				.grid-item_main_block4_reviews_wrap2 {
-// 					.grid-item_main_block4_reviews_wrap2-rating {
-// 						font-size: 7vw;
-// 					}
-// 					.grid-item_main_block4_reviews_wrap2-wrap {
-// 						.grid-item_main_block4_reviews_wrap2-stars2 {
-// 							width: 20vw;
-// 						}
-// 						.grid-item_main_block4_reviews_wrap2-desc {
-// 							font-size: 3vw;
-// 						}
-// 					}
-// 				}
-// 			}
-
-// 			.grid-item_main_block4_reviews_wrap-2gis {
-// 				grid-area: 1 / 2 / 2 / 3;
-// 				width: 50vw;
-// 				height: 20vw;
-// 				.grid-item_main_block4_reviews_logo2 {
-// 					width: 15vw;
-// 				}
-// 				.grid-item_main_block4_reviews_wrap2 {
-// 					.grid-item_main_block4_reviews_wrap2-rating {
-// 						font-size: 7vw;
-// 					}
-// 					.grid-item_main_block4_reviews_wrap2-wrap {
-// 						.grid-item_main_block4_reviews_wrap2-stars2 {
-// 							width: 20vw;
-// 						}
-// 						.grid-item_main_block4_reviews_wrap2-desc {
-// 							font-size: 3vw;
-// 						}
-// 					}
-// 				}
-// 			}
-
-// 			.grid-item_main_block4_reviews_carousel {
-// 				display: none;
-// 			}
-// 		}
-// 		.grid-item_main_block4_contacts {
-// 			grid-area: 3 / 1 / 4 / 2;
-// 			background-position: bottom;
-// 			-webkit-background-size: 100%;
-// 			-moz-background-size: 100%;
-// 			-o-background-size: 100%;
-// 			background-size: 100%;
-// 			.grid-item_main_block4_contacts-container {
-// 				.grid-item_main_block4_contacts-map {
-// 					margin-top: 8vw;
-// 					margin-bottom: 11vw;
-// 					.grid-item_main_block4_contacts-map-logo
-// 						.grid-item_main_block4_contacts-map-logo2 {
-// 						width: 15vw;
-// 					}
-// 					.grid-item_main_block4_contacts-map-text {
-// 						display: flex;
-// 						flex-direction: column;
-// 						justify-content: center;
-// 						margin-left: 5vw;
-
-// 						.grid-item_main_block4_contacts-map-text-title {
-// 							margin-bottom: 0.3vw;
-// 							font-size: 4.8vw;
-// 						}
-// 						.grid-item_main_block4_contacts-map-text-desc {
-// 							margin-bottom: 0.3vw;
-// 							font-size: 3vw;
-// 						}
-// 					}
-// 				}
-// 				.grid-item_main_block4_contacts-data {
-// 					margin-bottom: 11vw;
-// 					.grid-item_main_block4_contacts-data-text {
-// 						display: flex;
-// 						align-items: center;
-// 						font-size: 3vw;
-// 						margin-left: 5vw;
-// 					}
-
-// 					.grid-item_main_block4_contacts-data-logo
-// 						.grid-item_main_block4_contacts-data-logo2 {
-// 						width: 15vw;
-// 					}
-// 				}
-// 				.grid-item_main_block4_contacts-phone {
-// 					margin-bottom: 11vw;
-// 					.grid-item_main_block4_contacts-phone-number {
-// 						display: flex;
-// 						flex-direction: column;
-// 						justify-content: center;
-// 						.grid-item_main_block4_contacts-phone-number-text {
-// 							margin-bottom: 0vw;
-// 							margin-top: 0vw;
-// 							font-size: 4vw;
-// 							margin-left: 5vw;
-
-// 							.grid-item_main_block4_contacts-phone-number-text2 {
-// 								margin-bottom: 0vw;
-// 								margin-top: 0vw;
-// 								font-size: 4vw;
-// 							}
-// 						}
-// 					}
-// 					.grid-item_main_block4_contacts-phone-logo {
-// 						align-self: center;
-
-// 						.grid-item_main_block4_contacts-phone-logo2 {
-// 							width: 15vw;
-// 							height: auto;
-// 						}
-// 					}
-// 				}
-// 				.grid-item_main_block4_contacts-button {
-// 					font-size: 3.7vw;
-// 					width: 40vw;
-// 					height: 15vw;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
