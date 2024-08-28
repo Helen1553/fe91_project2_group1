@@ -53,18 +53,17 @@
   gap: 1rem;
 }
 .header .header_row .header_logo {
-  width: 15%;
+  width: fit-content;
   height: 100%;
 }
 .header .header_row .header_logo_icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-left: 1rem;
   height: 100%;
 }
 .header .header_row .header_logo_text {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
   color: white;
 }
 .header .header_row .header_nav {
@@ -1669,11 +1668,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   height: 100%;
   cursor: pointer;
 }
 .footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_logo .logo .logo_text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .footer .grid-container_footer .grid-item_footer-itself .footer-itself .footer-itself_logo .logo .logo_text a {
   text-decoration: none;
@@ -1924,6 +1924,11 @@
   display: flex;
   justify-content: center;
 }
+.grid-container_projects_body .grid-item_projects_body_header .grid-container_header .header_logo .logo-text {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav {
   grid-area: 2/2/3/3;
 }
@@ -2107,9 +2112,15 @@
   display: flex;
   justify-content: center;
 }
+.grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo .svg {
+  margin-top: 1rem;
+  width: 40%;
+  height: 40%;
+}
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo .logo_text {
-  font-size: 1.1rem;
+  font-size: 1.5vw;
   color: white;
+  text-align: center;
 }
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav {
   height: 80%;
@@ -2161,6 +2172,10 @@
   }
   .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header .projects_title {
     font-size: 5vw;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .header_logo .logo .logo-text {
+    font-size: 1rem;
+    font-weight: 700;
   }
   .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav .nav_links {
     gap: 6rem;
@@ -2215,6 +2230,9 @@
   .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card6 {
     grid-area: 6/4/7/5;
   }
+  .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo .logo .logo_text {
+    font-size: 2vw;
+  }
   .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a {
     font-size: 2vw;
   }
@@ -2225,10 +2243,14 @@
     height: 11200px;
   }
   .grid-container_projects_body .grid-item_projects_body_header .grid-container_header {
-    grid-template: 80% 20%/20% 80%;
+    grid-template: 70% 30%/20% 80%;
   }
   .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header .projects_title {
     font-size: 7vw;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .header_logo .logo .logo-text {
+    font-size: 1rem;
+    font-weight: 700;
   }
   .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav .nav_links {
     gap: 0;
@@ -2287,6 +2309,9 @@
   .grid-container_projects_body .grid-item_projects_body_main .projects_main .grid-item_variants-card6 {
     grid-area: 12/2/13/3;
   }
+  .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo .logo .logo_text {
+    font-size: 2vw;
+  }
   .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav .nav_links a {
     font-size: 2vw;
   }
@@ -2297,10 +2322,17 @@
     height: 9900px;
   }
   .grid-container_projects_body .grid-item_projects_body_header .grid-container_header {
-    grid-template: 80% 20%/20% 80%;
+    grid-template: 70% 30%/20% 80%;
   }
   .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header .projects_title {
     font-size: 7.5vw;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .header_logo {
+    margin-left: 2rem;
+  }
+  .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .header_logo .logo-text {
+    font-size: 3.3vw;
+    font-weight: 600;
   }
   .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .nav .nav_links {
     gap: 0;
@@ -2361,6 +2393,12 @@
   }
   .grid-container_projects_body .grid-item_projects_body_main .projects_main .houses-flats-buttton {
     display: none;
+  }
+  .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo {
+    margin-left: 3rem;
+  }
+  .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_logo .logo .logo_text {
+    font-size: 3.5vw;
   }
   .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer .footer_nav {
     height: 100%;
