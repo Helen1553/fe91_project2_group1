@@ -1651,7 +1651,7 @@
   display: grid;
   grid-template: 80% 20%/1fr;
   height: 100%;
-  background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
+  background-image: url(../images/header/header_2.jpg);
   background-attachment: fixed;
   background-position: top;
 }
@@ -1913,7 +1913,7 @@
   grid-area: 1/1/2/4;
   align-content: center;
   text-align: center;
-  background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
+  background-image: url(../images/header/header_1.jpg);
   background-position: center;
 }
 .grid-container_projects_body .grid-item_projects_body_header .grid-container_header .grid-item_sup-header .projects_title {
@@ -1994,7 +1994,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://cobrio.club/uploads/posts/2022-10/1666014441_5-cobrio-club-p-podsvetka-karkasnogo-doma-dizain-krasivo-5.jpg);
+  background-image: url(../images/main_block3-houses/img_house6.jpg);
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -2105,7 +2105,7 @@
 .grid-container_projects_body .grid-item_projects_body_footer .grid-container_footer {
   display: grid;
   grid-template: 1fr/20% 80%;
-  background-image: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-oboi-temnie-doma-30.jpg);
+  background-image: url(../images/main_block3-houses/img_house1.jpg);
   background-attachment: fixed;
   background-position: top;
   height: 100%;
